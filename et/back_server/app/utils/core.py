@@ -3,8 +3,8 @@ import decimal
 import uuid
 
 import anytree
-from anytree.exporter import JsonExporter,DictExporter
-from anytree.importer import DictImporter
+# from anytree.exporter import JsonExporter,DictExporter
+# from anytree.importer import DictImporter
 from flask.json import JSONEncoder as BaseJSONEncoder
 from flask_sqlalchemy import SQLAlchemy
 from flask_apscheduler import APScheduler
@@ -13,8 +13,7 @@ scheduler = APScheduler()
 
 db = SQLAlchemy()
 
-realtionlib= anytree
-
+realtionlib = anytree
 
 
 class JSONEncoder(BaseJSONEncoder):
