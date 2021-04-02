@@ -1,0 +1,4 @@
+[2020-05-09 06:55:50,282: INFO/MainProcess] Received task: app.celery.async_alipay_service[6d640f05-1e9c-48d3-8a92-1338682a6dee]  
+[2020-05-09 06:55:51,887: INFO/ForkPoolWorker-7] Task app.celery.async_alipay_service[6d640f05-1e9c-48d3-8a92-1338682a6dee] succeeded in 1.6041630140389316s: None
+[2020-05-09 07:00:10,284: INFO/MainProcess] Received task: app.celery.async_alipay_service[6647bd4d-1611-486e-86fe-8d72cd32ab2d]  
+[2020-05-09 07:00:11,984: INFO/ForkPoolWorker-1] Task app.celery.async_alipay_service[6647bd4d-1611-486e-86fe-8d72cd32ab2d] succeeded in 1.6995231779874302s: None

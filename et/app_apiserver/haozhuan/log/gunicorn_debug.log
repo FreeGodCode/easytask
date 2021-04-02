@@ -1,0 +1,154 @@
+[2020-04-13 00:07:17 +0800] [27826] [DEBUG] Current configuration:
+  config: run_app.py
+  bind: ['0.0.0.0:5005']
+  backlog: 2048
+  workers: 4
+  worker_class: gevent
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /Users/zhouxiaojun/Documents/online_projects/app/haozhuan
+  daemon: False
+  raw_env: []
+  pidfile: log/gunicorn.pid
+  worker_tmp_dir: None
+  user: 501
+  group: 20
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: log/debug.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: unix:///var/run/syslog
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x104f98158>
+  on_reload: <function OnReload.on_reload at 0x104f98268>
+  when_ready: <function WhenReady.when_ready at 0x104f98378>
+  pre_fork: <function Prefork.pre_fork at 0x104f98488>
+  post_fork: <function Postfork.post_fork at 0x104f98598>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x104f986a8>
+  worker_int: <function WorkerInt.worker_int at 0x104f987b8>
+  worker_abort: <function WorkerAbort.worker_abort at 0x104f988c8>
+  pre_exec: <function PreExec.pre_exec at 0x104f989d8>
+  pre_request: <function PreRequest.pre_request at 0x104f98ae8>
+  post_request: <function PostRequest.post_request at 0x104f98b70>
+  child_exit: <function ChildExit.child_exit at 0x104f98c80>
+  worker_exit: <function WorkerExit.worker_exit at 0x104f98d90>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x104f98ea0>
+  on_exit: <function OnExit.on_exit at 0x104fa5048>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-04-13 00:07:17 +0800] [27826] [INFO] Starting gunicorn 20.0.4
+[2020-04-13 00:07:17 +0800] [27826] [DEBUG] Arbiter booted
+[2020-04-13 00:07:17 +0800] [27826] [INFO] Listening at: http://0.0.0.0:5005 (27826)
+[2020-04-13 00:07:17 +0800] [27826] [INFO] Using worker: gevent
+[2020-04-13 00:07:17 +0800] [27829] [INFO] Booting worker with pid: 27829
+[2020-04-13 00:07:17 +0800] [27830] [INFO] Booting worker with pid: 27830
+[2020-04-13 00:07:17 +0800] [27831] [INFO] Booting worker with pid: 27831
+[2020-04-13 00:07:17 +0800] [27832] [INFO] Booting worker with pid: 27832
+[2020-04-13 00:07:17 +0800] [27826] [DEBUG] 4 workers
+[2020-04-13 00:07:27 +0800] [27830] [DEBUG] GET /old_member
+[2020-04-13 00:07:27 +0800] [27830] [DEBUG] Closing connection. 
+[2020-04-13 00:08:21 +0800] [27829] [INFO] Worker reloading: run_app.py modified
+[2020-04-13 00:08:21 +0800] [27829] [INFO] Worker exiting (pid: 27829)
+[2020-04-13 00:08:21 +0800] [27830] [INFO] Worker reloading: run_app.py modified
+[2020-04-13 00:08:21 +0800] [27830] [INFO] Worker exiting (pid: 27830)
+[2020-04-13 00:08:21 +0800] [27848] [INFO] Booting worker with pid: 27848
+[2020-04-13 00:08:21 +0800] [27831] [INFO] Worker reloading: run_app.py modified
+[2020-04-13 00:08:21 +0800] [27831] [INFO] Worker exiting (pid: 27831)
+[2020-04-13 00:08:21 +0800] [27832] [INFO] Worker reloading: run_app.py modified
+[2020-04-13 00:08:21 +0800] [27832] [INFO] Worker exiting (pid: 27832)
+[2020-04-13 00:08:21 +0800] [27849] [INFO] Booting worker with pid: 27849
+[2020-04-13 00:08:21 +0800] [27850] [INFO] Booting worker with pid: 27850
+[2020-04-13 00:08:22 +0800] [27826] [DEBUG] 3 workers
+[2020-04-13 00:08:22 +0800] [27826] [DEBUG] 4 workers
+[2020-04-13 00:08:22 +0800] [27851] [INFO] Booting worker with pid: 27851
+[2020-04-13 00:08:30 +0800] [27848] [INFO] Worker reloading: /Users/zhouxiaojun/Documents/online_projects/app/haozhuan/main.py modified
+[2020-04-13 00:08:30 +0800] [27848] [INFO] Worker exiting (pid: 27848)
+[2020-04-13 00:08:30 +0800] [27851] [INFO] Worker reloading: /Users/zhouxiaojun/Documents/online_projects/app/haozhuan/main.py modified
+[2020-04-13 00:08:30 +0800] [27850] [INFO] Worker reloading: /Users/zhouxiaojun/Documents/online_projects/app/haozhuan/main.py modified
+[2020-04-13 00:08:30 +0800] [27850] [INFO] Worker exiting (pid: 27850)
+[2020-04-13 00:08:30 +0800] [27851] [INFO] Worker exiting (pid: 27851)
+[2020-04-13 00:08:30 +0800] [27849] [INFO] Worker reloading: /Users/zhouxiaojun/Documents/online_projects/app/haozhuan/main.py modified
+[2020-04-13 00:08:30 +0800] [27849] [INFO] Worker exiting (pid: 27849)
+[2020-04-13 00:08:30 +0800] [27853] [INFO] Booting worker with pid: 27853
+[2020-04-13 00:08:31 +0800] [27854] [INFO] Booting worker with pid: 27854
+[2020-04-13 00:08:31 +0800] [27826] [DEBUG] 3 workers
+[2020-04-13 00:08:31 +0800] [27855] [INFO] Booting worker with pid: 27855
+[2020-04-13 00:08:31 +0800] [27856] [INFO] Booting worker with pid: 27856
+[2020-04-13 00:08:31 +0800] [27826] [DEBUG] 4 workers
+[2020-04-13 00:08:34 +0800] [27826] [INFO] Handling signal: int
+[2020-04-13 00:08:34 +0800] [27855] [INFO] Worker exiting (pid: 27855)
+[2020-04-13 00:08:34 +0800] [27853] [INFO] Worker exiting (pid: 27853)
+[2020-04-13 00:08:34 +0800] [27854] [INFO] Worker exiting (pid: 27854)
+[2020-04-13 00:08:34 +0800] [27856] [INFO] Worker exiting (pid: 27856)
+[2020-04-13 00:08:34 +0800] [27826] [INFO] Shutting down: Master
+[2020-04-13 00:08:35 +0800] [27945] [INFO] Starting gunicorn 20.0.4
+[2020-04-13 00:08:35 +0800] [27945] [INFO] Listening at: http://0.0.0.0:5005 (27945)
+[2020-04-13 00:08:35 +0800] [27945] [INFO] Using worker: gevent
+[2020-04-13 00:08:35 +0800] [27948] [INFO] Booting worker with pid: 27948
+[2020-04-13 00:08:35 +0800] [27949] [INFO] Booting worker with pid: 27949
+[2020-04-13 00:08:35 +0800] [27950] [INFO] Booting worker with pid: 27950
+[2020-04-13 00:08:35 +0800] [27951] [INFO] Booting worker with pid: 27951
+[2020-04-13 00:10:07 +0800] [27948] [INFO] Worker reloading: run_app.py modified
+[2020-04-13 00:10:07 +0800] [27948] [INFO] Worker exiting (pid: 27948)
+[2020-04-13 00:10:07 +0800] [27986] [INFO] Booting worker with pid: 27986
+[2020-04-13 00:10:07 +0800] [27950] [INFO] Worker reloading: run_app.py modified
+[2020-04-13 00:10:07 +0800] [27950] [INFO] Worker exiting (pid: 27950)
+[2020-04-13 00:10:07 +0800] [27949] [INFO] Worker reloading: run_app.py modified
+[2020-04-13 00:10:07 +0800] [27949] [INFO] Worker exiting (pid: 27949)
+[2020-04-13 00:10:07 +0800] [27951] [INFO] Worker reloading: run_app.py modified
+[2020-04-13 00:10:07 +0800] [27951] [INFO] Worker exiting (pid: 27951)
+[2020-04-13 00:10:07 +0800] [27987] [INFO] Booting worker with pid: 27987
+[2020-04-13 00:10:07 +0800] [27988] [INFO] Booting worker with pid: 27988
+[2020-04-13 00:10:07 +0800] [27989] [INFO] Booting worker with pid: 27989
+[2020-04-13 00:10:10 +0800] [27945] [INFO] Handling signal: int
+[2020-04-13 00:10:10 +0800] [27988] [INFO] Worker exiting (pid: 27988)
+[2020-04-13 00:10:10 +0800] [27986] [INFO] Worker exiting (pid: 27986)
+[2020-04-13 00:10:10 +0800] [27987] [INFO] Worker exiting (pid: 27987)
+[2020-04-13 00:10:10 +0800] [27989] [INFO] Worker exiting (pid: 27989)
+[2020-04-13 00:10:10 +0800] [27945] [INFO] Shutting down: Master

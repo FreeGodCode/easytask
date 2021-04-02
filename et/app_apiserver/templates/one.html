@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0" />
+		<title>好赚任务</title>
+	</head>
+
+	
+	<script>
+	  	var _mtac = {"senseQuery":1};
+	  	(function() {
+	  		var mta = document.createElement("script");
+	  		mta.src = "http://pingjs.qq.com/h5/stats.js?v2.0.4";
+	  		mta.setAttribute("name", "MTAH5");
+	  		mta.setAttribute("sid", "500716032");
+	  		mta.setAttribute("cid", "500716033");
+	  		var s = document.getElementsByTagName("script")[0];
+	  		s.parentNode.insertBefore(mta, s);
+	  	})();
+	</script>
+	<link rel="stylesheet" type="text/css" href="font/demo.css" />
+	<link rel="stylesheet" type="text/css" href="./font/iconfont.css" />
+
+	<style type="text/css">
+		.input {
+			text-align: center;
+			background-color: #4b4571;
+			padding: 30px;
+		}
+
+		.passwordma,
+		.user,
+		.password {
+			margin: 2 auto;
+			width: 77%;
+			height: 20px;
+			padding: 10px;
+			font-size: 14px;
+			border: none;
+			border-radius: 2.5px;
+			letter-spacing: 1px;
+			border-radius: 20px;
+			outline: none;
+
+		}
+
+		#change_margin_1 {
+			border-radius: 20px;
+			background-color: #FFFFFF;
+			margin-bottom: 20px;
+			display: flex;
+			align-items: center;
+			padding: 0 20px;
+		}
+
+		.but {
+			border: none;
+			color: #44c5ff;
+			background-color: #fff;
+		}
+		.Popup{
+			display: none;
+			width: 200px;
+			height: 60px;
+			background-color: #4b4b4b;
+			position:fixed;
+			bottom: 40px;
+			left: 25%;
+			font-size: 14px;
+			text-align: center;
+			line-height: 60px;
+			color: #fff;
+			border-radius: 5px;
+		}
+		/* 下载按钮 */
+		.index-btm-top{
+			padding: 0px 0px 30px 0px;
+			width: 100%;
+			height: 56px;
+			background-color:#4b4571 ;
+			display: flex;
+			justify-content: space-around;
+			line-height: 80px;
+			
+		}
+		
+		.index-btm {
+			
+		   /* width: 100%; */
+		   float: left;
+		   height: 55px;
+			  /* position: fixed; */
+			  /* bottom: 0;
+			  left: 0; */
+			  width: 160px;
+			  background: #CCCCCC;
+		   /* background: linear-gradient(-30deg, #ffc955, #ffe555); */
+				border-radius:   30px 0 0  30px ;;
+		   font-size: 19px;
+		   font-family: PingFang SC;
+		   font-weight: bold;
+		   color: #e7460c;
+		   line-height: 55px;
+		  
+		   text-align: center;
+		 }
+		 .index-btmm {
+			 float: left;
+		    /* width: 100%; */
+		    height: 55px;
+		 	  /* position: fixed; */
+		 	  /* bottom: 0;
+		 	  left: 0; */
+		 	  width: 160px;
+			  background: #CCCCCC;
+		    /* background: linear-gradient(-30deg, #ffc955, #ffe555); */
+		 		border-radius:0  30px  30px 0;
+		    font-size: 19px;
+		    font-family: PingFang SC;
+		    font-weight: bold;
+		    color: #e7460c;
+		    line-height: 55px;
+		   
+		    text-align: center;
+		  }
+		  /*输入框无内容便提示*/
+		  #remind_1,
+		  #remind_2,
+		  #remind_3 {
+		      width: 76%;
+		      margin: 0 auto 2px;
+		      text-align: left;
+		      font-size: .2em;
+		      color: #f00;
+		  }
+	</style>
+	<body>
+		<div id="">
+			<img src="images/kkkjj.png" width=100% style="display: block;">
+			<!-- <div class="input"> -->
+				<!-- 手机输入框 -->
+				<!-- <div id="change_margin_1">
+					<i class="iconfont icon-shouji"></i>
+					<input maxlength=11 class="user" type="text" name="user" placeholder="请输入手机号" onblur="oBlur_1()" >
+					<i class="iconfont icon-cha" onClick="clAar()"></i>
+				</div>
+				<p id="remind_1"></p> -->
+				<!-- 图形验证码 -->
+				<!-- <div id="change_margin_1">
+					<i class="iconfont icon-dunpai"></i>
+					<input maxlength=4 class="password" type="text" name="password" placeholder="请输入图形验证码" onblur="oBlur_2()" >
+					<div id="mmsd">
+						<img src="" id="imgs" width="80px" onClick='imag()'>
+					</div>
+				</div>
+				 <p id="remind_2"></p> -->
+				<!-- 短信验证码 -->
+				<!-- onfocus="oFocus_3()" -->
+				<!-- <div id="change_margin_1">
+					<i class="iconfont icon-dunpai"></i>
+					<input maxlength=6 class="passwordma" type="passwordma" name="passwordma" placeholder="请输入短信验证码" onblur="oBlur_3()">
+					 
+					<input class="but" type="button" id="btn" value="获取验证码" onclick="settime()" />
+				</div>
+				<p id="remind_3"></p>
+			</div> -->
+			<!-- <div style="margin-top: -1px;background-color:#4b4571 ;" onClick="copyToClip()">
+				<div class="index-btm-top">
+					<div style="display: flex;">
+					<div class="index-btm"  id="btn1">
+					  Android下载
+					</div>
+						<div class="index-btmm"  id="btn2" > 
+						  IOS下载
+						</div>
+						</div>
+				</div>
+			</div> -->
+			<img type="image" src="images/lkj_03.png" width=100% style="display: block;margin-top: -1px;" onClick="copyToClip()"/>
+			<!-- <div style="margin-top: -1px;">
+				<div class="index-btm-top" style="background: #FFFFFF;">
+					<div style="display: flex;">
+					<div class="index-btm"  id="btn3">
+					  Android下载
+					</div>
+						<div class="index-btmm"  id="btn4" >
+						  IOS下载
+						</div>
+						</div>
+				</div>
+			</div> -->
+		<!-- </div> -->
+		<!-- <div class="Popup" id="popup">
+			验证码错误
+		</div> -->
+	</body>
+	<script type="text/javascript">
+		// 全局变量a和b，分别获取用户框和密码框的value值
+		var a = document.getElementsByTagName("input")[0].value;
+		var b = document.getElementsByTagName("input")[1].value;
+		var c = document.getElementsByTagName("input")[2].value;
+		//图形码的获取
+		var imags = document.getElementById('imgs');
+		//按钮的状态
+		var d = document.getElementById('btn');
+		// //判断点击的那个按钮
+		// var anorio = true;
+		//遮罩层
+		var popup = document.getElementById('popup');
+		//后端接口地址与测试地址修改
+		var apihttp = true ? 'http://47.113.91.65:5007':'http://haoz.hfj447.com';
+		//图形码事件戳的接收
+		var k = null;
+		//手机定时器60s的接收
+		var tem = null;
+		//时间的接收
+		var date = new Date()
+		//安卓下载的地址接收
+		var upandio = null;
+		//苹果下载地址接收
+		var upios = null;
+		//安卓苹果判断
+		var u = window.navigator.userAgent,
+			app = window.navigator.appVersion;
+		var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //g
+		var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+		//图形验证码
+		function imag() {
+			date = new Date()
+			k = date.getTime()
+			imags.src =apihttp + '/verification?uuid=' + k 
+		}
+		//图形码开局调用
+		imag();
+		//手机正则
+		// function checkPhone(){ 
+		//     var phone = document.getElementById('phone').value;
+		//     if(!(/^1[3456789]\d{9}$/.test(phone))){ 
+		//         alert("手机号码有误，请重填");  
+		//         return false; 
+		//     } 
+		// }·
+		// console.log(date.getTime())
+		
+		//弹窗，根据 k 来决定弹窗的字体展示
+		function pop (k){
+			popup.style.display = 'block'
+			popup.innerHTML = k
+			setTimeout(function(){
+				popup.style.display = 'none'
+			},
+			2000
+			)
+		}
+		
+		//手机号一键清空
+		function clAar () {
+			document.getElementsByTagName("input")[0].value = ""
+			console.log(a)
+		}
+		
+		
+		//倒计时
+		var countdown = 60;
+		async function settime(obj) {
+			if (!(/^1[3456789]\d{9}$/.test(a)) && !b) {
+				//调用弹窗
+				pop('请检查手机号和图形码')
+				//清除定时器
+				clearInterval(tem)
+				return
+			}
+			if (countdown == 60) {//第一次运行，以后不运行
+				//图形码的提交
+				await ajaxPost({
+					'url': apihttp+'/sms_code',
+					'data': {
+						'uuid': date.getTime().toString(),
+						'mobile': a,
+						'v_code': b,
+						'iiuv': 'Mope'
+					}
+				})
+			} else {//定时器为零变为重新获取验证码
+				if (countdown == 0) {
+					d.style.cssText = 'color: #44c5ff'
+					d.removeAttribute("disabled");
+					d.value = "获取验证码";
+					clearInterval(tem)
+					countdown = 60;
+					return;
+				} else {
+					//定时器不为零等待时间
+					d.style.cssText = 'color:#dadada'
+					d.setAttribute("disabled", true);
+					document.getElementById('btn').value = "重新发送(" + countdown + ")";
+					countdown--;
+				}
+			}
+		}
+		//用户框失去焦点后验证value值
+		function oBlur_1() {
+			a = document.getElementsByTagName("input")[0].value;
+			if (!(/^1[3456789]\d{9}$/.test(a))) { //用户框value值为空
+			pop('输入正确的手机号')
+				
+				// document.getElementById("remind_1").innerHTML = "请输入正确的手机号！";
+				// document.getElementById("change_margin_1").style.marginBottom = 1 + "px";
+			} else { //用户框value值不为空
+				document.getElementById("remind_1").innerHTML = "";
+				document.getElementById("change_margin_1").style.marginBottom = 19 + "px";
+			}
+
+		}
+
+		function oBlur_2() {
+			b = document.getElementsByTagName("input")[1].value;
+			if (!b) { //密码框value值为空
+			pop('输入正确的图形码')
+				// document.getElementById("remind_2").innerHTML = "图形码不能为空！";
+				// document.getElementById("change_margin_2").style.marginBottom = 1 + "px";
+				// document.getElementById("change_margin_3").style.marginTop = 2 + "px";
+			} else { //密码框value值不为空
+				document.getElementById("remind_2").innerHTML = "";
+				document.getElementById("change_margin_2").style.marginBottom = 19 + "px";
+				document.getElementById("change_margin_3").style.marginTop = 19 + "px";
+			}
+		}
+
+		function oBlur_3() {
+			c = document.getElementsByTagName("input")[2].value;
+			if (!c) { //密码框value值为空
+			pop('输入正确的短信验证码')
+				// document.getElementById("remind_3").innerHTML = "请输入正确短信验证码！";
+				// document.getElementById("change_margin_3").style.marginBottom = 1 + "px";
+				// document.getElementById("change_margin_3").style.marginTop = 2 + "px";
+			} else { //密码框value值不为空
+				document.getElementById("remind_3").innerHTML = "";
+				document.getElementById("change_margin_3").style.marginBottom = 19 + "px";
+				document.getElementById("change_margin_3").style.marginTop = 19 + "px";
+			}
+		}
+
+		//判断是安卓还是IOS
+		// function checkSystem() {
+		// 	var u = window.navigator.userAgent,
+		// 		app = window.navigator.appVersion;
+		// 	var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Linux') > -1; //g
+		// 	var isIOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
+		// 	if (isAndroid) {
+		// 		return 'android'
+		// 	}
+		// 	if (isIOS) {
+		// 		//alert('暂不支持iso系统')
+		// 		return 'ios';
+		// 	}
+		// }
+		// checkSystem();
+
+		//获取接口值
+		
+		// const token = "Content-Type";
+		
+		var httpRequest = new XMLHttpRequest(); //第一步：建立所需的对象
+		function getXHR() {
+			var xhr = null;
+			if (window.XMLHttpRequest) {
+				xhr = new XMLHttpRequest();
+			} else {
+				xhr = new ActiveXObject("Microsoft.XMLHTTP");
+			}
+			return xhr;
+		}
+		//get方式封装
+		function ajaxGet(obj) {
+			var xhr = getXHR();
+			xhr.open("get", obj.url);
+			xhr.send(null);
+			xhr.onreadystatechange = function() {
+				if (xhr.readyState == 4) {
+					if (xhr.status == 200) {
+						//下载地址的获取
+						upandio = JSON.parse(xhr.responseText).data.android.app下载url[0]
+						upios = JSON.parse(xhr.responseText).data.ios.app下载url[0]
+						console.log(JSON.parse(xhr.responseText).data)
+					} else {
+						if (obj.error) {
+							obj.error("响应出错；错误提示：" + xhr.status + ",错误原因：" + xhr.statusText);
+							console.log(obj.error)
+						}
+					}
+				}
+			}
+		}
+		//调用get获取下载地址
+		ajaxGet({'url':apihttp+'/update'})
+		function parameterSerialize(obj) {
+			var arr = [];
+			for (var key in obj) {
+				arr.push(key + "=" + encodeURI(obj[key]));
+			}
+			return arr.join("&");
+		}
+		
+		//post请求
+		function ajaxPost(obj) {
+			var xhr = getXHR();
+			xhr.open("post", obj.url);
+			//设置请求头(只有数据传递，必须设置这个请求头)
+			xhr.setRequestHeader("Content-Type", "application/json");
+			if (obj.data) {
+				console.log(JSON.stringify(obj.data))
+				xhr.send(JSON.stringify(obj.data));
+			} else {
+				xhr.send(null);
+			}
+			xhr.onreadystatechange = function() {
+				if (xhr.readyState == 4) {
+					if (xhr.status == 200) {
+						if (JSON.parse(xhr.responseText).error) {
+							//弹窗
+							pop(JSON.parse(xhr.responseText).error)
+							return
+						} else {
+							console.log(JSON.parse(xhr.responseText).token)
+							if (JSON.parse(xhr.responseText).token) {
+								// clearInterval(tem)
+								// var aux = document.createElement("input");
+								// aux.setAttribute("value", '+haozhuan+Mope');
+								// document.body.appendChild(aux);
+								// aux.select();
+								// document.execCommand("copy");
+								// document.body.removeChild(aux);
+								if (isAndroid) {
+									//安卓下载
+									console.log(upandio)
+									window.location.href = upandio;
+									return 'android'
+								}
+								if (isIOS) {
+									//苹果下载
+									console.log(456)
+									window.location.href =upios
+									return 'ios';
+								}
+								
+							} else {
+								if (isAndroid) {
+									document.getElementById('btn3').style.background = 'linear-gradient(-30deg, #ffc955, #ffe555)'
+									document.getElementById('btn1').style.background = 'linear-gradient(-30deg, #ffc955, #ffe555)'
+								}
+								if (isIOS) {
+									document.getElementById('btn2').style.background = 'linear-gradient(-30deg, #ffc955, #ffe555)'
+									// document.getElementById('btn2').style.background = '#CCCCCC'
+									document.getElementById('btn4').style.background = 'linear-gradient(-30deg, #ffc955, #ffe555)'
+								}
+								
+								
+								pop(JSON.parse(xhr.responseText).data)
+								countdown--
+								tem = setInterval(function() {
+									settime()
+								}, 1000)
+							}
+							// console.log(JSON.parse(xhr.responseText).token[0])
+							// obj.success(xhr.responseText);
+						}
+					} else {
+						if (obj.error) {
+							// obj.error("响应出错了，错误提示："+xhr.status+",错误原因："+xhr.statusText);
+						}
+					}
+				}
+			}
+		}
+//按钮点击事件
+		function copyToClip() {
+			console.log(222)
+			if (!a && !b && !c) {
+				pop('请检查输入信息是否正确!')
+				return
+			} else {
+				if (isAndroid) {
+					//统计事件安卓
+					console.log('001')
+					MtaH5.clickStat("001");
+					ajaxPost({
+						'url': apihttp+'/login',
+						'data': {
+							'mobile': a,
+							'code': c,
+							'iiuv': 'Mope'
+						}
+					})
+				}else if (isIOS) {
+					//统计事件苹果
+					console.log('005')
+					MtaH5.clickStat("005");
+					ajaxPost({
+						'url': apihttp+'/login',
+						'data': {
+							'mobile': a,
+							'code': c,
+							'iiuv': 'Mope'
+						}
+					})
+				}
+				
+			}
+		}
+		
+	</script>
+</html>

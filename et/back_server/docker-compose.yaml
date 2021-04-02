@@ -1,0 +1,13 @@
+version: "3"
+services:
+  flask_adminapp:
+    image: easytaskadmin:latest
+    container_name: easytaskadmin
+    restart: always
+    network_mode: bridge
+    ports:
+      - "8087:8087"
+    command: sh run_docker.sh
+    volumes:
+      - ./logs:/back_server/logs
+      - .:/back_server

@@ -1,0 +1,107 @@
+2020-05-06 20:08:30,009 [apscheduler.executors.default] [ERROR] :40: Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-06 20:08:40 CST)" raised an exception
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 583, in connect
+    **kwargs)
+  File "/usr/local/lib/python3.7/socket.py", line 728, in create_connection
+    raise err
+  File "/usr/local/lib/python3.7/socket.py", line 716, in create_connection
+    sock.connect(sa)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2262, in _wrap_pool_connect
+    return fn()
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 354, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 751, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 488, in checkout
+    rec._checkin_failed(err)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 129, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 485, in checkout
+    dbapi_connection = rec.get_connection()
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 612, in get_connection
+    self.__connect()
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 630, in __connect
+    connection = pool._invoke_creator(self)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 453, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.7/site-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 325, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 630, in connect
+    raise exc
+pymysql.err.OperationalError: (2003, "Can't connect to MySQL server on 'rm-j6cx33z365o25vo32po.mysql.rds.aliyuncs.com' (timed out)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/apscheduler/executors/base.py", line 125, in run_job
+    retval = job.func(*job.args, **job.kwargs)
+  File "/back_server/app/task/task.py", line 227, in auto_verify_withdrawals
+    EtMemberWithdrawal.verify == 0, EtMemberWithdrawal.amounts <=10).all()
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3161, in all
+    return list(self)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3317, in __iter__
+    return self._execute_and_instances(context)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3339, in _execute_and_instances
+    querycontext, self._connection_from_session, close_with_result=True
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3354, in _get_bind_args
+    mapper=self._bind_mapper(), clause=querycontext.statement, **kw
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3332, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1123, in connection
+    execution_options=execution_options,
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1129, in _connection_for_bind
+    engine, execution_options
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 430, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2226, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2266, in _wrap_pool_connect
+    e, dialect, self
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1536, in _handle_dbapi_exception_noconnection
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 383, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 128, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2262, in _wrap_pool_connect
+    return fn()
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 354, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 751, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 488, in checkout
+    rec._checkin_failed(err)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 129, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 485, in checkout
+    dbapi_connection = rec.get_connection()
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 612, in get_connection
+    self.__connect()
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 630, in __connect
+    connection = pool._invoke_creator(self)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 453, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/usr/local/lib/python3.7/site-packages/pymysql/__init__.py", line 94, in Connect
+    return Connection(*args, **kwargs)
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 325, in __init__
+    self.connect()
+  File "/usr/local/lib/python3.7/site-packages/pymysql/connections.py", line 630, in connect
+    raise exc
+sqlalchemy.exc.OperationalError: (pymysql.err.OperationalError) (2003, "Can't connect to MySQL server on 'rm-j6cx33z365o25vo32po.mysql.rds.aliyuncs.com' (timed out)")
+(Background on this error at: http://sqlalche.me/e/e3q8)
+2020-05-09 09:29:59,224 [root] [ERROR] :40: {'balance': 0, 'balance_version': '1588733598.78667645TnZQjIADdB2mJOMGRCb'}

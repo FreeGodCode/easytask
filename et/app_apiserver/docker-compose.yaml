@@ -1,0 +1,13 @@
+version: "3"
+services:
+  easytaskappserver:
+    image: easytaskappserver
+    container_name: easytaskappserver
+    restart: always
+    network_mode: bridge
+    command: sh run.sh
+    volumes:
+      - .:/webapps
+    ports:
+      - "5005:5001"
+    

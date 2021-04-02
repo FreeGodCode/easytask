@@ -1,0 +1,51 @@
+[2020-05-09 06:53:20 +0800] [21] [INFO] Worker reloading: /back_server/app/factory.py modified
+[2020-05-09 06:53:20 +0800] [26] [INFO] Worker reloading: /back_server/app/factory.py modified
+[2020-05-09 06:53:20 +0800] [28] [INFO] Worker reloading: /back_server/app/factory.py modified
+[2020-05-09 06:53:21 +0800] [24] [INFO] Worker reloading: /back_server/app/factory.py modified
+[2020-05-09 06:53:21 +0800] [21] [INFO] Worker exiting (pid: 21)
+[2020-05-09 06:53:21 +0800] [24] [INFO] Worker exiting (pid: 24)
+[2020-05-09 06:53:21 +0800] [28] [INFO] Worker exiting (pid: 28)
+[2020-05-09 06:53:21 +0800] [26] [INFO] Worker exiting (pid: 26)
+[2020-05-09 06:55:16 +0800] [111] [ERROR] Error handling request /account/act
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base_async.py", line 56, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/back_server/app/utils/util.py", line 110, in wrapper
+    rv = f(*args, **kwargs)
+  File "/back_server/app/api/account_service.py", line 40, in test_packed_response
+    test_dict['st'] = sched.state
+NameError: name 'test_dict' is not defined
+[2020-05-09 06:56:16 +0800] [109] [INFO] Worker reloading: /back_server/app/api/account_service.py modified
+[2020-05-09 06:56:16 +0800] [111] [INFO] Worker reloading: /back_server/app/api/account_service.py modified
+[2020-05-09 06:56:16 +0800] [113] [INFO] Worker reloading: /back_server/app/api/account_service.py modified
+[2020-05-09 06:56:16 +0800] [115] [INFO] Worker reloading: /back_server/app/api/account_service.py modified
+[2020-05-09 06:56:17 +0800] [113] [INFO] Worker exiting (pid: 113)
+[2020-05-09 06:56:17 +0800] [109] [INFO] Worker exiting (pid: 109)
+[2020-05-09 06:56:17 +0800] [115] [INFO] Worker exiting (pid: 115)
+[2020-05-09 06:56:17 +0800] [111] [INFO] Worker exiting (pid: 111)

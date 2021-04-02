@@ -1,0 +1,2389 @@
+[2020-05-06 17:02:34 +0800] [22744] [INFO] Worker reloading: config/gun.conf modified
+[2020-05-06 17:02:34 +0800] [22744] [INFO] Worker exiting (pid: 22744)
+[2020-05-06 17:02:35 +0800] [22739] [INFO] Worker reloading: config/gun.conf modified
+[2020-05-06 17:02:35 +0800] [22739] [INFO] Worker exiting (pid: 22739)
+[2020-05-06 17:02:35 +0800] [22740] [INFO] Worker reloading: config/gun.conf modified
+[2020-05-06 17:02:35 +0800] [22740] [INFO] Worker exiting (pid: 22740)
+[2020-05-06 17:02:35 +0800] [22737] [INFO] Worker reloading: config/gun.conf modified
+[2020-05-06 17:02:35 +0800] [22737] [INFO] Worker exiting (pid: 22737)
+[2020-05-06 17:21:37 +0800] [31065] [INFO] Starting gunicorn 20.0.4
+[2020-05-06 17:21:37 +0800] [31065] [INFO] Listening at: http://0.0.0.0:8087 (31065)
+[2020-05-06 17:21:37 +0800] [31065] [INFO] Using worker: eventlet
+[2020-05-06 17:21:37 +0800] [31069] [INFO] Booting worker with pid: 31069
+[2020-05-06 17:21:37 +0800] [31070] [INFO] Booting worker with pid: 31070
+[2020-05-06 17:21:37 +0800] [31071] [INFO] Booting worker with pid: 31071
+[2020-05-06 17:21:37 +0800] [31073] [INFO] Booting worker with pid: 31073
+[2020-05-06 17:25:33 +0800] [31065] [INFO] Handling signal: int
+[2020-05-06 17:25:33 +0800] [31070] [INFO] Worker exiting (pid: 31070)
+[2020-05-06 17:25:33 +0800] [31071] [INFO] Worker exiting (pid: 31071)
+[2020-05-06 17:25:34 +0800] [31073] [INFO] Worker exiting (pid: 31073)
+[2020-05-06 17:25:34 +0800] [31069] [INFO] Worker exiting (pid: 31069)
+[2020-05-06 17:25:34 +0800] [31065] [INFO] Shutting down: Master
+[2020-05-06 17:29:58 +0800] [19] [INFO] Starting gunicorn 19.9.0
+[2020-05-06 17:29:58 +0800] [19] [INFO] Listening at: http://0.0.0.0:8087 (19)
+[2020-05-06 17:29:58 +0800] [19] [INFO] Using worker: eventlet
+[2020-05-06 17:29:58 +0800] [21] [INFO] Booting worker with pid: 21
+[2020-05-06 17:29:58 +0800] [24] [INFO] Booting worker with pid: 24
+[2020-05-06 17:29:58 +0800] [26] [INFO] Booting worker with pid: 26
+[2020-05-06 17:29:58 +0800] [28] [INFO] Booting worker with pid: 28
+[2020-05-06 17:30:21 +0800] [28] [ERROR] Error handling request //merchants/merlists?page=1&limit=10&sort=%2Bid&mobile=&username=
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1974, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/wrappers/base_response.py", line 269, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/wrappers/base_response.py", line 26, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/test.py", line 1119, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'dict' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base_async.py", line 56, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1741, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1982, in make_response
+    reraise(TypeError, new_error, sys.exc_info()[2])
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 34, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1974, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/wrappers/base_response.py", line 269, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/wrappers/base_response.py", line 26, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/test.py", line 1119, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'dict' object is not callable
+The view function did not return a valid response. The return type must be a string, tuple, Response instance, or WSGI callable, but it was a dict.
+[2020-05-06 17:31:20 +0800] [26] [ERROR] Error handling request //merchants/merlists?page=1&limit=10&sort=%2Bid&mobile=&username=
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1974, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/wrappers/base_response.py", line 269, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/wrappers/base_response.py", line 26, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/test.py", line 1119, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'dict' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base_async.py", line 56, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1741, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1982, in make_response
+    reraise(TypeError, new_error, sys.exc_info()[2])
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 34, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1974, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/wrappers/base_response.py", line 269, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/wrappers/base_response.py", line 26, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/test.py", line 1119, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'dict' object is not callable
+The view function did not return a valid response. The return type must be a string, tuple, Response instance, or WSGI callable, but it was a dict.
+[2020-05-06 17:32:49 +0800] [28] [INFO] Worker reloading: /back_server/app/api/router.py modified
+[2020-05-06 17:32:49 +0800] [28] [INFO] Worker exiting (pid: 28)
+[2020-05-06 17:32:49 +0800] [56] [INFO] Booting worker with pid: 56
+[2020-05-06 17:32:49 +0800] [21] [INFO] Worker reloading: /back_server/app/api/router.py modified
+[2020-05-06 17:32:49 +0800] [24] [INFO] Worker reloading: /back_server/app/api/router.py modified
+[2020-05-06 17:32:49 +0800] [26] [INFO] Worker reloading: /back_server/app/api/router.py modified
+[2020-05-06 17:32:50 +0800] [21] [INFO] Worker exiting (pid: 21)
+[2020-05-06 17:32:50 +0800] [58] [INFO] Booting worker with pid: 58
+[2020-05-06 17:32:50 +0800] [24] [INFO] Worker exiting (pid: 24)
+[2020-05-06 17:32:50 +0800] [26] [INFO] Worker exiting (pid: 26)
+[2020-05-06 17:32:50 +0800] [60] [INFO] Booting worker with pid: 60
+[2020-05-06 17:32:50 +0800] [62] [INFO] Booting worker with pid: 62
+[2020-05-06 17:34:22 +0800] [62] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 17:34:22 +0800] [62] [INFO] Worker exiting (pid: 62)
+[2020-05-06 17:34:22 +0800] [74] [INFO] Booting worker with pid: 74
+[2020-05-06 17:34:23 +0800] [58] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 17:34:23 +0800] [58] [INFO] Worker exiting (pid: 58)
+[2020-05-06 17:34:23 +0800] [76] [INFO] Booting worker with pid: 76
+[2020-05-06 17:34:23 +0800] [60] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 17:34:23 +0800] [56] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 17:34:23 +0800] [60] [INFO] Worker exiting (pid: 60)
+[2020-05-06 17:34:23 +0800] [78] [INFO] Booting worker with pid: 78
+[2020-05-06 17:34:24 +0800] [56] [INFO] Worker exiting (pid: 56)
+[2020-05-06 17:34:24 +0800] [81] [INFO] Booting worker with pid: 81
+[2020-05-06 17:34:29 +0800] [76] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 17:34:29 +0800] [81] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 17:34:29 +0800] [78] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 17:34:29 +0800] [74] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 17:34:29 +0800] [81] [INFO] Worker exiting (pid: 81)
+[2020-05-06 17:34:29 +0800] [76] [INFO] Worker exiting (pid: 76)
+[2020-05-06 17:34:30 +0800] [78] [INFO] Worker exiting (pid: 78)
+[2020-05-06 17:34:30 +0800] [74] [INFO] Worker exiting (pid: 74)
+[2020-05-06 17:34:30 +0800] [83] [INFO] Booting worker with pid: 83
+[2020-05-06 17:34:30 +0800] [85] [INFO] Booting worker with pid: 85
+[2020-05-06 17:34:30 +0800] [87] [INFO] Booting worker with pid: 87
+[2020-05-06 17:34:30 +0800] [89] [INFO] Booting worker with pid: 89
+[2020-05-06 17:34:42 +0800] [83] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 17:34:42 +0800] [85] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 17:34:42 +0800] [87] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 17:34:42 +0800] [89] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 17:34:42 +0800] [85] [INFO] Worker exiting (pid: 85)
+[2020-05-06 17:34:42 +0800] [83] [INFO] Worker exiting (pid: 83)
+[2020-05-06 17:34:42 +0800] [87] [INFO] Worker exiting (pid: 87)
+[2020-05-06 17:34:42 +0800] [93] [INFO] Booting worker with pid: 93
+[2020-05-06 17:34:42 +0800] [95] [INFO] Booting worker with pid: 95
+[2020-05-06 17:34:42 +0800] [89] [INFO] Worker exiting (pid: 89)
+[2020-05-06 17:34:42 +0800] [97] [INFO] Booting worker with pid: 97
+[2020-05-06 17:34:42 +0800] [99] [INFO] Booting worker with pid: 99
+[2020-05-06 17:34:52 +0800] [99] [ERROR] Error handling request //merchants/merlists?page=1&limit=10&sort=%2Bid&mobile=&username=
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1974, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/wrappers/base_response.py", line 269, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/wrappers/base_response.py", line 26, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/test.py", line 1119, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'dict' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base_async.py", line 56, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1741, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1982, in make_response
+    reraise(TypeError, new_error, sys.exc_info()[2])
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 34, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1974, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/wrappers/base_response.py", line 269, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/wrappers/base_response.py", line 26, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/test.py", line 1119, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'dict' object is not callable
+The view function did not return a valid response. The return type must be a string, tuple, Response instance, or WSGI callable, but it was a dict.
+[2020-05-06 17:36:32 +0800] [95] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 17:36:32 +0800] [97] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 17:36:32 +0800] [95] [INFO] Worker exiting (pid: 95)
+[2020-05-06 17:36:32 +0800] [97] [INFO] Worker exiting (pid: 97)
+[2020-05-06 17:36:32 +0800] [99] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 17:36:32 +0800] [112] [INFO] Booting worker with pid: 112
+[2020-05-06 17:36:32 +0800] [114] [INFO] Booting worker with pid: 114
+[2020-05-06 17:36:33 +0800] [93] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 17:36:33 +0800] [93] [INFO] Worker exiting (pid: 93)
+[2020-05-06 17:36:33 +0800] [116] [INFO] Booting worker with pid: 116
+[2020-05-06 17:36:33 +0800] [99] [INFO] Worker exiting (pid: 99)
+[2020-05-06 17:36:33 +0800] [118] [INFO] Booting worker with pid: 118
+[2020-05-06 17:36:33 +0800] [112] [ERROR] Error handling request //merchants/merlists?page=1&limit=10&sort=%2Bid&mobile=&username=
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1974, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/wrappers/base_response.py", line 269, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/wrappers/base_response.py", line 26, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/test.py", line 1119, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'dict' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base_async.py", line 56, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1741, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1982, in make_response
+    reraise(TypeError, new_error, sys.exc_info()[2])
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 34, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1974, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/wrappers/base_response.py", line 269, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/wrappers/base_response.py", line 26, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/test.py", line 1119, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'dict' object is not callable
+The view function did not return a valid response. The return type must be a string, tuple, Response instance, or WSGI callable, but it was a dict.
+[2020-05-06 17:36:37 +0800] [116] [ERROR] Error handling request //merchants/merlists?page=1&limit=10&sort=%2Bid&mobile=&username=
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1974, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/wrappers/base_response.py", line 269, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/wrappers/base_response.py", line 26, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/test.py", line 1119, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'dict' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base_async.py", line 56, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1741, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1982, in make_response
+    reraise(TypeError, new_error, sys.exc_info()[2])
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 34, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1974, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/wrappers/base_response.py", line 269, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/wrappers/base_response.py", line 26, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/test.py", line 1119, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'dict' object is not callable
+The view function did not return a valid response. The return type must be a string, tuple, Response instance, or WSGI callable, but it was a dict.
+[2020-05-06 17:38:22 +0800] [116] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 17:38:22 +0800] [112] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 17:38:22 +0800] [114] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 17:38:22 +0800] [118] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 17:38:23 +0800] [116] [INFO] Worker exiting (pid: 116)
+[2020-05-06 17:38:23 +0800] [112] [INFO] Worker exiting (pid: 112)
+[2020-05-06 17:38:23 +0800] [131] [INFO] Booting worker with pid: 131
+[2020-05-06 17:38:23 +0800] [114] [INFO] Worker exiting (pid: 114)
+[2020-05-06 17:38:23 +0800] [118] [INFO] Worker exiting (pid: 118)
+[2020-05-06 17:38:23 +0800] [133] [INFO] Booting worker with pid: 133
+[2020-05-06 17:38:23 +0800] [135] [INFO] Booting worker with pid: 135
+[2020-05-06 17:38:23 +0800] [137] [INFO] Booting worker with pid: 137
+[2020-05-06 17:39:38 +0800] [131] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 17:39:38 +0800] [133] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 17:39:38 +0800] [133] [INFO] Worker exiting (pid: 133)
+[2020-05-06 17:39:38 +0800] [135] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 17:39:38 +0800] [131] [INFO] Worker exiting (pid: 131)
+[2020-05-06 17:39:39 +0800] [135] [INFO] Worker exiting (pid: 135)
+[2020-05-06 17:39:39 +0800] [137] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 17:39:39 +0800] [147] [INFO] Booting worker with pid: 147
+[2020-05-06 17:39:39 +0800] [137] [INFO] Worker exiting (pid: 137)
+[2020-05-06 17:39:39 +0800] [149] [INFO] Booting worker with pid: 149
+[2020-05-06 17:39:39 +0800] [151] [INFO] Booting worker with pid: 151
+[2020-05-06 17:39:39 +0800] [153] [INFO] Booting worker with pid: 153
+[2020-05-06 17:39:47 +0800] [151] [ERROR] Error handling request //merchants/merlists?page=1&limit=10&sort=%2Bid&mobile=&username=
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1974, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/wrappers/base_response.py", line 269, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/wrappers/base_response.py", line 26, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/test.py", line 1119, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'dict' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base_async.py", line 56, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2309, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2295, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1741, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 35, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1982, in make_response
+    reraise(TypeError, new_error, sys.exc_info()[2])
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 34, in reraise
+    raise value.with_traceback(tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1974, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/wrappers/base_response.py", line 269, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/wrappers/base_response.py", line 26, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "/usr/local/lib/python3.7/site-packages/werkzeug/test.py", line 1119, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'dict' object is not callable
+The view function did not return a valid response. The return type must be a string, tuple, Response instance, or WSGI callable, but it was a dict.
+[2020-05-06 17:42:15 +0800] [147] [INFO] Worker reloading: /usr/local/lib/python3.7/site-packages/flask/__init__.py modified
+[2020-05-06 17:42:15 +0800] [149] [INFO] Worker reloading: /usr/local/lib/python3.7/site-packages/flask/__init__.py modified
+[2020-05-06 17:42:15 +0800] [151] [INFO] Worker reloading: /usr/local/lib/python3.7/site-packages/flask/__init__.py modified
+[2020-05-06 17:42:15 +0800] [153] [INFO] Worker reloading: /usr/local/lib/python3.7/site-packages/flask/__init__.py modified
+[2020-05-06 17:42:15 +0800] [149] [INFO] Worker exiting (pid: 149)
+[2020-05-06 17:42:15 +0800] [147] [INFO] Worker exiting (pid: 147)
+[2020-05-06 17:42:15 +0800] [174] [INFO] Booting worker with pid: 174
+[2020-05-06 17:42:15 +0800] [153] [INFO] Worker exiting (pid: 153)
+[2020-05-06 17:42:15 +0800] [176] [INFO] Booting worker with pid: 176
+[2020-05-06 17:42:15 +0800] [151] [INFO] Worker exiting (pid: 151)
+[2020-05-06 17:42:16 +0800] [178] [INFO] Booting worker with pid: 178
+[2020-05-06 17:42:16 +0800] [180] [INFO] Booting worker with pid: 180
+[2020-05-06 17:42:42 +0800] [174] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 17:42:42 +0800] [176] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 17:42:42 +0800] [178] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 17:42:42 +0800] [180] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 17:42:42 +0800] [174] [INFO] Worker exiting (pid: 174)
+[2020-05-06 17:42:42 +0800] [176] [INFO] Worker exiting (pid: 176)
+[2020-05-06 17:42:42 +0800] [187] [INFO] Booting worker with pid: 187
+[2020-05-06 17:42:42 +0800] [178] [INFO] Worker exiting (pid: 178)
+[2020-05-06 17:42:42 +0800] [180] [INFO] Worker exiting (pid: 180)
+[2020-05-06 17:42:42 +0800] [189] [INFO] Booting worker with pid: 189
+[2020-05-06 17:42:42 +0800] [191] [INFO] Booting worker with pid: 191
+[2020-05-06 17:42:42 +0800] [193] [INFO] Booting worker with pid: 193
+[2020-05-06 18:25:41 +0800] [19] [INFO] Starting gunicorn 19.9.0
+[2020-05-06 18:25:41 +0800] [19] [INFO] Listening at: http://0.0.0.0:8087 (19)
+[2020-05-06 18:25:41 +0800] [19] [INFO] Using worker: eventlet
+[2020-05-06 18:25:41 +0800] [21] [INFO] Booting worker with pid: 21
+[2020-05-06 18:25:41 +0800] [24] [INFO] Booting worker with pid: 24
+[2020-05-06 18:25:41 +0800] [26] [INFO] Booting worker with pid: 26
+[2020-05-06 18:25:42 +0800] [28] [INFO] Booting worker with pid: 28
+[2020-05-06 18:33:05 +0800] [19] [INFO] Starting gunicorn 19.9.0
+[2020-05-06 18:33:05 +0800] [19] [INFO] Listening at: http://0.0.0.0:8087 (19)
+[2020-05-06 18:33:05 +0800] [19] [INFO] Using worker: eventlet
+[2020-05-06 18:33:05 +0800] [21] [INFO] Booting worker with pid: 21
+[2020-05-06 18:33:05 +0800] [24] [INFO] Booting worker with pid: 24
+[2020-05-06 18:33:05 +0800] [26] [INFO] Booting worker with pid: 26
+[2020-05-06 18:33:05 +0800] [28] [INFO] Booting worker with pid: 28
+[2020-05-06 18:48:42 +0800] [19] [INFO] Starting gunicorn 19.9.0
+[2020-05-06 18:48:42 +0800] [19] [INFO] Listening at: http://0.0.0.0:8085 (19)
+[2020-05-06 18:48:42 +0800] [19] [INFO] Using worker: eventlet
+[2020-05-06 18:48:42 +0800] [21] [INFO] Booting worker with pid: 21
+[2020-05-06 18:48:42 +0800] [24] [INFO] Booting worker with pid: 24
+[2020-05-06 18:48:42 +0800] [26] [INFO] Booting worker with pid: 26
+[2020-05-06 18:48:42 +0800] [28] [INFO] Booting worker with pid: 28
+[2020-05-06 20:00:56 +0800] [21] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 20:00:56 +0800] [21] [INFO] Worker exiting (pid: 21)
+[2020-05-06 20:00:56 +0800] [89] [INFO] Booting worker with pid: 89
+[2020-05-06 20:00:56 +0800] [26] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 20:00:56 +0800] [28] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 20:00:56 +0800] [24] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 20:00:57 +0800] [24] [INFO] Worker exiting (pid: 24)
+[2020-05-06 20:00:57 +0800] [28] [INFO] Worker exiting (pid: 28)
+[2020-05-06 20:00:57 +0800] [91] [INFO] Booting worker with pid: 91
+[2020-05-06 20:00:57 +0800] [93] [INFO] Booting worker with pid: 93
+[2020-05-06 20:00:57 +0800] [26] [INFO] Worker exiting (pid: 26)
+[2020-05-06 20:00:57 +0800] [95] [INFO] Booting worker with pid: 95
+[2020-05-06 20:01:14 +0800] [91] [INFO] Worker reloading: /back_server/app/api/work_station.py modified
+[2020-05-06 20:01:14 +0800] [93] [INFO] Worker reloading: /back_server/app/api/work_station.py modified
+[2020-05-06 20:01:14 +0800] [89] [INFO] Worker reloading: /back_server/app/api/work_station.py modified
+[2020-05-06 20:01:15 +0800] [91] [INFO] Worker exiting (pid: 91)
+[2020-05-06 20:01:15 +0800] [93] [INFO] Worker exiting (pid: 93)
+[2020-05-06 20:01:15 +0800] [95] [INFO] Worker reloading: /back_server/app/api/work_station.py modified
+[2020-05-06 20:01:15 +0800] [89] [INFO] Worker exiting (pid: 89)
+[2020-05-06 20:01:15 +0800] [104] [INFO] Booting worker with pid: 104
+[2020-05-06 20:01:15 +0800] [106] [INFO] Booting worker with pid: 106
+[2020-05-06 20:01:15 +0800] [108] [INFO] Booting worker with pid: 108
+[2020-05-06 20:01:15 +0800] [95] [INFO] Worker exiting (pid: 95)
+[2020-05-06 20:01:15 +0800] [110] [INFO] Booting worker with pid: 110
+[2020-05-06 20:02:40 +0800] [104] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 20:02:40 +0800] [106] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 20:02:40 +0800] [108] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 20:02:41 +0800] [110] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 20:02:41 +0800] [106] [INFO] Worker exiting (pid: 106)
+[2020-05-06 20:02:41 +0800] [108] [INFO] Worker exiting (pid: 108)
+[2020-05-06 20:02:41 +0800] [104] [INFO] Worker exiting (pid: 104)
+[2020-05-06 20:02:41 +0800] [122] [INFO] Booting worker with pid: 122
+[2020-05-06 20:02:41 +0800] [124] [INFO] Booting worker with pid: 124
+[2020-05-06 20:02:42 +0800] [126] [INFO] Booting worker with pid: 126
+[2020-05-06 20:02:42 +0800] [110] [INFO] Worker exiting (pid: 110)
+[2020-05-06 20:02:42 +0800] [128] [INFO] Booting worker with pid: 128
+[2020-05-06 20:03:05 +0800] [124] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 20:03:05 +0800] [126] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 20:03:05 +0800] [128] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 20:03:05 +0800] [124] [INFO] Worker exiting (pid: 124)
+[2020-05-06 20:03:05 +0800] [133] [INFO] Booting worker with pid: 133
+[2020-05-06 20:03:05 +0800] [126] [INFO] Worker exiting (pid: 126)
+[2020-05-06 20:03:05 +0800] [128] [INFO] Worker exiting (pid: 128)
+[2020-05-06 20:03:05 +0800] [135] [INFO] Booting worker with pid: 135
+[2020-05-06 20:03:06 +0800] [137] [INFO] Booting worker with pid: 137
+[2020-05-06 20:03:06 +0800] [122] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 20:03:06 +0800] [122] [INFO] Worker exiting (pid: 122)
+[2020-05-06 20:03:06 +0800] [139] [INFO] Booting worker with pid: 139
+[2020-05-06 20:04:38 +0800] [139] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 20:04:38 +0800] [133] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 20:04:38 +0800] [135] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 20:04:38 +0800] [137] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 20:04:39 +0800] [139] [INFO] Worker exiting (pid: 139)
+[2020-05-06 20:04:39 +0800] [151] [INFO] Booting worker with pid: 151
+[2020-05-06 20:04:39 +0800] [133] [INFO] Worker exiting (pid: 133)
+[2020-05-06 20:04:39 +0800] [153] [INFO] Booting worker with pid: 153
+[2020-05-06 20:04:39 +0800] [135] [INFO] Worker exiting (pid: 135)
+[2020-05-06 20:04:39 +0800] [137] [INFO] Worker exiting (pid: 137)
+[2020-05-06 20:04:39 +0800] [155] [INFO] Booting worker with pid: 155
+[2020-05-06 20:04:39 +0800] [158] [INFO] Booting worker with pid: 158
+[2020-05-06 20:04:43 +0800] [155] [ERROR] Error handling request /merchants/login
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base_async.py", line 56, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/back_server/app/api/oem_service.py", line 90, in login
+    if user.status != 1:
+AttributeError: 'result' object has no attribute 'status'
+[2020-05-06 20:05:15 +0800] [153] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 20:05:15 +0800] [153] [INFO] Worker exiting (pid: 153)
+[2020-05-06 20:05:15 +0800] [155] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 20:05:15 +0800] [164] [INFO] Booting worker with pid: 164
+[2020-05-06 20:05:15 +0800] [158] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 20:05:16 +0800] [155] [INFO] Worker exiting (pid: 155)
+[2020-05-06 20:05:16 +0800] [158] [INFO] Worker exiting (pid: 158)
+[2020-05-06 20:05:16 +0800] [166] [INFO] Booting worker with pid: 166
+[2020-05-06 20:05:16 +0800] [168] [INFO] Booting worker with pid: 168
+[2020-05-06 20:05:16 +0800] [151] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 20:05:16 +0800] [151] [INFO] Worker exiting (pid: 151)
+[2020-05-06 20:05:16 +0800] [170] [INFO] Booting worker with pid: 170
+[2020-05-06 20:05:24 +0800] [166] [ERROR] Error handling request /merchants/login
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base_async.py", line 56, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/back_server/app/api/oem_service.py", line 90, in login
+    if user['status'] != 1:
+TypeError: tuple indices must be integers or slices, not str
+[2020-05-06 20:05:42 +0800] [170] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 20:05:42 +0800] [164] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 20:05:42 +0800] [170] [INFO] Worker exiting (pid: 170)
+[2020-05-06 20:05:42 +0800] [164] [INFO] Worker exiting (pid: 164)
+[2020-05-06 20:05:42 +0800] [166] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 20:05:42 +0800] [177] [INFO] Booting worker with pid: 177
+[2020-05-06 20:05:42 +0800] [168] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 20:05:42 +0800] [179] [INFO] Booting worker with pid: 179
+[2020-05-06 20:05:42 +0800] [166] [INFO] Worker exiting (pid: 166)
+[2020-05-06 20:05:42 +0800] [168] [INFO] Worker exiting (pid: 168)
+[2020-05-06 20:05:42 +0800] [181] [INFO] Booting worker with pid: 181
+[2020-05-06 20:05:42 +0800] [183] [INFO] Booting worker with pid: 183
+[2020-05-06 20:05:43 +0800] [183] [ERROR] Error handling request /merchants/login
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base_async.py", line 56, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base_async.py", line 107, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib/python3.7/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.7/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.7/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/back_server/app/api/oem_service.py", line 90, in login
+    if user[0]['status'] != 1:
+TypeError: string indices must be integers
+[2020-05-06 20:06:33 +0800] [177] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 20:06:33 +0800] [179] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 20:06:34 +0800] [177] [INFO] Worker exiting (pid: 177)
+[2020-05-06 20:06:34 +0800] [179] [INFO] Worker exiting (pid: 179)
+[2020-05-06 20:06:34 +0800] [191] [INFO] Booting worker with pid: 191
+[2020-05-06 20:06:34 +0800] [181] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 20:06:34 +0800] [193] [INFO] Booting worker with pid: 193
+[2020-05-06 20:06:34 +0800] [183] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 20:06:34 +0800] [181] [INFO] Worker exiting (pid: 181)
+[2020-05-06 20:06:34 +0800] [183] [INFO] Worker exiting (pid: 183)
+[2020-05-06 20:06:34 +0800] [195] [INFO] Booting worker with pid: 195
+[2020-05-06 20:06:34 +0800] [197] [INFO] Booting worker with pid: 197
+[2020-05-06 20:15:40 +0800] [195] [INFO] Worker reloading: /back_server/app/api/work_station.py modified
+[2020-05-06 20:15:40 +0800] [197] [INFO] Worker reloading: /back_server/app/api/work_station.py modified
+[2020-05-06 20:15:40 +0800] [195] [INFO] Worker exiting (pid: 195)
+[2020-05-06 20:15:40 +0800] [210] [INFO] Booting worker with pid: 210
+[2020-05-06 20:15:40 +0800] [197] [INFO] Worker exiting (pid: 197)
+[2020-05-06 20:15:40 +0800] [193] [INFO] Worker reloading: /back_server/app/api/work_station.py modified
+[2020-05-06 20:15:40 +0800] [191] [INFO] Worker reloading: /back_server/app/api/work_station.py modified
+[2020-05-06 20:15:40 +0800] [212] [INFO] Booting worker with pid: 212
+[2020-05-06 20:15:41 +0800] [191] [INFO] Worker exiting (pid: 191)
+[2020-05-06 20:15:41 +0800] [193] [INFO] Worker exiting (pid: 193)
+[2020-05-06 20:15:41 +0800] [214] [INFO] Booting worker with pid: 214
+[2020-05-06 20:15:41 +0800] [216] [INFO] Booting worker with pid: 216
+[2020-05-06 21:13:38 +0800] [19] [INFO] Starting gunicorn 19.9.0
+[2020-05-06 21:13:38 +0800] [19] [INFO] Listening at: http://0.0.0.0:8085 (19)
+[2020-05-06 21:13:38 +0800] [19] [INFO] Using worker: eventlet
+[2020-05-06 21:13:38 +0800] [21] [INFO] Booting worker with pid: 21
+[2020-05-06 21:13:38 +0800] [24] [INFO] Booting worker with pid: 24
+[2020-05-06 21:13:38 +0800] [26] [INFO] Booting worker with pid: 26
+[2020-05-06 21:13:38 +0800] [28] [INFO] Booting worker with pid: 28
+[2020-05-06 21:13:38 +0800] [21] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/geventlet.py", line 102, in init_process
+    super(EventletWorker, self).init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/back_server/wsgi_gunicorn.py", line 3, in <module>
+    app = create_app(config_name="DEVELOPMENT")
+  File "/back_server/app/factory.py", line 74, in create_app
+    apm = ElasticAPM(app)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 102, in __init__
+    self.init_app(app, **defaults)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 143, in init_app
+    signals.got_request_exception.connect(self.handle_exception, sender=app, weak=False)
+  File "/usr/local/lib/python3.7/site-packages/flask/signals.py", line 39, in _fail
+    "Signalling support is unavailable because the blinker"
+RuntimeError: Signalling support is unavailable because the blinker library is not installed.
+[2020-05-06 21:13:38 +0800] [21] [INFO] Worker exiting (pid: 21)
+[2020-05-06 21:13:38 +0800] [24] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/geventlet.py", line 102, in init_process
+    super(EventletWorker, self).init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/back_server/wsgi_gunicorn.py", line 3, in <module>
+    app = create_app(config_name="DEVELOPMENT")
+  File "/back_server/app/factory.py", line 74, in create_app
+    apm = ElasticAPM(app)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 102, in __init__
+    self.init_app(app, **defaults)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 143, in init_app
+    signals.got_request_exception.connect(self.handle_exception, sender=app, weak=False)
+  File "/usr/local/lib/python3.7/site-packages/flask/signals.py", line 39, in _fail
+    "Signalling support is unavailable because the blinker"
+RuntimeError: Signalling support is unavailable because the blinker library is not installed.
+[2020-05-06 21:13:38 +0800] [24] [INFO] Worker exiting (pid: 24)
+[2020-05-06 21:13:38 +0800] [26] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/geventlet.py", line 102, in init_process
+    super(EventletWorker, self).init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/back_server/wsgi_gunicorn.py", line 3, in <module>
+    app = create_app(config_name="DEVELOPMENT")
+  File "/back_server/app/factory.py", line 74, in create_app
+    apm = ElasticAPM(app)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 102, in __init__
+    self.init_app(app, **defaults)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 143, in init_app
+    signals.got_request_exception.connect(self.handle_exception, sender=app, weak=False)
+  File "/usr/local/lib/python3.7/site-packages/flask/signals.py", line 39, in _fail
+    "Signalling support is unavailable because the blinker"
+RuntimeError: Signalling support is unavailable because the blinker library is not installed.
+[2020-05-06 21:13:38 +0800] [26] [INFO] Worker exiting (pid: 26)
+[2020-05-06 21:13:39 +0800] [19] [INFO] Starting gunicorn 19.9.0
+[2020-05-06 21:13:39 +0800] [19] [INFO] Listening at: http://0.0.0.0:8085 (19)
+[2020-05-06 21:13:39 +0800] [19] [INFO] Using worker: eventlet
+[2020-05-06 21:13:39 +0800] [21] [INFO] Booting worker with pid: 21
+[2020-05-06 21:13:39 +0800] [24] [INFO] Booting worker with pid: 24
+[2020-05-06 21:13:39 +0800] [26] [INFO] Booting worker with pid: 26
+[2020-05-06 21:13:39 +0800] [28] [INFO] Booting worker with pid: 28
+[2020-05-06 21:13:40 +0800] [21] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/geventlet.py", line 102, in init_process
+    super(EventletWorker, self).init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/back_server/wsgi_gunicorn.py", line 3, in <module>
+    app = create_app(config_name="DEVELOPMENT")
+  File "/back_server/app/factory.py", line 74, in create_app
+    apm = ElasticAPM(app)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 102, in __init__
+    self.init_app(app, **defaults)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 143, in init_app
+    signals.got_request_exception.connect(self.handle_exception, sender=app, weak=False)
+  File "/usr/local/lib/python3.7/site-packages/flask/signals.py", line 39, in _fail
+    "Signalling support is unavailable because the blinker"
+RuntimeError: Signalling support is unavailable because the blinker library is not installed.
+[2020-05-06 21:13:40 +0800] [21] [INFO] Worker exiting (pid: 21)
+[2020-05-06 21:13:40 +0800] [28] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/geventlet.py", line 102, in init_process
+    super(EventletWorker, self).init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/back_server/wsgi_gunicorn.py", line 3, in <module>
+    app = create_app(config_name="DEVELOPMENT")
+  File "/back_server/app/factory.py", line 74, in create_app
+    apm = ElasticAPM(app)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 102, in __init__
+    self.init_app(app, **defaults)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 143, in init_app
+    signals.got_request_exception.connect(self.handle_exception, sender=app, weak=False)
+  File "/usr/local/lib/python3.7/site-packages/flask/signals.py", line 39, in _fail
+    "Signalling support is unavailable because the blinker"
+RuntimeError: Signalling support is unavailable because the blinker library is not installed.
+[2020-05-06 21:13:40 +0800] [28] [INFO] Worker exiting (pid: 28)
+[2020-05-06 21:13:40 +0800] [19] [INFO] Starting gunicorn 19.9.0
+[2020-05-06 21:13:40 +0800] [19] [INFO] Listening at: http://0.0.0.0:8085 (19)
+[2020-05-06 21:13:40 +0800] [19] [INFO] Using worker: eventlet
+[2020-05-06 21:13:40 +0800] [21] [INFO] Booting worker with pid: 21
+[2020-05-06 21:13:40 +0800] [24] [INFO] Booting worker with pid: 24
+[2020-05-06 21:13:41 +0800] [26] [INFO] Booting worker with pid: 26
+[2020-05-06 21:13:41 +0800] [28] [INFO] Booting worker with pid: 28
+[2020-05-06 21:13:41 +0800] [24] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/geventlet.py", line 102, in init_process
+    super(EventletWorker, self).init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/back_server/wsgi_gunicorn.py", line 3, in <module>
+    app = create_app(config_name="DEVELOPMENT")
+  File "/back_server/app/factory.py", line 74, in create_app
+    apm = ElasticAPM(app)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 102, in __init__
+    self.init_app(app, **defaults)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 143, in init_app
+    signals.got_request_exception.connect(self.handle_exception, sender=app, weak=False)
+  File "/usr/local/lib/python3.7/site-packages/flask/signals.py", line 39, in _fail
+    "Signalling support is unavailable because the blinker"
+RuntimeError: Signalling support is unavailable because the blinker library is not installed.
+[2020-05-06 21:13:41 +0800] [24] [INFO] Worker exiting (pid: 24)
+[2020-05-06 21:13:41 +0800] [21] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/geventlet.py", line 102, in init_process
+    super(EventletWorker, self).init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/back_server/wsgi_gunicorn.py", line 3, in <module>
+    app = create_app(config_name="DEVELOPMENT")
+  File "/back_server/app/factory.py", line 74, in create_app
+    apm = ElasticAPM(app)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 102, in __init__
+    self.init_app(app, **defaults)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 143, in init_app
+    signals.got_request_exception.connect(self.handle_exception, sender=app, weak=False)
+  File "/usr/local/lib/python3.7/site-packages/flask/signals.py", line 39, in _fail
+    "Signalling support is unavailable because the blinker"
+RuntimeError: Signalling support is unavailable because the blinker library is not installed.
+[2020-05-06 21:13:41 +0800] [21] [INFO] Worker exiting (pid: 21)
+[2020-05-06 21:13:42 +0800] [19] [INFO] Starting gunicorn 19.9.0
+[2020-05-06 21:13:42 +0800] [19] [INFO] Listening at: http://0.0.0.0:8085 (19)
+[2020-05-06 21:13:42 +0800] [19] [INFO] Using worker: eventlet
+[2020-05-06 21:13:42 +0800] [21] [INFO] Booting worker with pid: 21
+[2020-05-06 21:13:42 +0800] [24] [INFO] Booting worker with pid: 24
+[2020-05-06 21:13:42 +0800] [26] [INFO] Booting worker with pid: 26
+[2020-05-06 21:13:42 +0800] [28] [INFO] Booting worker with pid: 28
+[2020-05-06 21:13:43 +0800] [21] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/geventlet.py", line 102, in init_process
+    super(EventletWorker, self).init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/back_server/wsgi_gunicorn.py", line 3, in <module>
+    app = create_app(config_name="DEVELOPMENT")
+  File "/back_server/app/factory.py", line 74, in create_app
+    apm = ElasticAPM(app)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 102, in __init__
+    self.init_app(app, **defaults)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 143, in init_app
+    signals.got_request_exception.connect(self.handle_exception, sender=app, weak=False)
+  File "/usr/local/lib/python3.7/site-packages/flask/signals.py", line 39, in _fail
+    "Signalling support is unavailable because the blinker"
+RuntimeError: Signalling support is unavailable because the blinker library is not installed.
+[2020-05-06 21:13:43 +0800] [21] [INFO] Worker exiting (pid: 21)
+[2020-05-06 21:13:43 +0800] [24] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/geventlet.py", line 102, in init_process
+    super(EventletWorker, self).init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/back_server/wsgi_gunicorn.py", line 3, in <module>
+    app = create_app(config_name="DEVELOPMENT")
+  File "/back_server/app/factory.py", line 74, in create_app
+    apm = ElasticAPM(app)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 102, in __init__
+    self.init_app(app, **defaults)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 143, in init_app
+    signals.got_request_exception.connect(self.handle_exception, sender=app, weak=False)
+  File "/usr/local/lib/python3.7/site-packages/flask/signals.py", line 39, in _fail
+    "Signalling support is unavailable because the blinker"
+RuntimeError: Signalling support is unavailable because the blinker library is not installed.
+[2020-05-06 21:13:43 +0800] [24] [INFO] Worker exiting (pid: 24)
+[2020-05-06 21:13:43 +0800] [28] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/geventlet.py", line 102, in init_process
+    super(EventletWorker, self).init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/back_server/wsgi_gunicorn.py", line 3, in <module>
+    app = create_app(config_name="DEVELOPMENT")
+  File "/back_server/app/factory.py", line 74, in create_app
+    apm = ElasticAPM(app)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 102, in __init__
+    self.init_app(app, **defaults)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 143, in init_app
+    signals.got_request_exception.connect(self.handle_exception, sender=app, weak=False)
+  File "/usr/local/lib/python3.7/site-packages/flask/signals.py", line 39, in _fail
+    "Signalling support is unavailable because the blinker"
+RuntimeError: Signalling support is unavailable because the blinker library is not installed.
+[2020-05-06 21:13:43 +0800] [28] [INFO] Worker exiting (pid: 28)
+[2020-05-06 21:13:43 +0800] [26] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/geventlet.py", line 102, in init_process
+    super(EventletWorker, self).init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/back_server/wsgi_gunicorn.py", line 3, in <module>
+    app = create_app(config_name="DEVELOPMENT")
+  File "/back_server/app/factory.py", line 74, in create_app
+    apm = ElasticAPM(app)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 102, in __init__
+    self.init_app(app, **defaults)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 143, in init_app
+    signals.got_request_exception.connect(self.handle_exception, sender=app, weak=False)
+  File "/usr/local/lib/python3.7/site-packages/flask/signals.py", line 39, in _fail
+    "Signalling support is unavailable because the blinker"
+RuntimeError: Signalling support is unavailable because the blinker library is not installed.
+[2020-05-06 21:13:43 +0800] [26] [INFO] Worker exiting (pid: 26)
+[2020-05-06 21:13:44 +0800] [19] [INFO] Starting gunicorn 19.9.0
+[2020-05-06 21:13:44 +0800] [19] [INFO] Listening at: http://0.0.0.0:8085 (19)
+[2020-05-06 21:13:44 +0800] [19] [INFO] Using worker: eventlet
+[2020-05-06 21:13:44 +0800] [21] [INFO] Booting worker with pid: 21
+[2020-05-06 21:13:44 +0800] [24] [INFO] Booting worker with pid: 24
+[2020-05-06 21:13:44 +0800] [26] [INFO] Booting worker with pid: 26
+[2020-05-06 21:13:44 +0800] [27] [INFO] Booting worker with pid: 27
+[2020-05-06 21:13:45 +0800] [21] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/geventlet.py", line 102, in init_process
+    super(EventletWorker, self).init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/back_server/wsgi_gunicorn.py", line 3, in <module>
+    app = create_app(config_name="DEVELOPMENT")
+  File "/back_server/app/factory.py", line 74, in create_app
+    apm = ElasticAPM(app)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 102, in __init__
+    self.init_app(app, **defaults)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 143, in init_app
+    signals.got_request_exception.connect(self.handle_exception, sender=app, weak=False)
+  File "/usr/local/lib/python3.7/site-packages/flask/signals.py", line 39, in _fail
+    "Signalling support is unavailable because the blinker"
+RuntimeError: Signalling support is unavailable because the blinker library is not installed.
+[2020-05-06 21:13:45 +0800] [21] [INFO] Worker exiting (pid: 21)
+[2020-05-06 21:13:45 +0800] [24] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/geventlet.py", line 102, in init_process
+    super(EventletWorker, self).init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/back_server/wsgi_gunicorn.py", line 3, in <module>
+    app = create_app(config_name="DEVELOPMENT")
+  File "/back_server/app/factory.py", line 74, in create_app
+    apm = ElasticAPM(app)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 102, in __init__
+    self.init_app(app, **defaults)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 143, in init_app
+    signals.got_request_exception.connect(self.handle_exception, sender=app, weak=False)
+  File "/usr/local/lib/python3.7/site-packages/flask/signals.py", line 39, in _fail
+    "Signalling support is unavailable because the blinker"
+RuntimeError: Signalling support is unavailable because the blinker library is not installed.
+[2020-05-06 21:13:45 +0800] [24] [INFO] Worker exiting (pid: 24)
+[2020-05-06 21:13:45 +0800] [26] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/geventlet.py", line 102, in init_process
+    super(EventletWorker, self).init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/back_server/wsgi_gunicorn.py", line 3, in <module>
+    app = create_app(config_name="DEVELOPMENT")
+  File "/back_server/app/factory.py", line 74, in create_app
+    apm = ElasticAPM(app)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 102, in __init__
+    self.init_app(app, **defaults)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 143, in init_app
+    signals.got_request_exception.connect(self.handle_exception, sender=app, weak=False)
+  File "/usr/local/lib/python3.7/site-packages/flask/signals.py", line 39, in _fail
+    "Signalling support is unavailable because the blinker"
+RuntimeError: Signalling support is unavailable because the blinker library is not installed.
+[2020-05-06 21:13:45 +0800] [26] [INFO] Worker exiting (pid: 26)
+[2020-05-06 21:13:45 +0800] [27] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/geventlet.py", line 102, in init_process
+    super(EventletWorker, self).init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/back_server/wsgi_gunicorn.py", line 3, in <module>
+    app = create_app(config_name="DEVELOPMENT")
+  File "/back_server/app/factory.py", line 74, in create_app
+    apm = ElasticAPM(app)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 102, in __init__
+    self.init_app(app, **defaults)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 143, in init_app
+    signals.got_request_exception.connect(self.handle_exception, sender=app, weak=False)
+  File "/usr/local/lib/python3.7/site-packages/flask/signals.py", line 39, in _fail
+    "Signalling support is unavailable because the blinker"
+RuntimeError: Signalling support is unavailable because the blinker library is not installed.
+[2020-05-06 21:13:45 +0800] [27] [INFO] Worker exiting (pid: 27)
+[2020-05-06 21:13:47 +0800] [19] [INFO] Starting gunicorn 19.9.0
+[2020-05-06 21:13:47 +0800] [19] [INFO] Listening at: http://0.0.0.0:8085 (19)
+[2020-05-06 21:13:47 +0800] [19] [INFO] Using worker: eventlet
+[2020-05-06 21:13:47 +0800] [21] [INFO] Booting worker with pid: 21
+[2020-05-06 21:13:47 +0800] [24] [INFO] Booting worker with pid: 24
+[2020-05-06 21:13:47 +0800] [26] [INFO] Booting worker with pid: 26
+[2020-05-06 21:13:47 +0800] [28] [INFO] Booting worker with pid: 28
+[2020-05-06 21:13:48 +0800] [24] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/geventlet.py", line 102, in init_process
+    super(EventletWorker, self).init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/back_server/wsgi_gunicorn.py", line 3, in <module>
+    app = create_app(config_name="DEVELOPMENT")
+  File "/back_server/app/factory.py", line 74, in create_app
+    apm = ElasticAPM(app)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 102, in __init__
+    self.init_app(app, **defaults)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 143, in init_app
+    signals.got_request_exception.connect(self.handle_exception, sender=app, weak=False)
+  File "/usr/local/lib/python3.7/site-packages/flask/signals.py", line 39, in _fail
+    "Signalling support is unavailable because the blinker"
+RuntimeError: Signalling support is unavailable because the blinker library is not installed.
+[2020-05-06 21:13:48 +0800] [24] [INFO] Worker exiting (pid: 24)
+[2020-05-06 21:13:48 +0800] [21] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/geventlet.py", line 102, in init_process
+    super(EventletWorker, self).init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/back_server/wsgi_gunicorn.py", line 3, in <module>
+    app = create_app(config_name="DEVELOPMENT")
+  File "/back_server/app/factory.py", line 74, in create_app
+    apm = ElasticAPM(app)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 102, in __init__
+    self.init_app(app, **defaults)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 143, in init_app
+    signals.got_request_exception.connect(self.handle_exception, sender=app, weak=False)
+  File "/usr/local/lib/python3.7/site-packages/flask/signals.py", line 39, in _fail
+    "Signalling support is unavailable because the blinker"
+RuntimeError: Signalling support is unavailable because the blinker library is not installed.
+[2020-05-06 21:13:48 +0800] [21] [INFO] Worker exiting (pid: 21)
+[2020-05-06 21:13:48 +0800] [26] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/geventlet.py", line 102, in init_process
+    super(EventletWorker, self).init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/back_server/wsgi_gunicorn.py", line 3, in <module>
+    app = create_app(config_name="DEVELOPMENT")
+  File "/back_server/app/factory.py", line 74, in create_app
+    apm = ElasticAPM(app)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 102, in __init__
+    self.init_app(app, **defaults)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 143, in init_app
+    signals.got_request_exception.connect(self.handle_exception, sender=app, weak=False)
+  File "/usr/local/lib/python3.7/site-packages/flask/signals.py", line 39, in _fail
+    "Signalling support is unavailable because the blinker"
+RuntimeError: Signalling support is unavailable because the blinker library is not installed.
+[2020-05-06 21:13:48 +0800] [26] [INFO] Worker exiting (pid: 26)
+[2020-05-06 21:13:52 +0800] [19] [INFO] Starting gunicorn 19.9.0
+[2020-05-06 21:13:52 +0800] [19] [INFO] Listening at: http://0.0.0.0:8085 (19)
+[2020-05-06 21:13:52 +0800] [19] [INFO] Using worker: eventlet
+[2020-05-06 21:13:52 +0800] [21] [INFO] Booting worker with pid: 21
+[2020-05-06 21:13:52 +0800] [24] [INFO] Booting worker with pid: 24
+[2020-05-06 21:13:52 +0800] [26] [INFO] Booting worker with pid: 26
+[2020-05-06 21:13:52 +0800] [28] [INFO] Booting worker with pid: 28
+[2020-05-06 21:13:52 +0800] [24] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/geventlet.py", line 102, in init_process
+    super(EventletWorker, self).init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/back_server/wsgi_gunicorn.py", line 3, in <module>
+    app = create_app(config_name="DEVELOPMENT")
+  File "/back_server/app/factory.py", line 74, in create_app
+    apm = ElasticAPM(app)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 102, in __init__
+    self.init_app(app, **defaults)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 143, in init_app
+    signals.got_request_exception.connect(self.handle_exception, sender=app, weak=False)
+  File "/usr/local/lib/python3.7/site-packages/flask/signals.py", line 39, in _fail
+    "Signalling support is unavailable because the blinker"
+RuntimeError: Signalling support is unavailable because the blinker library is not installed.
+[2020-05-06 21:13:52 +0800] [24] [INFO] Worker exiting (pid: 24)
+[2020-05-06 21:13:52 +0800] [26] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/geventlet.py", line 102, in init_process
+    super(EventletWorker, self).init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/back_server/wsgi_gunicorn.py", line 3, in <module>
+    app = create_app(config_name="DEVELOPMENT")
+  File "/back_server/app/factory.py", line 74, in create_app
+    apm = ElasticAPM(app)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 102, in __init__
+    self.init_app(app, **defaults)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 143, in init_app
+    signals.got_request_exception.connect(self.handle_exception, sender=app, weak=False)
+  File "/usr/local/lib/python3.7/site-packages/flask/signals.py", line 39, in _fail
+    "Signalling support is unavailable because the blinker"
+RuntimeError: Signalling support is unavailable because the blinker library is not installed.
+[2020-05-06 21:13:52 +0800] [26] [INFO] Worker exiting (pid: 26)
+[2020-05-06 21:13:52 +0800] [21] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/geventlet.py", line 102, in init_process
+    super(EventletWorker, self).init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/back_server/wsgi_gunicorn.py", line 3, in <module>
+    app = create_app(config_name="DEVELOPMENT")
+  File "/back_server/app/factory.py", line 74, in create_app
+    apm = ElasticAPM(app)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 102, in __init__
+    self.init_app(app, **defaults)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 143, in init_app
+    signals.got_request_exception.connect(self.handle_exception, sender=app, weak=False)
+  File "/usr/local/lib/python3.7/site-packages/flask/signals.py", line 39, in _fail
+    "Signalling support is unavailable because the blinker"
+RuntimeError: Signalling support is unavailable because the blinker library is not installed.
+[2020-05-06 21:13:52 +0800] [21] [INFO] Worker exiting (pid: 21)
+[2020-05-06 21:13:59 +0800] [19] [INFO] Starting gunicorn 19.9.0
+[2020-05-06 21:13:59 +0800] [19] [INFO] Listening at: http://0.0.0.0:8085 (19)
+[2020-05-06 21:13:59 +0800] [19] [INFO] Using worker: eventlet
+[2020-05-06 21:13:59 +0800] [21] [INFO] Booting worker with pid: 21
+[2020-05-06 21:13:59 +0800] [24] [INFO] Booting worker with pid: 24
+[2020-05-06 21:13:59 +0800] [26] [INFO] Booting worker with pid: 26
+[2020-05-06 21:13:59 +0800] [28] [INFO] Booting worker with pid: 28
+[2020-05-06 21:14:00 +0800] [24] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/geventlet.py", line 102, in init_process
+    super(EventletWorker, self).init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/back_server/wsgi_gunicorn.py", line 3, in <module>
+    app = create_app(config_name="DEVELOPMENT")
+  File "/back_server/app/factory.py", line 74, in create_app
+    apm = ElasticAPM(app)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 102, in __init__
+    self.init_app(app, **defaults)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 143, in init_app
+    signals.got_request_exception.connect(self.handle_exception, sender=app, weak=False)
+  File "/usr/local/lib/python3.7/site-packages/flask/signals.py", line 39, in _fail
+    "Signalling support is unavailable because the blinker"
+RuntimeError: Signalling support is unavailable because the blinker library is not installed.
+[2020-05-06 21:14:00 +0800] [24] [INFO] Worker exiting (pid: 24)
+[2020-05-06 21:14:00 +0800] [21] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/geventlet.py", line 102, in init_process
+    super(EventletWorker, self).init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/back_server/wsgi_gunicorn.py", line 3, in <module>
+    app = create_app(config_name="DEVELOPMENT")
+  File "/back_server/app/factory.py", line 74, in create_app
+    apm = ElasticAPM(app)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 102, in __init__
+    self.init_app(app, **defaults)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 143, in init_app
+    signals.got_request_exception.connect(self.handle_exception, sender=app, weak=False)
+  File "/usr/local/lib/python3.7/site-packages/flask/signals.py", line 39, in _fail
+    "Signalling support is unavailable because the blinker"
+RuntimeError: Signalling support is unavailable because the blinker library is not installed.
+[2020-05-06 21:14:00 +0800] [21] [INFO] Worker exiting (pid: 21)
+[2020-05-06 21:14:13 +0800] [19] [INFO] Starting gunicorn 19.9.0
+[2020-05-06 21:14:13 +0800] [19] [INFO] Listening at: http://0.0.0.0:8085 (19)
+[2020-05-06 21:14:13 +0800] [19] [INFO] Using worker: eventlet
+[2020-05-06 21:14:13 +0800] [21] [INFO] Booting worker with pid: 21
+[2020-05-06 21:14:13 +0800] [24] [INFO] Booting worker with pid: 24
+[2020-05-06 21:14:13 +0800] [26] [INFO] Booting worker with pid: 26
+[2020-05-06 21:14:13 +0800] [28] [INFO] Booting worker with pid: 28
+[2020-05-06 21:14:14 +0800] [21] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/geventlet.py", line 102, in init_process
+    super(EventletWorker, self).init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/back_server/wsgi_gunicorn.py", line 3, in <module>
+    app = create_app(config_name="DEVELOPMENT")
+  File "/back_server/app/factory.py", line 74, in create_app
+    apm = ElasticAPM(app)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 102, in __init__
+    self.init_app(app, **defaults)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 143, in init_app
+    signals.got_request_exception.connect(self.handle_exception, sender=app, weak=False)
+  File "/usr/local/lib/python3.7/site-packages/flask/signals.py", line 39, in _fail
+    "Signalling support is unavailable because the blinker"
+RuntimeError: Signalling support is unavailable because the blinker library is not installed.
+[2020-05-06 21:14:14 +0800] [21] [INFO] Worker exiting (pid: 21)
+[2020-05-06 21:14:14 +0800] [24] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/arbiter.py", line 583, in spawn_worker
+    worker.init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/geventlet.py", line 102, in init_process
+    super(EventletWorker, self).init_process()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 129, in init_process
+    self.load_wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/workers/base.py", line 138, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 52, in load
+    return self.load_wsgiapp()
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/app/wsgiapp.py", line 41, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/usr/local/lib/python3.7/site-packages/gunicorn/util.py", line 350, in import_app
+    __import__(module)
+  File "/back_server/wsgi_gunicorn.py", line 3, in <module>
+    app = create_app(config_name="DEVELOPMENT")
+  File "/back_server/app/factory.py", line 74, in create_app
+    apm = ElasticAPM(app)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 102, in __init__
+    self.init_app(app, **defaults)
+  File "/usr/local/lib/python3.7/site-packages/elasticapm/contrib/flask/__init__.py", line 143, in init_app
+    signals.got_request_exception.connect(self.handle_exception, sender=app, weak=False)
+  File "/usr/local/lib/python3.7/site-packages/flask/signals.py", line 39, in _fail
+    "Signalling support is unavailable because the blinker"
+RuntimeError: Signalling support is unavailable because the blinker library is not installed.
+[2020-05-06 21:14:14 +0800] [24] [INFO] Worker exiting (pid: 24)
+[2020-05-06 21:18:31 +0800] [19] [INFO] Starting gunicorn 19.9.0
+[2020-05-06 21:18:31 +0800] [19] [INFO] Listening at: http://0.0.0.0:8085 (19)
+[2020-05-06 21:18:31 +0800] [19] [INFO] Using worker: eventlet
+[2020-05-06 21:18:31 +0800] [21] [INFO] Booting worker with pid: 21
+[2020-05-06 21:18:31 +0800] [24] [INFO] Booting worker with pid: 24
+[2020-05-06 21:18:31 +0800] [26] [INFO] Booting worker with pid: 26
+[2020-05-06 21:18:31 +0800] [28] [INFO] Booting worker with pid: 28
+[2020-05-06 21:19:06 +0800] [21] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 21:19:07 +0800] [24] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 21:19:07 +0800] [26] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 21:19:07 +0800] [28] [INFO] Worker reloading: /back_server/app/api/oem_service.py modified
+[2020-05-06 21:19:07 +0800] [24] [INFO] Worker exiting (pid: 24)
+[2020-05-06 21:19:07 +0800] [21] [INFO] Worker exiting (pid: 21)
+[2020-05-06 21:19:07 +0800] [28] [INFO] Worker exiting (pid: 28)
+[2020-05-06 21:19:07 +0800] [26] [INFO] Worker exiting (pid: 26)
+[2020-05-06 21:19:17 +0800] [57] [INFO] Booting worker with pid: 57
+[2020-05-06 21:19:17 +0800] [59] [INFO] Booting worker with pid: 59
+[2020-05-06 21:19:17 +0800] [61] [INFO] Booting worker with pid: 61
+[2020-05-06 21:19:17 +0800] [63] [INFO] Booting worker with pid: 63
+[2020-05-08 15:02:44 +0800] [23859] [INFO] Starting gunicorn 20.0.4
+[2020-05-08 15:03:08 +0800] [24026] [INFO] Starting gunicorn 20.0.4
+[2020-05-08 15:03:46 +0800] [24283] [INFO] Starting gunicorn 20.0.4
+[2020-05-08 15:04:11 +0800] [24448] [INFO] Starting gunicorn 20.0.4
+[2020-05-08 15:04:11 +0800] [24448] [INFO] Listening at: http://0.0.0.0:8087 (24448)
+[2020-05-08 15:04:11 +0800] [24448] [INFO] Using worker: eventlet
+[2020-05-08 15:04:11 +0800] [24452] [INFO] Booting worker with pid: 24452
+[2020-05-08 15:04:12 +0800] [24453] [INFO] Booting worker with pid: 24453
+[2020-05-08 15:04:12 +0800] [24455] [INFO] Booting worker with pid: 24455
+[2020-05-08 15:04:12 +0800] [24457] [INFO] Booting worker with pid: 24457
+[2020-05-08 15:20:15 +0800] [24457] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 15:20:15 +0800] [24457] [INFO] Worker exiting (pid: 24457)
+[2020-05-08 15:20:16 +0800] [31468] [INFO] Booting worker with pid: 31468
+[2020-05-08 15:20:16 +0800] [24452] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 15:20:16 +0800] [24452] [INFO] Worker exiting (pid: 24452)
+[2020-05-08 15:20:16 +0800] [24455] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 15:20:16 +0800] [24455] [INFO] Worker exiting (pid: 24455)
+[2020-05-08 15:20:16 +0800] [24453] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 15:20:16 +0800] [24453] [INFO] Worker exiting (pid: 24453)
+[2020-05-08 15:20:16 +0800] [31472] [INFO] Booting worker with pid: 31472
+[2020-05-08 15:20:16 +0800] [31473] [INFO] Booting worker with pid: 31473
+[2020-05-08 15:20:16 +0800] [31475] [INFO] Booting worker with pid: 31475
+[2020-05-08 15:24:55 +0800] [31472] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 15:24:55 +0800] [31472] [INFO] Worker exiting (pid: 31472)
+[2020-05-08 15:24:55 +0800] [31473] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 15:24:55 +0800] [31473] [INFO] Worker exiting (pid: 31473)
+[2020-05-08 15:24:55 +0800] [31475] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 15:24:55 +0800] [31475] [INFO] Worker exiting (pid: 31475)
+[2020-05-08 15:24:55 +0800] [972] [INFO] Booting worker with pid: 972
+[2020-05-08 15:24:55 +0800] [973] [INFO] Booting worker with pid: 973
+[2020-05-08 15:24:55 +0800] [975] [INFO] Booting worker with pid: 975
+[2020-05-08 15:24:55 +0800] [31468] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 15:24:55 +0800] [31468] [INFO] Worker exiting (pid: 31468)
+[2020-05-08 15:24:55 +0800] [979] [INFO] Booting worker with pid: 979
+[2020-05-08 15:26:51 +0800] [973] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 15:26:51 +0800] [973] [INFO] Worker exiting (pid: 973)
+[2020-05-08 15:26:51 +0800] [972] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 15:26:51 +0800] [972] [INFO] Worker exiting (pid: 972)
+[2020-05-08 15:26:52 +0800] [975] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 15:26:52 +0800] [975] [INFO] Worker exiting (pid: 975)
+[2020-05-08 15:26:52 +0800] [1771] [INFO] Booting worker with pid: 1771
+[2020-05-08 15:26:52 +0800] [1772] [INFO] Booting worker with pid: 1772
+[2020-05-08 15:26:52 +0800] [979] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 15:26:52 +0800] [979] [INFO] Worker exiting (pid: 979)
+[2020-05-08 15:26:52 +0800] [1774] [INFO] Booting worker with pid: 1774
+[2020-05-08 15:26:52 +0800] [1777] [INFO] Booting worker with pid: 1777
+[2020-05-08 15:27:51 +0800] [1774] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 15:27:51 +0800] [1777] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 15:27:51 +0800] [1774] [INFO] Worker exiting (pid: 1774)
+[2020-05-08 15:27:51 +0800] [1777] [INFO] Worker exiting (pid: 1777)
+[2020-05-08 15:27:51 +0800] [1772] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 15:27:51 +0800] [1772] [INFO] Worker exiting (pid: 1772)
+[2020-05-08 15:27:51 +0800] [2196] [INFO] Booting worker with pid: 2196
+[2020-05-08 15:27:51 +0800] [1771] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 15:27:51 +0800] [1771] [INFO] Worker exiting (pid: 1771)
+[2020-05-08 15:27:51 +0800] [2197] [INFO] Booting worker with pid: 2197
+[2020-05-08 15:27:51 +0800] [2198] [INFO] Booting worker with pid: 2198
+[2020-05-08 15:27:51 +0800] [2201] [INFO] Booting worker with pid: 2201
+[2020-05-08 16:15:44 +0800] [24448] [INFO] Handling signal: hup
+[2020-05-08 16:15:44 +0800] [24448] [INFO] Hang up: Master
+[2020-05-08 16:15:44 +0800] [24448] [INFO] Unhandled exception in main loop
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/app/base.py", line 106, in get_config_from_filename
+    util.warn(msg)
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/util.py", line 581, in warn
+    print("!!!", file=sys.stderr)
+OSError: [Errno 5] Input/output error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/app/base.py", line 36, in do_load_config
+    self.load_config()
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/app/base.py", line 174, in load_config
+    self.load_config_from_file(args.config)
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/app/base.py", line 153, in load_config_from_file
+    return self.load_config_from_module_name_or_filename(location=filename)
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/app/base.py", line 137, in load_config_from_module_name_or_filename
+    cfg = self.get_config_from_filename(filename)
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/app/base.py", line 113, in get_config_from_filename
+    print("Failed to read config file: %s" % filename, file=sys.stderr)
+OSError: [Errno 5] Input/output error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/arbiter.py", line 224, in run
+    handler()
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/arbiter.py", line 253, in handle_hup
+    self.reload()
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/arbiter.py", line 448, in reload
+    self.app.reload()
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/app/base.py", line 61, in reload
+    self.do_load_config()
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/app/base.py", line 38, in do_load_config
+    print("\nError: %s" % str(e), file=sys.stderr)
+OSError: [Errno 5] Input/output error
+[2020-05-08 17:21:51 +0800] [18118] [INFO] Starting gunicorn 20.0.4
+[2020-05-08 17:21:51 +0800] [18118] [INFO] Listening at: http://0.0.0.0:8087 (18118)
+[2020-05-08 17:21:51 +0800] [18118] [INFO] Using worker: eventlet
+[2020-05-08 17:21:51 +0800] [18121] [INFO] Booting worker with pid: 18121
+[2020-05-08 17:21:51 +0800] [18124] [INFO] Booting worker with pid: 18124
+[2020-05-08 17:21:51 +0800] [18125] [INFO] Booting worker with pid: 18125
+[2020-05-08 17:21:51 +0800] [18129] [INFO] Booting worker with pid: 18129
+[2020-05-08 18:49:01 +0800] [18129] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 18:49:01 +0800] [18129] [INFO] Worker exiting (pid: 18129)
+[2020-05-08 18:49:01 +0800] [18121] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 18:49:01 +0800] [18121] [INFO] Worker exiting (pid: 18121)
+[2020-05-08 18:49:01 +0800] [23166] [INFO] Booting worker with pid: 23166
+[2020-05-08 18:49:01 +0800] [23167] [INFO] Booting worker with pid: 23167
+[2020-05-08 18:49:01 +0800] [18124] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 18:49:01 +0800] [18125] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 18:49:01 +0800] [18125] [INFO] Worker exiting (pid: 18125)
+[2020-05-08 18:49:01 +0800] [18124] [INFO] Worker exiting (pid: 18124)
+[2020-05-08 18:49:01 +0800] [23170] [INFO] Booting worker with pid: 23170
+[2020-05-08 18:49:02 +0800] [23171] [INFO] Booting worker with pid: 23171
+[2020-05-08 18:59:57 +0800] [23170] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 18:59:57 +0800] [23170] [INFO] Worker exiting (pid: 23170)
+[2020-05-08 18:59:57 +0800] [27731] [INFO] Booting worker with pid: 27731
+[2020-05-08 18:59:57 +0800] [23171] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 18:59:57 +0800] [23171] [INFO] Worker exiting (pid: 23171)
+[2020-05-08 18:59:57 +0800] [27733] [INFO] Booting worker with pid: 27733
+[2020-05-08 18:59:57 +0800] [23166] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 18:59:57 +0800] [23166] [INFO] Worker exiting (pid: 23166)
+[2020-05-08 18:59:57 +0800] [23167] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 18:59:57 +0800] [23167] [INFO] Worker exiting (pid: 23167)
+[2020-05-08 18:59:57 +0800] [27738] [INFO] Booting worker with pid: 27738
+[2020-05-08 18:59:57 +0800] [27741] [INFO] Booting worker with pid: 27741
+[2020-05-08 19:03:24 +0800] [27738] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 19:03:24 +0800] [27738] [INFO] Worker exiting (pid: 27738)
+[2020-05-08 19:03:25 +0800] [27741] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 19:03:25 +0800] [27741] [INFO] Worker exiting (pid: 27741)
+[2020-05-08 19:03:25 +0800] [27731] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 19:03:25 +0800] [27731] [INFO] Worker exiting (pid: 27731)
+[2020-05-08 19:03:25 +0800] [29584] [INFO] Booting worker with pid: 29584
+[2020-05-08 19:03:25 +0800] [27733] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 19:03:25 +0800] [27733] [INFO] Worker exiting (pid: 27733)
+[2020-05-08 19:03:25 +0800] [29585] [INFO] Booting worker with pid: 29585
+[2020-05-08 19:03:25 +0800] [29588] [INFO] Booting worker with pid: 29588
+[2020-05-08 19:03:26 +0800] [29590] [INFO] Booting worker with pid: 29590
+[2020-05-08 20:13:39 +0800] [29584] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 20:13:39 +0800] [29584] [INFO] Worker exiting (pid: 29584)
+[2020-05-08 20:13:39 +0800] [29588] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 20:13:39 +0800] [29588] [INFO] Worker exiting (pid: 29588)
+[2020-05-08 20:13:39 +0800] [29585] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 20:13:39 +0800] [29585] [INFO] Worker exiting (pid: 29585)
+[2020-05-08 20:13:39 +0800] [27177] [INFO] Booting worker with pid: 27177
+[2020-05-08 20:13:39 +0800] [27178] [INFO] Booting worker with pid: 27178
+[2020-05-08 20:13:39 +0800] [27180] [INFO] Booting worker with pid: 27180
+[2020-05-08 20:13:39 +0800] [29590] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 20:13:39 +0800] [29590] [INFO] Worker exiting (pid: 29590)
+[2020-05-08 20:13:39 +0800] [27184] [INFO] Booting worker with pid: 27184
+[2020-05-08 20:31:27 +0800] [27184] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 20:31:27 +0800] [27184] [INFO] Worker exiting (pid: 27184)
+[2020-05-08 20:31:27 +0800] [2437] [INFO] Booting worker with pid: 2437
+[2020-05-08 20:31:27 +0800] [27180] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 20:31:27 +0800] [27180] [INFO] Worker exiting (pid: 27180)
+[2020-05-08 20:31:27 +0800] [27177] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 20:31:27 +0800] [27177] [INFO] Worker exiting (pid: 27177)
+[2020-05-08 20:31:27 +0800] [2462] [INFO] Booting worker with pid: 2462
+[2020-05-08 20:31:28 +0800] [2463] [INFO] Booting worker with pid: 2463
+[2020-05-08 20:31:28 +0800] [27178] [INFO] Worker reloading: /home/et/back_server/app/api/oem_service.py modified
+[2020-05-08 20:31:28 +0800] [27178] [INFO] Worker exiting (pid: 27178)
+[2020-05-08 20:31:28 +0800] [2467] [INFO] Booting worker with pid: 2467
+[2020-05-08 20:34:27 +0800] [2437] [INFO] Worker reloading: /home/et/back_server/app/task/task.py modified
+[2020-05-08 20:34:27 +0800] [2437] [INFO] Worker exiting (pid: 2437)
+[2020-05-08 20:34:27 +0800] [3712] [INFO] Booting worker with pid: 3712
+[2020-05-08 20:34:45 +0800] [18118] [INFO] Handling signal: int
+[2020-05-08 20:34:45 +0800] [2463] [INFO] Worker exiting (pid: 2463)
+[2020-05-08 20:34:46 +0800] [3712] [INFO] Worker exiting (pid: 3712)
+[2020-05-08 20:34:46 +0800] [2467] [INFO] Worker exiting (pid: 2467)
+[2020-05-08 20:34:46 +0800] [2462] [INFO] Worker exiting (pid: 2462)
+[2020-05-08 20:34:47 +0800] [18118] [INFO] Shutting down: Master
+[2020-05-08 20:34:51 +0800] [3893] [INFO] Starting gunicorn 20.0.4
+[2020-05-08 20:34:51 +0800] [3893] [INFO] Listening at: http://0.0.0.0:8087 (3893)
+[2020-05-08 20:34:51 +0800] [3893] [INFO] Using worker: eventlet
+[2020-05-08 20:34:51 +0800] [3897] [INFO] Booting worker with pid: 3897
+[2020-05-08 20:34:51 +0800] [3898] [INFO] Booting worker with pid: 3898
+[2020-05-08 20:34:51 +0800] [3901] [INFO] Booting worker with pid: 3901
+[2020-05-08 20:34:51 +0800] [3905] [INFO] Booting worker with pid: 3905
+[2020-05-08 20:35:02 +0800] [3893] [INFO] Handling signal: int
+[2020-05-08 20:35:02 +0800] [3905] [INFO] Worker exiting (pid: 3905)
+[2020-05-08 20:35:02 +0800] [3897] [INFO] Worker exiting (pid: 3897)
+[2020-05-08 20:35:03 +0800] [3901] [INFO] Worker exiting (pid: 3901)
+[2020-05-08 20:35:03 +0800] [3898] [INFO] Worker exiting (pid: 3898)
+[2020-05-08 20:35:03 +0800] [3893] [INFO] Shutting down: Master
+[2020-05-08 20:35:29 +0800] [4196] [INFO] Starting gunicorn 20.0.4
+[2020-05-08 20:35:29 +0800] [4196] [INFO] Listening at: http://0.0.0.0:8087 (4196)
+[2020-05-08 20:35:29 +0800] [4196] [INFO] Using worker: eventlet
+[2020-05-08 20:35:29 +0800] [4222] [INFO] Booting worker with pid: 4222
+[2020-05-08 20:35:29 +0800] [4223] [INFO] Booting worker with pid: 4223
+[2020-05-08 20:35:29 +0800] [4225] [INFO] Booting worker with pid: 4225
+[2020-05-08 20:35:30 +0800] [4228] [INFO] Booting worker with pid: 4228
+[2020-05-08 21:47:42 +0800] [4196] [INFO] Handling signal: hup
+[2020-05-08 21:47:42 +0800] [4196] [INFO] Hang up: Master
+[2020-05-08 21:47:42 +0800] [4196] [INFO] Unhandled exception in main loop
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/app/base.py", line 106, in get_config_from_filename
+    util.warn(msg)
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/util.py", line 581, in warn
+    print("!!!", file=sys.stderr)
+OSError: [Errno 5] Input/output error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/app/base.py", line 36, in do_load_config
+    self.load_config()
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/app/base.py", line 174, in load_config
+    self.load_config_from_file(args.config)
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/app/base.py", line 153, in load_config_from_file
+    return self.load_config_from_module_name_or_filename(location=filename)
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/app/base.py", line 137, in load_config_from_module_name_or_filename
+    cfg = self.get_config_from_filename(filename)
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/app/base.py", line 113, in get_config_from_filename
+    print("Failed to read config file: %s" % filename, file=sys.stderr)
+OSError: [Errno 5] Input/output error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/arbiter.py", line 224, in run
+    handler()
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/arbiter.py", line 253, in handle_hup
+    self.reload()
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/arbiter.py", line 448, in reload
+    self.app.reload()
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/app/base.py", line 61, in reload
+    self.do_load_config()
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/app/base.py", line 38, in do_load_config
+    print("\nError: %s" % str(e), file=sys.stderr)
+OSError: [Errno 5] Input/output error
+[2020-05-09 09:14:32 +0800] [5289] [INFO] Starting gunicorn 20.0.4
+[2020-05-09 09:14:32 +0800] [5289] [INFO] Listening at: http://0.0.0.0:8087 (5289)
+[2020-05-09 09:14:32 +0800] [5289] [INFO] Using worker: eventlet
+[2020-05-09 09:14:32 +0800] [5292] [INFO] Booting worker with pid: 5292
+[2020-05-09 09:14:32 +0800] [5293] [INFO] Booting worker with pid: 5293
+[2020-05-09 09:14:32 +0800] [5296] [INFO] Booting worker with pid: 5296
+[2020-05-09 09:14:32 +0800] [5297] [INFO] Booting worker with pid: 5297
+[2020-05-09 13:30:19 +0800] [5293] [ERROR] Error handling request /merchants/login
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 55, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 106, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/et/back_server/app/api/oem_service.py", line 104, in login
+    if user.status != 1:
+AttributeError: 'NoneType' object has no attribute 'status'
+[2020-05-09 13:30:24 +0800] [5296] [ERROR] Error handling request /merchants/login
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 55, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 106, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/et/back_server/app/api/oem_service.py", line 104, in login
+    if user.status != 1:
+AttributeError: 'NoneType' object has no attribute 'status'
+[2020-05-09 14:26:12 +0800] [5292] [ERROR] Error handling request //merchants/login
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 55, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 106, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/et/back_server/app/api/oem_service.py", line 104, in login
+    if user.status != 1:
+AttributeError: 'NoneType' object has no attribute 'status'
+[2020-05-09 14:26:34 +0800] [5293] [ERROR] Error handling request //merchants/login
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 55, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 106, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/et/back_server/app/api/oem_service.py", line 104, in login
+    if user.status != 1:
+AttributeError: 'NoneType' object has no attribute 'status'
+[2020-05-09 14:27:20 +0800] [5293] [ERROR] Error handling request //merchants/login
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 55, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 106, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/et/back_server/app/api/oem_service.py", line 104, in login
+    if user.status != 1:
+AttributeError: 'NoneType' object has no attribute 'status'
+[2020-05-09 14:28:28 +0800] [5296] [ERROR] Error handling request //merchants/login
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 55, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 106, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/et/back_server/app/api/oem_service.py", line 104, in login
+    if user.status != 1:
+AttributeError: 'NoneType' object has no attribute 'status'
+[2020-05-09 14:29:20 +0800] [5292] [ERROR] Error handling request //merchants/login
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 55, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 106, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/et/back_server/app/api/oem_service.py", line 104, in login
+    if user.status != 1:
+AttributeError: 'NoneType' object has no attribute 'status'
+[2020-05-09 14:30:07 +0800] [5292] [ERROR] Error handling request //merchants/login
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 55, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 106, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/et/back_server/app/api/oem_service.py", line 104, in login
+    if user.status != 1:
+AttributeError: 'NoneType' object has no attribute 'status'
+[2020-05-09 14:31:19 +0800] [5296] [ERROR] Error handling request //merchants/login
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 55, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 106, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/et/back_server/app/api/oem_service.py", line 104, in login
+    if user.status != 1:
+AttributeError: 'NoneType' object has no attribute 'status'
+[2020-05-09 14:32:29 +0800] [5296] [ERROR] Error handling request //merchants/login
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 55, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 106, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/et/back_server/app/api/oem_service.py", line 104, in login
+    if user.status != 1:
+AttributeError: 'NoneType' object has no attribute 'status'
+[2020-05-09 14:34:02 +0800] [5293] [ERROR] Error handling request //merchants/login
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 55, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 106, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/et/back_server/app/api/oem_service.py", line 104, in login
+    if user.status != 1:
+AttributeError: 'NoneType' object has no attribute 'status'
+[2020-05-09 14:37:41 +0800] [5296] [ERROR] Error handling request /merchants/login
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 55, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 106, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/et/back_server/app/api/oem_service.py", line 104, in login
+    if user.status != 1:
+AttributeError: 'NoneType' object has no attribute 'status'
+[2020-05-09 14:37:56 +0800] [5293] [ERROR] Error handling request /merchants/login
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 55, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 106, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/et/back_server/app/api/oem_service.py", line 104, in login
+    if user.status != 1:
+AttributeError: 'NoneType' object has no attribute 'status'
+[2020-05-09 14:40:43 +0800] [5292] [ERROR] Error handling request //merchants/login
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 55, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 106, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/et/back_server/app/api/oem_service.py", line 104, in login
+    if user.status != 1:
+AttributeError: 'NoneType' object has no attribute 'status'
+[2020-05-09 14:40:56 +0800] [5293] [ERROR] Error handling request //merchants/login
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 55, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 106, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/et/back_server/app/api/oem_service.py", line 104, in login
+    if user.status != 1:
+AttributeError: 'NoneType' object has no attribute 'status'
+[2020-05-09 14:43:34 +0800] [5297] [ERROR] Error handling request //merchants/login
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 55, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 106, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/et/back_server/app/api/oem_service.py", line 104, in login
+    if user.status != 1:
+AttributeError: 'NoneType' object has no attribute 'status'
+[2020-05-09 15:10:34 +0800] [5297] [ERROR] Error handling request //merchants/login
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 55, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 106, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/et/back_server/app/api/oem_service.py", line 104, in login
+    if user.status != 1:
+AttributeError: 'NoneType' object has no attribute 'status'
+[2020-05-09 15:10:45 +0800] [5297] [ERROR] Error handling request //merchants/login
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 55, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 106, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/et/back_server/app/api/oem_service.py", line 104, in login
+    if user.status != 1:
+AttributeError: 'NoneType' object has no attribute 'status'
+[2020-05-09 15:14:41 +0800] [5297] [ERROR] Error handling request //merchants/login
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 55, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 106, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/et/back_server/app/api/oem_service.py", line 104, in login
+    if user.status != 1:
+AttributeError: 'NoneType' object has no attribute 'status'
+[2020-05-09 15:15:35 +0800] [5297] [ERROR] Error handling request //merchants/login
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 55, in handle
+    self.handle_request(listener_name, req, client, addr)
+  File "/usr/local/lib/python3.6/site-packages/gunicorn/workers/base_async.py", line 106, in handle_request
+    respiter = self.wsgi(environ, resp.start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2463, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2449, in wsgi_app
+    response = self.handle_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1866, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/lib64/python3.6/site-packages/flask_cors/extension.py", line 161, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/lib/python3.6/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/lib/python3.6/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/home/et/back_server/app/api/oem_service.py", line 104, in login
+    if user.status != 1:
+AttributeError: 'NoneType' object has no attribute 'status'

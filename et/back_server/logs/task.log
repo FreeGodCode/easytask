@@ -1,0 +1,535 @@
+2020-05-06 17:21:37 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:21:37 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:21:37 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:21:37 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 17:21:37 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 17:21:37 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 17:21:37 base.py[line:166] INFO Scheduler started
+2020-05-06 17:21:37 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 17:21:37 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 17:21:40+08:00 (in 2.136783 seconds)
+2020-05-06 17:21:37 factory.py[line:123] DEBUG Scheduler Started,---------------
+2020-05-06 17:29:59 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:29:59 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:29:59 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:29:59 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 17:29:59 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 17:29:59 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 17:29:59 base.py[line:166] INFO Scheduler started
+2020-05-06 17:29:59 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 17:29:59 factory.py[line:123] DEBUG Scheduler Started,---------------
+2020-05-06 17:29:59 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 17:30:00+08:00 (in 0.516628 seconds)
+2020-05-06 17:32:51 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:32:51 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:32:51 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:32:51 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 17:32:51 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 17:32:51 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 17:32:51 base.py[line:166] INFO Scheduler started
+2020-05-06 17:32:51 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 17:32:51 factory.py[line:123] DEBUG Scheduler Started,---------------
+2020-05-06 17:32:51 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 17:33:00+08:00 (in 8.798376 seconds)
+2020-05-06 17:34:23 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:34:23 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:34:23 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:34:23 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 17:34:23 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 17:34:23 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 17:34:23 base.py[line:166] INFO Scheduler started
+2020-05-06 17:34:23 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 17:34:23 factory.py[line:123] DEBUG Scheduler Started,---------------
+2020-05-06 17:34:23 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 17:34:30+08:00 (in 6.125366 seconds)
+2020-05-06 17:34:30 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:34:30 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:34:30 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:34:30 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 17:34:30 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 17:34:30 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 17:34:30 base.py[line:166] INFO Scheduler started
+2020-05-06 17:34:30 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 17:34:30 factory.py[line:123] DEBUG Scheduler Started,---------------
+2020-05-06 17:34:30 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 17:34:40+08:00 (in 9.381463 seconds)
+2020-05-06 17:34:43 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:34:43 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:34:43 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:34:43 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 17:34:43 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 17:34:43 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 17:34:43 base.py[line:166] INFO Scheduler started
+2020-05-06 17:34:43 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 17:34:43 factory.py[line:123] DEBUG Scheduler Started,---------------
+2020-05-06 17:34:43 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 17:34:50+08:00 (in 6.622794 seconds)
+2020-05-06 17:36:34 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:36:34 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:36:34 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:36:34 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 17:36:34 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 17:36:34 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 17:36:34 base.py[line:166] INFO Scheduler started
+2020-05-06 17:36:34 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 17:36:34 factory.py[line:123] DEBUG Scheduler Started,---------------
+2020-05-06 17:36:34 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 17:36:40+08:00 (in 5.893635 seconds)
+2020-05-06 17:38:23 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:38:23 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:38:23 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:38:23 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 17:38:23 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 17:38:23 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 17:38:23 base.py[line:166] INFO Scheduler started
+2020-05-06 17:38:23 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 17:38:23 factory.py[line:123] DEBUG Scheduler Started,---------------
+2020-05-06 17:38:23 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 17:38:30+08:00 (in 6.142925 seconds)
+2020-05-06 17:39:39 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:39:39 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:39:39 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:39:39 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 17:39:39 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 17:39:39 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 17:39:39 base.py[line:166] INFO Scheduler started
+2020-05-06 17:39:39 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 17:39:39 factory.py[line:123] DEBUG Scheduler Started,---------------
+2020-05-06 17:39:39 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 17:39:40+08:00 (in 0.395408 seconds)
+2020-05-06 17:42:16 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:42:16 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:42:16 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:42:16 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 17:42:16 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 17:42:16 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 17:42:16 base.py[line:166] INFO Scheduler started
+2020-05-06 17:42:16 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 17:42:16 factory.py[line:123] DEBUG Scheduler Started,---------------
+2020-05-06 17:42:16 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 17:42:20+08:00 (in 3.605493 seconds)
+2020-05-06 17:42:43 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:42:43 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:42:43 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 17:42:43 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 17:42:43 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 17:42:43 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 17:42:43 base.py[line:166] INFO Scheduler started
+2020-05-06 17:42:43 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 17:42:43 factory.py[line:123] DEBUG Scheduler Started,---------------
+2020-05-06 17:42:43 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 17:42:50+08:00 (in 6.960936 seconds)
+2020-05-06 18:25:42 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 18:25:42 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 18:25:42 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 18:25:42 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 18:25:42 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 18:25:42 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 18:25:42 base.py[line:166] INFO Scheduler started
+2020-05-06 18:25:42 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 18:25:42 factory.py[line:123] DEBUG Scheduler Started,---------------
+2020-05-06 18:25:42 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 18:25:50+08:00 (in 7.567108 seconds)
+2020-05-06 18:33:06 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 18:33:06 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 18:33:06 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 18:33:06 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 18:33:06 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 18:33:06 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 18:33:06 base.py[line:166] INFO Scheduler started
+2020-05-06 18:33:06 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 18:33:06 factory.py[line:123] DEBUG Scheduler Started,---------------
+2020-05-06 18:33:06 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 18:33:10+08:00 (in 3.592683 seconds)
+2020-05-06 18:48:43 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 18:48:43 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 18:48:43 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 18:48:43 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 18:48:43 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 18:48:43 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 18:48:43 base.py[line:166] INFO Scheduler started
+2020-05-06 18:48:43 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 18:48:43 factory.py[line:123] DEBUG Scheduler Started,---------------
+2020-05-06 18:48:43 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 18:48:50+08:00 (in 6.830801 seconds)
+2020-05-06 20:00:57 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 20:00:57 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 20:00:57 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 20:00:57 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 20:00:57 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 20:00:57 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 20:00:57 base.py[line:166] INFO Scheduler started
+2020-05-06 20:00:57 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 20:00:57 factory.py[line:123] DEBUG Scheduler Started,---------------
+2020-05-06 20:00:57 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 20:00:58+08:00 (in 0.040488 seconds)
+2020-05-06 20:01:15 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 20:01:15 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 20:01:15 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 20:01:15 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 20:01:15 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 20:01:15 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 20:01:15 base.py[line:166] INFO Scheduler started
+2020-05-06 20:01:15 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 20:01:15 factory.py[line:123] DEBUG Scheduler Started,---------------
+2020-05-06 20:01:15 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 20:01:20+08:00 (in 4.272086 seconds)
+2020-05-06 20:02:42 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 20:02:42 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 20:02:42 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 20:02:42 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 20:02:42 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 20:02:42 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 20:02:42 base.py[line:166] INFO Scheduler started
+2020-05-06 20:02:42 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 20:02:42 factory.py[line:123] DEBUG Scheduler Started,---------------
+2020-05-06 20:02:42 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 20:02:50+08:00 (in 7.616522 seconds)
+2020-05-06 20:03:06 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 20:03:06 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 20:03:06 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 20:03:06 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 20:03:06 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 20:03:06 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 20:03:06 base.py[line:166] INFO Scheduler started
+2020-05-06 20:03:06 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 20:03:06 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 20:03:10+08:00 (in 3.039509 seconds)
+2020-05-06 20:03:06 factory.py[line:123] DEBUG Scheduler Started,---------------
+2020-05-06 20:04:39 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 20:04:39 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 20:04:39 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 20:04:39 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 20:04:39 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 20:04:39 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 20:04:39 base.py[line:166] INFO Scheduler started
+2020-05-06 20:04:39 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 20:04:39 factory.py[line:123] DEBUG Scheduler Started,---------------
+2020-05-06 20:04:39 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 20:04:40+08:00 (in 0.360934 seconds)
+2020-05-06 20:05:17 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 20:05:17 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 20:05:17 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 20:05:17 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 20:05:17 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 20:05:17 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 20:05:17 base.py[line:166] INFO Scheduler started
+2020-05-06 20:05:17 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 20:05:17 factory.py[line:123] DEBUG Scheduler Started,---------------
+2020-05-06 20:05:17 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 20:05:20+08:00 (in 2.729817 seconds)
+2020-05-06 20:05:42 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 20:05:42 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 20:05:42 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 20:05:42 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 20:05:42 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 20:05:42 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 20:05:42 base.py[line:166] INFO Scheduler started
+2020-05-06 20:05:42 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 20:05:42 factory.py[line:123] DEBUG Scheduler Started,---------------
+2020-05-06 20:05:42 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 20:05:50+08:00 (in 7.056185 seconds)
+2020-05-06 20:06:34 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 20:06:34 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 20:06:34 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 20:06:34 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 20:06:34 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 20:06:34 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 20:06:34 base.py[line:166] INFO Scheduler started
+2020-05-06 20:06:34 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 20:06:34 factory.py[line:123] DEBUG Scheduler Started,---------------
+2020-05-06 20:06:34 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 20:06:40+08:00 (in 5.364541 seconds)
+2020-05-06 20:15:41 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 20:15:41 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 20:15:41 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 20:15:41 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 20:15:41 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 20:15:41 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 20:15:41 base.py[line:166] INFO Scheduler started
+2020-05-06 20:15:41 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 20:15:41 factory.py[line:123] DEBUG Scheduler Started,---------------
+2020-05-06 20:15:41 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 20:15:50+08:00 (in 8.258937 seconds)
+2020-05-06 21:13:38 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:38 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:38 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:38 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 21:13:38 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 21:13:38 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 21:13:38 base.py[line:166] INFO Scheduler started
+2020-05-06 21:13:38 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 21:13:38 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 21:13:40+08:00 (in 1.380149 seconds)
+2020-05-06 21:13:38 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-06 21:13:38 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:38 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:38 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:38 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 21:13:38 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 21:13:38 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 21:13:38 base.py[line:166] INFO Scheduler started
+2020-05-06 21:13:38 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 21:13:38 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-06 21:13:38 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 21:13:40+08:00 (in 1.290411 seconds)
+2020-05-06 21:13:38 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:38 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:38 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:38 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 21:13:38 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 21:13:38 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 21:13:38 base.py[line:166] INFO Scheduler started
+2020-05-06 21:13:38 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 21:13:38 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-06 21:13:38 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 21:13:40+08:00 (in 1.219304 seconds)
+2020-05-06 21:13:38 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:38 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:38 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:39 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:39 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:39 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:40 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 21:13:40 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 21:13:40 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 21:13:40 base.py[line:166] INFO Scheduler started
+2020-05-06 21:13:40 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 21:13:40 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-06 21:13:40 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 21:13:50+08:00 (in 9.988327 seconds)
+2020-05-06 21:13:40 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:40 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:40 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:40 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 21:13:40 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 21:13:40 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 21:13:40 base.py[line:166] INFO Scheduler started
+2020-05-06 21:13:40 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 21:13:40 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-06 21:13:40 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 21:13:50+08:00 (in 9.856986 seconds)
+2020-05-06 21:13:41 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:41 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:41 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:41 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 21:13:41 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 21:13:41 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 21:13:41 base.py[line:166] INFO Scheduler started
+2020-05-06 21:13:41 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 21:13:41 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-06 21:13:41 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 21:13:50+08:00 (in 8.581029 seconds)
+2020-05-06 21:13:43 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:43 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:43 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:43 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 21:13:43 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 21:13:43 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 21:13:43 base.py[line:166] INFO Scheduler started
+2020-05-06 21:13:43 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 21:13:43 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-06 21:13:43 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 21:13:50+08:00 (in 6.951256 seconds)
+2020-05-06 21:13:43 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:43 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:43 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:43 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 21:13:43 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 21:13:43 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 21:13:43 base.py[line:166] INFO Scheduler started
+2020-05-06 21:13:43 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 21:13:43 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-06 21:13:43 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 21:13:50+08:00 (in 6.792523 seconds)
+2020-05-06 21:13:45 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:45 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:45 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:45 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 21:13:45 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 21:13:45 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 21:13:45 base.py[line:166] INFO Scheduler started
+2020-05-06 21:13:45 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 21:13:45 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-06 21:13:45 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 21:13:50+08:00 (in 4.829850 seconds)
+2020-05-06 21:13:45 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:45 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:45 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:45 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 21:13:45 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 21:13:45 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 21:13:45 base.py[line:166] INFO Scheduler started
+2020-05-06 21:13:45 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 21:13:45 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-06 21:13:45 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 21:13:50+08:00 (in 4.716202 seconds)
+2020-05-06 21:13:48 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:48 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:48 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:48 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 21:13:48 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 21:13:48 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 21:13:48 base.py[line:166] INFO Scheduler started
+2020-05-06 21:13:48 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 21:13:48 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-06 21:13:48 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 21:13:50+08:00 (in 1.927550 seconds)
+2020-05-06 21:13:48 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:48 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:48 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:48 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 21:13:48 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 21:13:48 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 21:13:48 base.py[line:166] INFO Scheduler started
+2020-05-06 21:13:48 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 21:13:48 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-06 21:13:48 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 21:13:50+08:00 (in 1.819068 seconds)
+2020-05-06 21:13:48 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:48 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:48 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:48 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 21:13:48 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 21:13:48 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 21:13:48 base.py[line:166] INFO Scheduler started
+2020-05-06 21:13:48 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 21:13:48 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-06 21:13:48 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 21:13:50+08:00 (in 1.679988 seconds)
+2020-05-06 21:13:52 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:52 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:52 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:13:52 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 21:13:52 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 21:13:52 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 21:13:52 base.py[line:166] INFO Scheduler started
+2020-05-06 21:13:52 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 21:13:52 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-06 21:13:52 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 21:14:00+08:00 (in 7.251815 seconds)
+2020-05-06 21:14:00 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:14:00 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:14:00 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:14:00 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 21:14:00 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 21:14:00 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 21:14:00 base.py[line:166] INFO Scheduler started
+2020-05-06 21:14:00 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 21:14:00 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-06 21:14:00 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 21:14:10+08:00 (in 9.729492 seconds)
+2020-05-06 21:14:00 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:14:00 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:14:00 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:14:14 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:14:14 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:14:14 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:14:14 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 21:14:14 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 21:14:14 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 21:14:14 base.py[line:166] INFO Scheduler started
+2020-05-06 21:14:14 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 21:14:14 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-06 21:14:14 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 21:14:20+08:00 (in 5.767102 seconds)
+2020-05-06 21:14:14 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:14:14 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:14:14 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:14:14 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 21:14:14 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 21:14:14 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 21:14:14 base.py[line:166] INFO Scheduler started
+2020-05-06 21:14:14 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 21:14:14 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-06 21:14:14 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 21:14:20+08:00 (in 5.650832 seconds)
+2020-05-06 21:14:14 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:14:14 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:14:14 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:14:14 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 21:14:14 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 21:14:14 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 21:14:14 base.py[line:166] INFO Scheduler started
+2020-05-06 21:18:32 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:18:32 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:18:32 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:18:32 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 21:18:32 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 21:18:32 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 21:18:32 base.py[line:166] INFO Scheduler started
+2020-05-06 21:18:32 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 21:18:32 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-06 21:18:32 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 21:18:40+08:00 (in 7.754543 seconds)
+2020-05-06 21:19:17 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:19:17 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:19:17 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-06 21:19:17 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-06 21:19:17 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-06 21:19:17 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-06 21:19:17 base.py[line:166] INFO Scheduler started
+2020-05-06 21:19:17 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-06 21:19:17 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-06 21:19:17 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-06 21:19:20+08:00 (in 2.009764 seconds)
+2020-05-08 15:04:12 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-08 15:04:12 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-08 15:04:12 base.py[line:166] INFO Scheduler started
+2020-05-08 15:04:12 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-08 15:04:12 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-08 15:20:00+08:00 (in 947.313670 seconds)
+2020-05-08 15:04:12 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-08 15:20:16 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-08 15:20:16 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-08 15:20:16 base.py[line:166] INFO Scheduler started
+2020-05-08 15:20:16 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-08 15:20:16 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-08 15:20:17+08:00 (in 0.350788 seconds)
+2020-05-08 15:20:16 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-08 15:24:56 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-08 15:24:56 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-08 15:24:56 base.py[line:166] INFO Scheduler started
+2020-05-08 15:24:56 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-08 15:24:56 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-08 15:40:00+08:00 (in 903.983333 seconds)
+2020-05-08 15:24:56 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-08 15:26:53 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-08 15:26:53 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-08 15:26:53 base.py[line:166] INFO Scheduler started
+2020-05-08 15:26:53 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-08 15:26:53 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-08 15:40:00+08:00 (in 786.629883 seconds)
+2020-05-08 15:26:53 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-08 15:27:51 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-08 15:27:51 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-08 15:27:51 base.py[line:166] INFO Scheduler started
+2020-05-08 15:27:51 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-08 15:27:51 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-08 15:40:00+08:00 (in 728.207190 seconds)
+2020-05-08 15:27:51 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-08 17:21:52 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-08 17:21:52 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-08 17:21:52 base.py[line:166] INFO Scheduler started
+2020-05-08 17:21:52 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-08 17:21:52 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-08 17:40:00+08:00 (in 1087.619401 seconds)
+2020-05-08 17:21:52 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-08 18:49:02 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-08 18:49:02 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-08 18:49:02 base.py[line:166] INFO Scheduler started
+2020-05-08 18:49:02 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-08 18:49:02 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-08 19:00:00+08:00 (in 657.833369 seconds)
+2020-05-08 18:49:02 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-08 18:59:57 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-08 18:59:57 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-08 18:59:57 base.py[line:166] INFO Scheduler started
+2020-05-08 18:59:57 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-08 18:59:57 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-08 19:00:00+08:00 (in 2.046773 seconds)
+2020-05-08 18:59:57 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-08 19:03:27 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-08 19:03:27 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-08 19:03:27 base.py[line:166] INFO Scheduler started
+2020-05-08 19:03:27 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-08 19:03:27 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-08 19:20:00+08:00 (in 992.789224 seconds)
+2020-05-08 19:03:27 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-08 20:13:39 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-08 20:13:39 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-08 20:13:39 base.py[line:166] INFO Scheduler started
+2020-05-08 20:13:39 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-08 20:13:39 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-08 20:20:00+08:00 (in 380.203755 seconds)
+2020-05-08 20:13:39 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-08 20:31:28 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-08 20:31:28 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-08 20:31:28 base.py[line:166] INFO Scheduler started
+2020-05-08 20:31:28 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-08 20:31:28 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-08 20:40:00+08:00 (in 511.658606 seconds)
+2020-05-08 20:31:28 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-08 20:34:28 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-08 20:34:28 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-08 20:34:28 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-08 20:34:28 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-08 20:34:28 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-08 20:34:28 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-08 20:34:28 base.py[line:166] INFO Scheduler started
+2020-05-08 20:34:28 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-08 20:34:28 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-08 20:34:29+08:00 (in 0.762603 seconds)
+2020-05-08 20:34:28 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-08 20:34:52 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-08 20:34:52 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-08 20:34:52 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-08 20:34:52 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-08 20:34:52 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-08 20:34:52 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-08 20:34:52 base.py[line:166] INFO Scheduler started
+2020-05-08 20:34:52 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-08 20:34:52 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-08 20:34:53+08:00 (in 0.555594 seconds)
+2020-05-08 20:34:52 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-08 20:35:30 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-08 20:35:30 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-08 20:35:30 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-08 20:35:30 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-08 20:35:30 base.py[line:881] INFO Added job "2_auto_verify_withdrawals" to job store "default"
+2020-05-08 20:35:30 base.py[line:881] INFO Added job "3_get_rank_data" to job store "default"
+2020-05-08 20:35:30 base.py[line:166] INFO Scheduler started
+2020-05-08 20:35:30 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-08 20:35:30 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-08 20:35:40+08:00 (in 9.482091 seconds)
+2020-05-08 20:35:30 factory.py[line:132] DEBUG Scheduler Started,---------------
+2020-05-09 09:14:33 base.py[line:440] INFO Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2020-05-09 09:14:33 base.py[line:881] INFO Added job "1_test_my_job" to job store "default"
+2020-05-09 09:14:33 base.py[line:166] INFO Scheduler started
+2020-05-09 09:14:33 base.py[line:940] DEBUG Looking for jobs to run
+2020-05-09 09:14:33 base.py[line:1020] DEBUG Next wakeup is due at 2020-05-09 09:20:00+08:00 (in 326.636768 seconds)
+2020-05-09 09:14:33 factory.py[line:132] DEBUG Scheduler Started,---------------

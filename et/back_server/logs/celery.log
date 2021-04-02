@@ -1,0 +1,119 @@
+[2020-05-06 17:29:59,998: INFO/MainProcess] Connected to redis://:**@r-j6c7np2thvyfdz85lcpd.redis.rds.aliyuncs.com:6379/0
+[2020-05-06 17:30:00,090: INFO/MainProcess] mingle: searching for neighbors
+[2020-05-06 17:30:01,251: INFO/MainProcess] mingle: sync with 1 nodes
+[2020-05-06 17:30:01,252: INFO/MainProcess] mingle: sync complete
+[2020-05-06 17:30:01,456: INFO/MainProcess] celery@2414fc35d2e7 ready.
+[2020-05-06 17:30:02,549: WARNING/MainProcess] Substantial drift from celery@6f0be971d117 may mean clocks are out of sync.  Current drift is
+79 seconds.  [orig: 2020-05-06 17:30:02.548892 recv: 2020-05-06 17:28:43.317776]
+
+[2020-05-06 17:56:49,269: INFO/MainProcess] Received task: app.celery.async_alipay_service[da08644f-2857-4e70-b6d3-0fbcfcc5aa5d]  
+[2020-05-06 17:56:51,081: INFO/ForkPoolWorker-7] Task app.celery.async_alipay_service[da08644f-2857-4e70-b6d3-0fbcfcc5aa5d] succeeded in 1.8105235560215078s: None
+[2020-05-06 18:02:40,243: INFO/MainProcess] Received task: app.celery.async_alipay_service[350b0707-bd5d-4f4e-aa18-a36673b521f7]  
+[2020-05-06 18:02:42,388: INFO/ForkPoolWorker-1] Task app.celery.async_alipay_service[350b0707-bd5d-4f4e-aa18-a36673b521f7] succeeded in 2.143450773030054s: None
+[2020-05-06 18:20:29,282: INFO/MainProcess] Received task: app.celery.async_alipay_service[7d1c6c99-edd7-44c1-b74f-5d72e908a2d8]  
+[2020-05-06 18:20:31,562: INFO/ForkPoolWorker-3] Task app.celery.async_alipay_service[7d1c6c99-edd7-44c1-b74f-5d72e908a2d8] succeeded in 2.2792300850269385s: None
+[2020-05-06 18:25:43,080: INFO/MainProcess] Connected to redis://:**@r-j6c7np2thvyfdz85lcpd.redis.rds.aliyuncs.com:6379/0
+[2020-05-06 18:25:43,123: INFO/MainProcess] mingle: searching for neighbors
+[2020-05-06 18:25:44,290: INFO/MainProcess] mingle: sync with 1 nodes
+[2020-05-06 18:25:44,290: INFO/MainProcess] mingle: sync complete
+[2020-05-06 18:25:44,529: INFO/MainProcess] celery@a5dc9751a8da ready.
+[2020-05-06 18:25:44,808: WARNING/MainProcess] Substantial drift from celery@6f0be971d117 may mean clocks are out of sync.  Current drift is
+79 seconds.  [orig: 2020-05-06 18:25:44.808288 recv: 2020-05-06 18:24:25.557212]
+
+[2020-05-06 18:33:06,973: INFO/MainProcess] Connected to redis://:**@r-j6c7np2thvyfdz85lcpd.redis.rds.aliyuncs.com:6379/0
+[2020-05-06 18:33:07,019: INFO/MainProcess] mingle: searching for neighbors
+[2020-05-06 18:33:08,183: INFO/MainProcess] mingle: sync with 1 nodes
+[2020-05-06 18:33:08,184: INFO/MainProcess] mingle: sync complete
+[2020-05-06 18:33:08,414: INFO/MainProcess] celery@c0dd1bf7a58b ready.
+[2020-05-06 18:33:09,377: WARNING/MainProcess] Substantial drift from celery@6f0be971d117 may mean clocks are out of sync.  Current drift is
+79 seconds.  [orig: 2020-05-06 18:33:09.376800 recv: 2020-05-06 18:31:50.122108]
+
+[2020-05-06 18:48:43,835: INFO/MainProcess] Connected to redis://:**@r-j6c7np2thvyfdz85lcpd.redis.rds.aliyuncs.com:6379/0
+[2020-05-06 18:48:43,879: INFO/MainProcess] mingle: searching for neighbors
+[2020-05-06 18:48:45,043: INFO/MainProcess] mingle: sync with 1 nodes
+[2020-05-06 18:48:45,044: INFO/MainProcess] mingle: sync complete
+[2020-05-06 18:48:45,296: INFO/MainProcess] celery@9751c5baed68 ready.
+[2020-05-06 18:48:46,577: WARNING/MainProcess] Substantial drift from celery@6f0be971d117 may mean clocks are out of sync.  Current drift is
+79 seconds.  [orig: 2020-05-06 18:48:46.577025 recv: 2020-05-06 18:47:27.316576]
+
+[2020-05-06 18:53:15,148: INFO/MainProcess] missed heartbeat from celery@6f0be971d117
+[2020-05-06 18:55:15,814: WARNING/MainProcess] Substantial drift from celery@25a7e65c1182 may mean clocks are out of sync.  Current drift is
+79 seconds.  [orig: 2020-05-06 18:55:15.814513 recv: 2020-05-06 18:53:56.549585]
+
+[2020-05-06 18:55:15,832: INFO/MainProcess] sync with celery@25a7e65c1182
+[2020-05-06 18:57:09,333: INFO/MainProcess] Received task: app.celery.async_alipay_service[8916d983-7e2e-499e-8c60-e6d39a28469d]  
+[2020-05-06 18:57:11,151: INFO/ForkPoolWorker-7] Task app.celery.async_alipay_service[8916d983-7e2e-499e-8c60-e6d39a28469d] succeeded in 1.8171103509957902s: None
+[2020-05-06 18:58:50,133: INFO/MainProcess] Received task: app.celery.async_alipay_service[386db2d6-db39-4d16-8d4c-8435a5c25af6]  
+[2020-05-06 18:58:51,873: INFO/ForkPoolWorker-1] Task app.celery.async_alipay_service[386db2d6-db39-4d16-8d4c-8435a5c25af6] succeeded in 1.739598588028457s: None
+[2020-05-06 19:03:49,294: INFO/MainProcess] Received task: app.celery.async_alipay_service[e93cf0a0-ebac-4e4d-8dcd-810cc36648e3]  
+[2020-05-06 19:03:51,058: INFO/ForkPoolWorker-3] Task app.celery.async_alipay_service[e93cf0a0-ebac-4e4d-8dcd-810cc36648e3] succeeded in 1.7632327260216698s: None
+[2020-05-06 19:17:39,301: INFO/MainProcess] Received task: app.celery.async_alipay_service[0b3bb7d2-a3fd-487b-8722-39d1323cbecd]  
+[2020-05-06 19:17:41,261: INFO/ForkPoolWorker-5] Task app.celery.async_alipay_service[0b3bb7d2-a3fd-487b-8722-39d1323cbecd] succeeded in 1.9595111859962344s: None
+[2020-05-06 19:17:49,298: INFO/MainProcess] Received task: app.celery.async_alipay_service[0d733328-7097-493b-aa92-d8150e22ef66]  
+[2020-05-06 19:17:50,911: INFO/ForkPoolWorker-7] Task app.celery.async_alipay_service[0d733328-7097-493b-aa92-d8150e22ef66] succeeded in 1.6121474530082196s: None
+[2020-05-06 19:33:59,310: INFO/MainProcess] Received task: app.celery.async_alipay_service[b61ab8f3-a04d-40c5-a6f1-17f2adb6f436]  
+[2020-05-06 19:34:00,881: INFO/ForkPoolWorker-1] Task app.celery.async_alipay_service[b61ab8f3-a04d-40c5-a6f1-17f2adb6f436] succeeded in 1.5698221510392614s: None
+[2020-05-06 20:04:09,315: INFO/MainProcess] Received task: app.celery.async_alipay_service[670c2882-1340-404f-a34a-be52959b43b9]  
+[2020-05-06 20:04:11,047: INFO/ForkPoolWorker-3] Task app.celery.async_alipay_service[670c2882-1340-404f-a34a-be52959b43b9] succeeded in 1.7297820880194195s: None
+[2020-05-06 20:08:39,220: INFO/MainProcess] missed heartbeat from celery@25a7e65c1182
+[2020-05-06 20:09:04,227: INFO/MainProcess] missed heartbeat from celery@25a7e65c1182
+[2020-05-06 20:10:17,373: INFO/MainProcess] missed heartbeat from celery@25a7e65c1182
+[2020-05-06 20:10:17,374: WARNING/MainProcess] consumer: Connection to broker lost. Trying to re-establish the connection...
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/redis/connection.py", line 182, in _read_from_socket
+    data = recv(self._sock, socket_read_size)
+  File "/usr/local/lib/python3.7/site-packages/redis/_compat.py", line 58, in recv
+    return sock.recv(*args, **kwargs)
+ConnectionResetError: [Errno 104] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.7/site-packages/celery/worker/consumer/consumer.py", line 318, in start
+    blueprint.start(self)
+  File "/usr/local/lib/python3.7/site-packages/celery/bootsteps.py", line 119, in start
+    step.start(parent)
+  File "/usr/local/lib/python3.7/site-packages/celery/worker/consumer/consumer.py", line 596, in start
+    c.loop(*c.loop_args())
+  File "/usr/local/lib/python3.7/site-packages/celery/worker/loops.py", line 91, in asynloop
+    next(loop)
+  File "/usr/local/lib/python3.7/site-packages/kombu/asynchronous/hub.py", line 364, in create_loop
+    cb(*cbargs)
+  File "/usr/local/lib/python3.7/site-packages/kombu/transport/redis.py", line 1088, in on_readable
+    self.cycle.on_readable(fileno)
+  File "/usr/local/lib/python3.7/site-packages/kombu/transport/redis.py", line 359, in on_readable
+    chan.handlers[type]()
+  File "/usr/local/lib/python3.7/site-packages/kombu/transport/redis.py", line 693, in _receive
+    ret.append(self._receive_one(c))
+  File "/usr/local/lib/python3.7/site-packages/kombu/transport/redis.py", line 703, in _receive_one
+    response = c.parse_response()
+  File "/usr/local/lib/python3.7/site-packages/redis/client.py", line 3036, in parse_response
+    return self._execute(connection, connection.read_response)
+  File "/usr/local/lib/python3.7/site-packages/redis/client.py", line 3013, in _execute
+    return command(*args)
+  File "/usr/local/lib/python3.7/site-packages/redis/connection.py", line 637, in read_response
+    response = self._parser.read_response()
+  File "/usr/local/lib/python3.7/site-packages/redis/connection.py", line 290, in read_response
+    response = self._buffer.readline()
+  File "/usr/local/lib/python3.7/site-packages/redis/connection.py", line 224, in readline
+    self._read_from_socket()
+  File "/usr/local/lib/python3.7/site-packages/redis/connection.py", line 199, in _read_from_socket
+    (e.args,))
+redis.exceptions.ConnectionError: Error while reading from socket: (104, 'Connection reset by peer')
+[2020-05-06 20:10:17,640: INFO/MainProcess] Connected to redis://:**@r-j6c7np2thvyfdz85lcpd.redis.rds.aliyuncs.com:6379/0
+[2020-05-06 20:10:17,683: INFO/MainProcess] mingle: searching for neighbors
+[2020-05-06 20:10:18,799: INFO/MainProcess] mingle: sync with 1 nodes
+[2020-05-06 20:10:18,799: INFO/MainProcess] mingle: sync complete
+[2020-05-06 20:14:19,318: INFO/MainProcess] Received task: app.celery.async_alipay_service[2812f120-8555-4724-a056-396f229f884d]  
+[2020-05-06 20:14:34,677: INFO/ForkPoolWorker-7] +提现失败金额：
+[2020-05-06 20:14:34,677: INFO/ForkPoolWorker-7] 0.3
+[2020-05-06 20:14:34,853: INFO/ForkPoolWorker-7] 支付宝提现系统升级中！支付宝提现系统升级中！请销后尝试
+[2020-05-06 20:14:34,901: INFO/ForkPoolWorker-7] Task app.celery.async_alipay_service[2812f120-8555-4724-a056-396f229f884d] succeeded in 15.5814161929884s: '支付宝提现系统升级中！支付宝提现系统升级中！请销后尝试'
+[2020-05-06 21:18:32,798: INFO/MainProcess] Connected to redis://:**@r-j6c7np2thvyfdz85lcpd.redis.rds.aliyuncs.com:6379/0
+[2020-05-06 21:18:32,840: INFO/MainProcess] mingle: searching for neighbors
+[2020-05-06 21:18:34,036: INFO/MainProcess] mingle: sync with 1 nodes
+[2020-05-06 21:18:34,036: INFO/MainProcess] mingle: sync complete
+[2020-05-06 21:18:34,271: INFO/MainProcess] celery@d08fdd39a616 ready.
+[2020-05-06 21:18:35,200: WARNING/MainProcess] Substantial drift from celery@25a7e65c1182 may mean clocks are out of sync.  Current drift is
+80 seconds.  [orig: 2020-05-06 21:18:35.200408 recv: 2020-05-06 21:17:15.888169]
+

@@ -1,0 +1,370 @@
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:53:40 CST)" (scheduled at 2020-05-09 06:53:40+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:53:50 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:53:50 CST)" (scheduled at 2020-05-09 06:53:50+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:54:00 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:54:00 CST)" (scheduled at 2020-05-09 06:54:00+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:54:10 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:54:10 CST)" (scheduled at 2020-05-09 06:54:10+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:54:20 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:54:20 CST)" (scheduled at 2020-05-09 06:54:20+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:54:30 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:54:30 CST)" (scheduled at 2020-05-09 06:54:30+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:54:40 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:54:40 CST)" (scheduled at 2020-05-09 06:54:40+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:54:50 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:54:50 CST)" (scheduled at 2020-05-09 06:54:50+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:55:00 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:55:00 CST)" (scheduled at 2020-05-09 06:55:00+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:55:10 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:55:10 CST)" (scheduled at 2020-05-09 06:55:10+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:55:20 CST)" executed successfully
+0
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_add_url_route', '_apply_auth', '_authentication_callback', '_handle_authentication_error', '_host_name', '_load_api', '_load_config', '_load_jobs', '_scheduler', 'add_job', 'add_listener', 'allowed_hosts', 'api_enabled', 'api_prefix', 'app', 'auth', 'authenticate', 'delete_all_jobs', 'delete_job', 'endpoint_prefix', 'get_job', 'get_jobs', 'host_name', 'init_app', 'modify_job', 'pause', 'pause_job', 'remove_all_jobs', 'remove_job', 'remove_listener', 'resume', 'resume_job', 'run_job', 'running', 'scheduler', 'shutdown', 'start', 'state', 'task']
+[]
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:55:30 CST)" (scheduled at 2020-05-09 06:55:20+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:55:30 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:55:40 CST)" (scheduled at 2020-05-09 06:55:30+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:55:40 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:55:50 CST)" (scheduled at 2020-05-09 06:55:40+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:55:50 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:56:00 CST)" (scheduled at 2020-05-09 06:55:50+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:56:00 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:56:10 CST)" (scheduled at 2020-05-09 06:56:00+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:56:10 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:56:20 CST)" (scheduled at 2020-05-09 06:56:10+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:56:20 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:56:30 CST)" (scheduled at 2020-05-09 06:56:20+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:56:30 CST)" executed successfully
+0
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_add_url_route', '_apply_auth', '_authentication_callback', '_handle_authentication_error', '_host_name', '_load_api', '_load_config', '_load_jobs', '_scheduler', 'add_job', 'add_listener', 'allowed_hosts', 'api_enabled', 'api_prefix', 'app', 'auth', 'authenticate', 'delete_all_jobs', 'delete_job', 'endpoint_prefix', 'get_job', 'get_jobs', 'host_name', 'init_app', 'modify_job', 'pause', 'pause_job', 'remove_all_jobs', 'remove_job', 'remove_listener', 'resume', 'resume_job', 'run_job', 'running', 'scheduler', 'shutdown', 'start', 'state', 'task']
+[]
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:56:40 CST)" (scheduled at 2020-05-09 06:56:30+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:56:40 CST)" executed successfully
+0
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_add_url_route', '_apply_auth', '_authentication_callback', '_handle_authentication_error', '_host_name', '_load_api', '_load_config', '_load_jobs', '_scheduler', 'add_job', 'add_listener', 'allowed_hosts', 'api_enabled', 'api_prefix', 'app', 'auth', 'authenticate', 'delete_all_jobs', 'delete_job', 'endpoint_prefix', 'get_job', 'get_jobs', 'host_name', 'init_app', 'modify_job', 'pause', 'pause_job', 'remove_all_jobs', 'remove_job', 'remove_listener', 'resume', 'resume_job', 'run_job', 'running', 'scheduler', 'shutdown', 'start', 'state', 'task']
+[]
+0
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_add_url_route', '_apply_auth', '_authentication_callback', '_handle_authentication_error', '_host_name', '_load_api', '_load_config', '_load_jobs', '_scheduler', 'add_job', 'add_listener', 'allowed_hosts', 'api_enabled', 'api_prefix', 'app', 'auth', 'authenticate', 'delete_all_jobs', 'delete_job', 'endpoint_prefix', 'get_job', 'get_jobs', 'host_name', 'init_app', 'modify_job', 'pause', 'pause_job', 'remove_all_jobs', 'remove_job', 'remove_listener', 'resume', 'resume_job', 'run_job', 'running', 'scheduler', 'shutdown', 'start', 'state', 'task']
+[]
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:56:40 CST)" (scheduled at 2020-05-09 06:56:40+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:56:50 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:56:50 CST)" (scheduled at 2020-05-09 06:56:50+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:57:00 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:57:00 CST)" (scheduled at 2020-05-09 06:57:00+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:57:10 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:57:10 CST)" (scheduled at 2020-05-09 06:57:10+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:57:20 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:57:20 CST)" (scheduled at 2020-05-09 06:57:20+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:57:30 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:57:30 CST)" (scheduled at 2020-05-09 06:57:30+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:57:40 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:57:40 CST)" (scheduled at 2020-05-09 06:57:40+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:57:50 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:57:50 CST)" (scheduled at 2020-05-09 06:57:50+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:58:00 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:58:00 CST)" (scheduled at 2020-05-09 06:58:00+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:58:10 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:58:20 CST)" (scheduled at 2020-05-09 06:58:10+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:58:20 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:58:30 CST)" (scheduled at 2020-05-09 06:58:20+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:58:30 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:58:40 CST)" (scheduled at 2020-05-09 06:58:30+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:58:40 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:58:50 CST)" (scheduled at 2020-05-09 06:58:40+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:58:50 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:59:00 CST)" (scheduled at 2020-05-09 06:58:50+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:59:00 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:59:10 CST)" (scheduled at 2020-05-09 06:59:00+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:59:10 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:59:20 CST)" (scheduled at 2020-05-09 06:59:10+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:59:20 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:59:30 CST)" (scheduled at 2020-05-09 06:59:20+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:59:30 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:59:40 CST)" (scheduled at 2020-05-09 06:59:30+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:59:40 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:59:50 CST)" (scheduled at 2020-05-09 06:59:40+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 06:59:50 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:00:00 CST)" (scheduled at 2020-05-09 06:59:50+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:00:00 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:01 CST)" (scheduled at 2020-05-09 07:00:00+08:00)
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:00:10 CST)" (scheduled at 2020-05-09 07:00:00+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:01 CST)" (scheduled at 2020-05-09 07:00:00+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:01 CST)" executed successfully
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:00:10 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:01 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:02 CST)" (scheduled at 2020-05-09 07:00:01+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:02 CST)" (scheduled at 2020-05-09 07:00:01+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:02 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:02 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:03 CST)" (scheduled at 2020-05-09 07:00:02+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:03 CST)" (scheduled at 2020-05-09 07:00:02+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:03 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:03 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:04 CST)" (scheduled at 2020-05-09 07:00:03+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:04 CST)" (scheduled at 2020-05-09 07:00:03+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:04 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:04 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:05 CST)" (scheduled at 2020-05-09 07:00:04+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:05 CST)" (scheduled at 2020-05-09 07:00:04+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:05 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:05 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:06 CST)" (scheduled at 2020-05-09 07:00:05+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:06 CST)" (scheduled at 2020-05-09 07:00:05+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:06 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:06 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:07 CST)" (scheduled at 2020-05-09 07:00:06+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:07 CST)" (scheduled at 2020-05-09 07:00:06+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:07 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:07 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:08 CST)" (scheduled at 2020-05-09 07:00:07+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:08 CST)" (scheduled at 2020-05-09 07:00:07+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:08 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:08 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:09 CST)" (scheduled at 2020-05-09 07:00:08+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:09 CST)" (scheduled at 2020-05-09 07:00:08+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:09 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:09 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:10 CST)" (scheduled at 2020-05-09 07:00:09+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:10 CST)" (scheduled at 2020-05-09 07:00:09+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:10 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:10 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:11 CST)" (scheduled at 2020-05-09 07:00:10+08:00)
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:00:20 CST)" (scheduled at 2020-05-09 07:00:10+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:11 CST)" (scheduled at 2020-05-09 07:00:10+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:11 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:11 CST)" executed successfully
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:00:20 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:12 CST)" (scheduled at 2020-05-09 07:00:11+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:12 CST)" (scheduled at 2020-05-09 07:00:11+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:12 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:12 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:13 CST)" (scheduled at 2020-05-09 07:00:12+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:13 CST)" (scheduled at 2020-05-09 07:00:12+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:13 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:13 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:14 CST)" (scheduled at 2020-05-09 07:00:13+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:14 CST)" (scheduled at 2020-05-09 07:00:13+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:14 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:14 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:15 CST)" (scheduled at 2020-05-09 07:00:14+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:15 CST)" (scheduled at 2020-05-09 07:00:14+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:15 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:15 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:16 CST)" (scheduled at 2020-05-09 07:00:15+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:16 CST)" (scheduled at 2020-05-09 07:00:15+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:16 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:16 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:17 CST)" (scheduled at 2020-05-09 07:00:16+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:17 CST)" (scheduled at 2020-05-09 07:00:16+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:17 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:17 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:18 CST)" (scheduled at 2020-05-09 07:00:17+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:18 CST)" (scheduled at 2020-05-09 07:00:17+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:18 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:18 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:19 CST)" (scheduled at 2020-05-09 07:00:18+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:19 CST)" (scheduled at 2020-05-09 07:00:18+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:19 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:19 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:20 CST)" (scheduled at 2020-05-09 07:00:19+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:20 CST)" (scheduled at 2020-05-09 07:00:19+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:20 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:20 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:21 CST)" (scheduled at 2020-05-09 07:00:20+08:00)
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:00:30 CST)" (scheduled at 2020-05-09 07:00:20+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:21 CST)" (scheduled at 2020-05-09 07:00:20+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:21 CST)" executed successfully
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:00:30 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:21 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:22 CST)" (scheduled at 2020-05-09 07:00:21+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:22 CST)" (scheduled at 2020-05-09 07:00:21+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:22 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:22 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:23 CST)" (scheduled at 2020-05-09 07:00:22+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:23 CST)" (scheduled at 2020-05-09 07:00:22+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:23 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:23 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:24 CST)" (scheduled at 2020-05-09 07:00:23+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:24 CST)" (scheduled at 2020-05-09 07:00:23+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:24 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:24 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:25 CST)" (scheduled at 2020-05-09 07:00:24+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:25 CST)" (scheduled at 2020-05-09 07:00:24+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:25 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:25 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:26 CST)" (scheduled at 2020-05-09 07:00:25+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:26 CST)" (scheduled at 2020-05-09 07:00:25+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:26 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:26 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:27 CST)" (scheduled at 2020-05-09 07:00:26+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:27 CST)" (scheduled at 2020-05-09 07:00:26+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:27 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:27 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:28 CST)" (scheduled at 2020-05-09 07:00:27+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:28 CST)" (scheduled at 2020-05-09 07:00:27+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:28 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:28 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:29 CST)" (scheduled at 2020-05-09 07:00:28+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:29 CST)" (scheduled at 2020-05-09 07:00:28+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:29 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:29 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:30 CST)" (scheduled at 2020-05-09 07:00:29+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:30 CST)" (scheduled at 2020-05-09 07:00:29+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:30 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:30 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:31 CST)" (scheduled at 2020-05-09 07:00:30+08:00)
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:00:40 CST)" (scheduled at 2020-05-09 07:00:30+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:31 CST)" (scheduled at 2020-05-09 07:00:30+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:31 CST)" executed successfully
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:00:40 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:31 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:32 CST)" (scheduled at 2020-05-09 07:00:31+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:32 CST)" (scheduled at 2020-05-09 07:00:31+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:32 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:32 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:33 CST)" (scheduled at 2020-05-09 07:00:32+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:33 CST)" (scheduled at 2020-05-09 07:00:32+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:33 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:33 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:34 CST)" (scheduled at 2020-05-09 07:00:33+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:34 CST)" (scheduled at 2020-05-09 07:00:33+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:34 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:34 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:35 CST)" (scheduled at 2020-05-09 07:00:34+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:35 CST)" (scheduled at 2020-05-09 07:00:34+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:35 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:35 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:36 CST)" (scheduled at 2020-05-09 07:00:35+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:36 CST)" (scheduled at 2020-05-09 07:00:35+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:36 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:36 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:37 CST)" (scheduled at 2020-05-09 07:00:36+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:37 CST)" (scheduled at 2020-05-09 07:00:36+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:37 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:37 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:38 CST)" (scheduled at 2020-05-09 07:00:37+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:38 CST)" (scheduled at 2020-05-09 07:00:37+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:38 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:38 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:39 CST)" (scheduled at 2020-05-09 07:00:38+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:39 CST)" (scheduled at 2020-05-09 07:00:38+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:39 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:39 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:40 CST)" (scheduled at 2020-05-09 07:00:39+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:40 CST)" (scheduled at 2020-05-09 07:00:39+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:40 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:40 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:41 CST)" (scheduled at 2020-05-09 07:00:40+08:00)
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:00:50 CST)" (scheduled at 2020-05-09 07:00:40+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:41 CST)" (scheduled at 2020-05-09 07:00:40+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:41 CST)" executed successfully
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:00:50 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:41 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:42 CST)" (scheduled at 2020-05-09 07:00:41+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:42 CST)" (scheduled at 2020-05-09 07:00:41+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:42 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:42 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:43 CST)" (scheduled at 2020-05-09 07:00:42+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:43 CST)" (scheduled at 2020-05-09 07:00:42+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:43 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:43 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:44 CST)" (scheduled at 2020-05-09 07:00:43+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:44 CST)" (scheduled at 2020-05-09 07:00:43+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:44 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:44 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:45 CST)" (scheduled at 2020-05-09 07:00:44+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:45 CST)" (scheduled at 2020-05-09 07:00:44+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:45 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:45 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:46 CST)" (scheduled at 2020-05-09 07:00:45+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:46 CST)" (scheduled at 2020-05-09 07:00:45+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:46 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:46 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:47 CST)" (scheduled at 2020-05-09 07:00:46+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:47 CST)" (scheduled at 2020-05-09 07:00:46+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:47 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:47 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:48 CST)" (scheduled at 2020-05-09 07:00:47+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:48 CST)" (scheduled at 2020-05-09 07:00:47+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:48 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:48 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:49 CST)" (scheduled at 2020-05-09 07:00:48+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:49 CST)" (scheduled at 2020-05-09 07:00:48+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:49 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:49 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:50 CST)" (scheduled at 2020-05-09 07:00:49+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:50 CST)" (scheduled at 2020-05-09 07:00:49+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:50 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:50 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:51 CST)" (scheduled at 2020-05-09 07:00:50+08:00)
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:01:00 CST)" (scheduled at 2020-05-09 07:00:50+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:51 CST)" (scheduled at 2020-05-09 07:00:50+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:51 CST)" executed successfully
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:01:00 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:51 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:52 CST)" (scheduled at 2020-05-09 07:00:51+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:52 CST)" (scheduled at 2020-05-09 07:00:51+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:52 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:52 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:53 CST)" (scheduled at 2020-05-09 07:00:52+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:53 CST)" (scheduled at 2020-05-09 07:00:52+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:53 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:53 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:54 CST)" (scheduled at 2020-05-09 07:00:53+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:54 CST)" (scheduled at 2020-05-09 07:00:53+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:54 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:54 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:55 CST)" (scheduled at 2020-05-09 07:00:54+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:55 CST)" (scheduled at 2020-05-09 07:00:54+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:55 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:55 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:56 CST)" (scheduled at 2020-05-09 07:00:55+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:56 CST)" (scheduled at 2020-05-09 07:00:55+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:56 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:56 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:57 CST)" (scheduled at 2020-05-09 07:00:56+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:57 CST)" (scheduled at 2020-05-09 07:00:56+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:57 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:57 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:58 CST)" (scheduled at 2020-05-09 07:00:57+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:58 CST)" (scheduled at 2020-05-09 07:00:57+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:58 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:58 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:59 CST)" (scheduled at 2020-05-09 07:00:58+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:59 CST)" (scheduled at 2020-05-09 07:00:58+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:00:59 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:00:59 CST)" executed successfully
+Running job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:20:00 CST)" (scheduled at 2020-05-09 07:00:59+08:00)
+Running job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:10:00 CST)" (scheduled at 2020-05-09 07:00:59+08:00)
+Job "1_test_my_job (trigger: cron[hour='*', minute='*/20', second='*'], next run at: 2020-05-09 07:20:00 CST)" executed successfully
+Job "3_get_rank_data (trigger: cron[hour='*', minute='*/10', second='*'], next run at: 2020-05-09 07:10:00 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:01:10 CST)" (scheduled at 2020-05-09 07:01:00+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:01:10 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:01:20 CST)" (scheduled at 2020-05-09 07:01:10+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:01:20 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:01:30 CST)" (scheduled at 2020-05-09 07:01:20+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:01:30 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:01:40 CST)" (scheduled at 2020-05-09 07:01:30+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:01:40 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:01:50 CST)" (scheduled at 2020-05-09 07:01:40+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:01:50 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:02:00 CST)" (scheduled at 2020-05-09 07:01:50+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:02:00 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:02:10 CST)" (scheduled at 2020-05-09 07:02:00+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:02:10 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:02:20 CST)" (scheduled at 2020-05-09 07:02:10+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:02:20 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:02:30 CST)" (scheduled at 2020-05-09 07:02:20+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:02:30 CST)" executed successfully
+0
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_add_url_route', '_apply_auth', '_authentication_callback', '_handle_authentication_error', '_host_name', '_load_api', '_load_config', '_load_jobs', '_scheduler', 'add_job', 'add_listener', 'allowed_hosts', 'api_enabled', 'api_prefix', 'app', 'auth', 'authenticate', 'delete_all_jobs', 'delete_job', 'endpoint_prefix', 'get_job', 'get_jobs', 'host_name', 'init_app', 'modify_job', 'pause', 'pause_job', 'remove_all_jobs', 'remove_job', 'remove_listener', 'resume', 'resume_job', 'run_job', 'running', 'scheduler', 'shutdown', 'start', 'state', 'task']
+[]
+0
+['__class__', '__delattr__', '__dict__', '__dir__', '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__le__', '__lt__', '__module__', '__ne__', '__new__', '__reduce__', '__reduce_ex__', '__repr__', '__setattr__', '__sizeof__', '__str__', '__subclasshook__', '__weakref__', '_add_url_route', '_apply_auth', '_authentication_callback', '_handle_authentication_error', '_host_name', '_load_api', '_load_config', '_load_jobs', '_scheduler', 'add_job', 'add_listener', 'allowed_hosts', 'api_enabled', 'api_prefix', 'app', 'auth', 'authenticate', 'delete_all_jobs', 'delete_job', 'endpoint_prefix', 'get_job', 'get_jobs', 'host_name', 'init_app', 'modify_job', 'pause', 'pause_job', 'remove_all_jobs', 'remove_job', 'remove_listener', 'resume', 'resume_job', 'run_job', 'running', 'scheduler', 'shutdown', 'start', 'state', 'task']
+[]
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:02:40 CST)" (scheduled at 2020-05-09 07:02:30+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:02:40 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:02:50 CST)" (scheduled at 2020-05-09 07:02:40+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:02:50 CST)" executed successfully
+Running job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:03:00 CST)" (scheduled at 2020-05-09 07:02:50+08:00)
+Job "2_auto_verify_withdrawals (trigger: cron[hour='*', minute='*', second='*/10'], next run at: 2020-05-09 07:03:00 CST)" executed successfully

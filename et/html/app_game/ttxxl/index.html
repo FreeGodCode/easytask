@@ -1,0 +1,273 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style" />
+	<meta name="format-detection" content="telephone=no">
+	<title>开心消消乐</title>
+	
+	<style>
+		/* CSS Document */
+		html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,section, article, aside, header, footer, nav, dialog, figure,menu,hgroup,iframe{ margin:0; padding:0; border:0; -webkit-font-smoothing:antialiased; font-family:"Microsoft YaHei","Lantinghei SC", "Open Sans", Arial, "Hiragino Sans GB",  "STHeiti", "WenQuanYi Micro Hei", SimSun, sans-serif; }
+		html{ -webkit-text-size-adjust:none;}
+		body{ font-size:12px; line-height:24px; background-color:#edf1f4;  -webkit-font-smoothing: antialiased; -moz-font-smoothing: antialiased;  font-smoothing: antialiased;  color:#333;max-width: 1200px; margin:0 auto;}
+		input,textarea{ resize:none; font-family:"Microsoft YaHei"; border-radius:0; background: #fff;border: 0; }
+		img{ border:none;vertical-align:middle; -ms-interpolation-mode: bicubic; max-width:100%;}
+		ul,li{ list-style:none;}
+		a{ text-decoration:none; color:#333; outline:none; -webkit-transition: color 0.3s ease; transition: color 0.3s ease; }
+		a:hover{ color:#ff4400;}
+		input:focus,textarea:focus{ outline:none; }
+		h1,h2,h3{  font-weight:normal;} 
+		body{background: #ffffff; padding-bottom:.77rem; }
+		.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0} 
+		.clearfloat{zoom:1}
+		.box{width: 100%; height: auto;}
+		.top_box{width: 100%; height:auto; display: block;}
+		.top_box img{ max-width: 100%; height: auto;}
+		.icon_box { background: url(http://static.hfj447.com/app_game/xxl/Images/border01.jpg) no-repeat bottom;  background-size: 100%;  }
+		.icon_box .icon1{ width:100%;display: block; box-sizing: border-box; padding-left: .19rem; padding-top: .21rem;}
+		.icon_box .icon1 img{ display: inline-block; float: left;width: 1.00rem;height: 1.00rem;}
+		.icon_box .name{ display: inline-block; float: left; width:1.3rem; padding-left: .13rem; padding-top: .07rem;}
+		.font01{ font-size: .2rem; color: #000000; font-weight: bold; line-height: .2rem;}
+		.font02{ font-size: .14rem; color: #8e8e93; line-height: .14rem; padding-top: .07rem; padding-bottom: .2rem;}
+		.icon_box .name a{ width:1.3rem; height: .30rem;border：0; background: #3478f6; border-radius: .15rem; display: block;line-height: .30rem; text-align: center; color: #fff; font-size: .14rem;}
+		.pingfen{width: 98%; height:.55rem; display: block; padding-left:2%; padding-top:4%;}
+		.pingfen li{float: left; line-height: 2em; display: inline-block;  width: 20%; margin-right: 3%;text-align: center;}
+		.pingfen li span{ display: block; color: #8e8f93;}
+		.pingfen li.li01{width: 36%; margin-left:4%; margin-right: 6%;text-align: left; }
+		.pingfen li.li03{width: 20%; margin-left:4%; margin-right: 6%; float: right; display: inline-block; }
+		.pingfen li span.pf01{font-size: .17rem; line-height: 1.5em; font-weight: bold;}
+		.pingfen li span.pf02{font-size: 14px; line-height: 1.5em; color: #c7c7cb;}
+		.pingfen li span.p01bg{ background:url(http://static.hfj447.com/app_game/xxl/Images/star5.png) no-repeat right;  background-size: 79% 68%; box-sizing: border-box;  }
+		.common-tit{ padding-left:0; width: 100%; height: 2em; font-size:20px; }
+		.common-tit ul li{width: 40%;height: 40%;}
+		.common-tit ul li .top-imgs{width: 40%; height: 40%;}
+		.swiper-wrapper li{ padding:0 .075rem; box-sizing: border-box; }
+		
+		.box2{padding-left: 5%; width:100%; background: url(http://static.hfj447.com/app_game/xxl/Images/border01.jpg) no-repeat bottom; background-size: 100%;  height: 1.5rem; box-sizing: border-box;}
+		.box2 .kx-cid{font-size: .2rem; height: .2rem; padding-top: .2rem; padding-bottom: .1rem;}
+		.box2 p{ font-size:.14rem; line-height: .21rem; width: 95%;}
+		.dsda{font-size: 14px; line-height: 1.7em; background: url(http://static.hfj447.com/app_game/xxl/Images/border01.jpg) no-repeat bottom;  height: .9rem; padding-top: .1rem;}
+
+		.pf_box{ width: 90%; margin: 5%;}
+		.pf_box h1{ font-size: 16px; font-weight: bold; line-height: 2em;height: 2em;}
+		.pf_box h2 img{width: 25%; height: 25%; padding-left: 1%;}
+		.pf_box p{font-size: 14px; line-height: 1.5em; margin-top: 3%;}
+		.pf_img{margin-bottom:5%; background: url(http://static.hfj447.com/app_game/xxl/Images/border01.jpg) no-repeat bottom; padding-bottom: .15rem;}
+		.pl_01{width: 94%; height: 180px; line-height: 1.5em; background:#f0f0f7; border-radio:10px; height:100%; border-radius: 10px;  margin-bottom:5%; padding:3%;}
+
+		.banquan{width: 90%; height: 100%;  margin:5%;}
+		.banquan p{width: 100%; color: #7e7e7e; text-align: center; font-size: 10px; line-height: 1.5em;}
+
+
+		.qz-bg-05{width: 90%; height: 100%;  padding-top:3%; margin-left: 5%; overflow:hidden;}
+		.float_box-bg{ width: 100%;height: .77rem; background: #f0f0f7; position: fixed; bottom: 0; left: 0;z-index: 2; }
+		.float_box{width: 2.05rem;height: .55rem; text-align: center;margin:0 auto; box-sizing: border-box; padding-top: .1rem;}
+		.float_box .flaot_icon{ width: .55rem;height:.55rem;   display: inline-block; float: left;  }
+		.float_box .flaot_icon img{ width: 100%;}
+		.float_box .float_text{  display: inline-block; width:1.4rem; height: .55rem; float: left; margin-left: .1rem;}
+		.float_box .float_text h1{width:100%; height: .25rem; line-height: .25rem;font-size: .13rem; font-weight:bold;}
+		.float_box .float_text p{width: 100%; }
+		.float_box .float_text p a{ width: 1.4rem; height: .3rem; background: #3478f6; display:block; border-radius: .142rem; text-align: center; line-height: .3rem; color: #fff;font-size: .14rem;}
+
+
+		@media screen and (min-width:320px){
+        html{font-size: 85.3px;}
+        }
+        @media screen and (min-width:360px){
+        html{font-size: 96px;}
+        }
+        @media screen and (min-width:375px){
+        html{font-size: 100px;}
+        }
+        @media screen and (min-width:412px){
+        html{font-size: 110px;}
+        }
+        @media screen and (min-width:414px){
+        html{font-size: 110.4px;}
+        }
+        @media screen and (min-width:540px){
+        html{font-size: 144px;}
+        }
+        @media screen and (min-width:562.5px){
+        html{font-size: 150px;}
+        }
+        @media screen and (min-width:768px){
+        html{font-size: 204.8px;}
+        }
+	</style>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">
+	<script src="http://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var swiper = new Swiper('.swiper-container', {
+				watchSlidesProgress : true,
+				watchSlidesVisibility : true,
+				slidesPerView : 2,
+			        pagination: '.swiper-pagination',
+			        autoplay: 5000,
+			        loop : true,
+			        paginationClickable: true,
+			        autoplayDisableOnInteraction:false,
+			         paginationBulletRender: function (swiper, index, className) {
+					      return '<span class="' + className +'"></span>';
+					  }
+			   });
+			var top = 0;	  
+			$('.nav-lists li').click(function(){
+		        
+		        var cid = $(this).attr('cid');
+		        top = $('.'+cid).offset().top-30;
+		        $('body,html').animate({scrollTop:top},200);
+		        
+		     })
+
+		})
+	</script>
+	
+</head>
+<body>
+	<div class="fixed-con">
+		<div class=“box” >
+			<div class="top_box">
+				<img src="http://static.hfj447.com/app_game/xxl/Images/top_bg.jpg" alt="" style="max-width: 100%; height: auto;" />
+			</div>
+			<div class="icon_box">
+				<div class="icon1 clearfloat">
+					<img src="http://static.hfj447.com/app_game/xxl/Images/icon01.png" alt="">
+					<ul class="name">
+						<li class="font01">开心消消乐</li>
+						<li class="font02">好玩无处不在</li>
+						<li><a id="btn-download" href="##" onclick="cps.autoDownClick();"/>免费下载</a></li>
+					</ul>
+				</div>
+				<ul class="pingfen">
+					<li  class="li01">
+						<span class="pf01 p01bg">5.0</span>
+						<span class="pf02">36万个评分</span>
+					</li>
+					<li>
+						<span class="pf01">＃1</span>
+						<span class="pf02">聚会游戏</span> 
+					</li>
+					<li  class="li03"> 
+						<span class="pf01">4+</span>
+						<span class="pf02">年龄</span> 
+					</li>
+
+				</ul>
+			</div>
+
+			<div class="box2">
+				<div class="common-tit kx-cid">新功能</div>
+				<p>
+					消除一下,清凉一夏！《开心消消乐》全新版本上线！7月闯关赢好礼，超值福利送不停！
+				</p>
+				<p>
+					1、【闯关晋级赛】已有40%的玩家升级到钻石段位了，你是其中一员吗?
+				</p>
+			</div>
+
+		</div>
+
+
+		<div class="qz-bg-05">
+			<div class="common-tit kx-cid">预览</div>
+			<div class="creat-con swiper-container">
+				<ul class="creat-lists swiper-wrapper">
+					<li class="swiper-slide">
+						<div class="top-imgs clearfloat">
+							<img src="http://static.hfj447.com/app_game/xxl/Images/img01.jpg" alt="" />
+						</div>
+					</li>
+					<li class="swiper-slide">
+						<div class="top-imgs clearfloat">
+							<img src="http://static.hfj447.com/app_game/xxl/Images/img02.jpg" alt="" />
+						</div>
+					</li>
+					<li class="swiper-slide">
+						<div class="top-imgs clearfloat">
+							<img src="http://static.hfj447.com/app_game/xxl/Images/img03.jpg" alt="" />
+						</div>
+					</li>
+					<li class="swiper-slide">
+						<div class="top-imgs clearfloat">
+							<img src="http://static.hfj447.com/app_game/xxl/Images/img04.jpg" alt="" />
+						</div>
+					</li>
+
+					<li class="swiper-slide">
+						<div class="top-imgs clearfloat">
+							<img src="http://static.hfj447.com/app_game/xxl/Images/img05.jpg" alt="" />
+						</div>
+					</li>
+					<li class="swiper-slide">
+						<div class="top-imgs clearfloat">
+							<img src="http://static.hfj447.com/app_game/xxl/Images/img06.jpg" alt="" />
+						</div>
+					</li>
+					<li class="swiper-slide">
+						<div class="top-imgs clearfloat">
+							<img src="http://static.hfj447.com/app_game/xxl/Images/img07.jpg" alt="" />
+						</div>
+					</li>
+				</ul>
+				<div class="swiper-pagination"></div>
+			</div>
+			<div class="dsda">
+				<p>《开心消消乐》，以三消游戏的方式，让国民连接在一起！2019年，8亿玩家的共同选择！</p>
+				<p>【App Store下载量榜首，多次精选推荐】</p>
+			</div>
+		</div>
+
+		<div class="pf_box">
+			<div class="common-tit kx-cid">评分及评论</div>
+			<div class="pf_img"><img src="http://static.hfj447.com/app_game/xxl/Images/pingfenimg.jpg" alt=""></div>
+			<div class="pl_01">
+				<h1>一直陪伴的游戏</h1>
+				<h2><img src="http://static.hfj447.com/app_game/xxl/Images/star5-a.png" alt=""></h2>
+				<p>
+					消消乐是坚守在手机里时间最久的游戏了 从最开始的空间版 到手机版 时间越久就越有感情 每次换手机都会把消消乐装上 希望消消乐越来越好 也祝大家新年快乐
+				</p>
+			</div>
+			<div class="pl_01">
+				<h1>一个游戏的魅力在哪儿？</h1>
+				<h2><img src="http://static.hfj447.com/app_game/xxl/Images/star5-a.png" alt=""></h2>
+				<p>
+					两年前，我再一个楼梯间玩游戏，我男朋友冲过来问我在干嘛， 我说游戏！你又不玩游戏，而且还是这种对你来说无聊的不能再无聊的游戏，我根本没有对他的兴趣产生任何反应，谁知道，第二天我发现他也开始玩了，我不夸张的说，一个从来不玩任何游戏的男的，这个游戏的魅力，让我的男人像疯了一样，每天按时领奖励....
+				</p>
+			</div>
+		</div>
+
+		<div class="banquan">
+			<p>乐元素科技（北京）股份有限公司</p>
+			<p>Copyright © 2009 Happy Elements, All rights reserved.</p>
+			<p>京网文[2014]0386-086号 京ICP证140541号 京ICP备13001543号-11 京公网安备11010802010565</p>
+		</div>
+
+
+		<div class="float_box-bg">
+			<div class="float_box">
+				<div class="flaot_icon"><img src="http://static.hfj447.com/app_game/xxl/Images/icon01.png" alt="" ></div>
+				<div  class="float_text">
+					<h1>全民都在玩的游戏</h1>
+					<p><a id="float-btn-download" href="##" onclick="cps.autoDownClick();"/>免费下载</a></p>
+				</div>
+			</div>
+		</div>
+
+
+	<div>
+	
+	
+	
+	
+
+<!-- js start --><script type="text/javascript" src="http://code.jquery.com/jquery-1.12.2.min.js"></script><script type="text/javascript" src="js/cps.js"></script><script type="text/javascript">var cps= new CPS({iosApp:"animal_ioscn_prod",adrApp:"animal_androidcncm_prod",androidType:"PACK"});$().ready(function(){cps.bindClickEvent();cps.log();});</script><!-- js end --></body>
+</html>

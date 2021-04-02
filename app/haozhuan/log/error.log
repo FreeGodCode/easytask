@@ -1,0 +1,171 @@
+[2020-04-10 04:02:40 +0800] [4684] [INFO] Starting gunicorn 20.0.4
+[2020-04-10 04:02:40 +0800] [4684] [ERROR] Connection in use: ('0.0.0.0', 5001)
+[2020-04-10 04:02:40 +0800] [4684] [ERROR] Retrying in 1 second.
+[2020-04-10 04:02:41 +0800] [4684] [ERROR] Connection in use: ('0.0.0.0', 5001)
+[2020-04-10 04:02:41 +0800] [4684] [ERROR] Retrying in 1 second.
+[2020-04-10 04:02:42 +0800] [4684] [ERROR] Connection in use: ('0.0.0.0', 5001)
+[2020-04-10 04:02:42 +0800] [4684] [ERROR] Retrying in 1 second.
+[2020-04-10 04:02:43 +0800] [4684] [ERROR] Connection in use: ('0.0.0.0', 5001)
+[2020-04-10 04:02:43 +0800] [4684] [ERROR] Retrying in 1 second.
+[2020-04-10 04:02:44 +0800] [4684] [ERROR] Connection in use: ('0.0.0.0', 5001)
+[2020-04-10 04:02:44 +0800] [4684] [ERROR] Retrying in 1 second.
+[2020-04-10 04:02:45 +0800] [4684] [ERROR] Can't connect to ('0.0.0.0', 5001)
+[2020-04-10 04:04:16 +0800] [4983] [INFO] Starting gunicorn 20.0.4
+[2020-04-10 04:04:16 +0800] [4983] [INFO] Listening at: http://0.0.0.0:5006 (4983)
+[2020-04-10 04:04:16 +0800] [4983] [INFO] Using worker: gevent
+[2020-04-10 04:04:16 +0800] [4984] [INFO] Booting worker with pid: 4984
+[2020-04-10 04:04:17 +0800] [4987] [INFO] Booting worker with pid: 4987
+[2020-04-10 04:04:17 +0800] [4988] [INFO] Booting worker with pid: 4988
+[2020-04-10 04:04:17 +0800] [4990] [INFO] Booting worker with pid: 4990
+[2020-04-10 04:06:27 +0800] [4988] [INFO] Worker reloading: run_app.py modified
+[2020-04-10 04:06:27 +0800] [4988] [INFO] Worker exiting (pid: 4988)
+[2020-04-10 04:06:27 +0800] [4990] [INFO] Worker reloading: run_app.py modified
+[2020-04-10 04:06:27 +0800] [4990] [INFO] Worker exiting (pid: 4990)
+[2020-04-10 04:06:27 +0800] [5416] [INFO] Booting worker with pid: 5416
+[2020-04-10 04:06:27 +0800] [5417] [INFO] Booting worker with pid: 5417
+[2020-04-10 04:06:27 +0800] [4984] [INFO] Worker reloading: run_app.py modified
+[2020-04-10 04:06:27 +0800] [4984] [INFO] Worker exiting (pid: 4984)
+[2020-04-10 04:06:27 +0800] [5427] [INFO] Booting worker with pid: 5427
+[2020-04-10 04:06:27 +0800] [4987] [INFO] Worker reloading: run_app.py modified
+[2020-04-10 04:06:27 +0800] [4987] [INFO] Worker exiting (pid: 4987)
+[2020-04-10 04:06:27 +0800] [5429] [INFO] Booting worker with pid: 5429
+[2020-04-10 04:08:13 +0800] [5427] [INFO] Worker reloading: run_app.py modified
+[2020-04-10 04:08:13 +0800] [5427] [INFO] Worker exiting (pid: 5427)
+[2020-04-10 04:08:13 +0800] [5735] [INFO] Booting worker with pid: 5735
+[2020-04-10 04:08:13 +0800] [5429] [INFO] Worker reloading: run_app.py modified
+[2020-04-10 04:08:13 +0800] [5429] [INFO] Worker exiting (pid: 5429)
+[2020-04-10 04:08:13 +0800] [5736] [INFO] Booting worker with pid: 5736
+[2020-04-10 04:08:13 +0800] [5416] [INFO] Worker reloading: run_app.py modified
+[2020-04-10 04:08:13 +0800] [5416] [INFO] Worker exiting (pid: 5416)
+[2020-04-10 04:08:13 +0800] [5738] [INFO] Booting worker with pid: 5738
+[2020-04-10 04:08:13 +0800] [5417] [INFO] Worker reloading: run_app.py modified
+[2020-04-10 04:08:13 +0800] [5417] [INFO] Worker exiting (pid: 5417)
+[2020-04-10 04:08:13 +0800] [5740] [INFO] Booting worker with pid: 5740
+[2020-04-10 04:08:23 +0800] [5738] [INFO] Worker reloading: run_app.py modified
+[2020-04-10 04:08:23 +0800] [5738] [INFO] Worker exiting (pid: 5738)
+[2020-04-10 04:08:23 +0800] [5740] [INFO] Worker reloading: run_app.py modified
+[2020-04-10 04:08:23 +0800] [5740] [INFO] Worker exiting (pid: 5740)
+[2020-04-10 04:08:23 +0800] [5799] [INFO] Booting worker with pid: 5799
+[2020-04-10 04:08:23 +0800] [5800] [INFO] Booting worker with pid: 5800
+[2020-04-10 04:08:24 +0800] [5735] [INFO] Worker reloading: run_app.py modified
+[2020-04-10 04:08:24 +0800] [5735] [INFO] Worker exiting (pid: 5735)
+[2020-04-10 04:08:24 +0800] [5807] [INFO] Booting worker with pid: 5807
+[2020-04-10 04:08:24 +0800] [5736] [INFO] Worker reloading: run_app.py modified
+[2020-04-10 04:08:24 +0800] [5736] [INFO] Worker exiting (pid: 5736)
+[2020-04-10 04:08:24 +0800] [5809] [INFO] Booting worker with pid: 5809
+[2020-04-10 04:09:03 +0800] [5809] [INFO] Parent changed, shutting down: <Worker 5809>
+[2020-04-10 04:09:03 +0800] [5809] [INFO] Worker exiting (pid: 5809)
+[2020-04-10 04:09:03 +0800] [5799] [INFO] Parent changed, shutting down: <Worker 5799>
+[2020-04-10 04:09:03 +0800] [5799] [INFO] Worker exiting (pid: 5799)
+[2020-04-10 04:09:03 +0800] [5800] [INFO] Parent changed, shutting down: <Worker 5800>
+[2020-04-10 04:09:03 +0800] [5800] [INFO] Worker exiting (pid: 5800)
+[2020-04-10 04:09:04 +0800] [5807] [INFO] Parent changed, shutting down: <Worker 5807>
+[2020-04-10 04:09:04 +0800] [5807] [INFO] Worker exiting (pid: 5807)
+[2020-04-10 04:09:19 +0800] [5959] [DEBUG] Current configuration:
+  config: run_app.py
+  bind: ['0.0.0.0:5006']
+  backlog: 2048
+  workers: 4
+  worker_class: gevent
+  threads: 1
+  worker_connections: 1000
+  max_requests: 0
+  max_requests_jitter: 0
+  timeout: 30
+  graceful_timeout: 30
+  keepalive: 2
+  limit_request_line: 4094
+  limit_request_fields: 100
+  limit_request_field_size: 8190
+  reload: True
+  reload_engine: auto
+  reload_extra_files: []
+  spew: False
+  check_config: False
+  preload_app: False
+  sendfile: None
+  reuse_port: False
+  chdir: /home/app/haozhuan
+  daemon: True
+  raw_env: []
+  pidfile: log/gunicorn.pid
+  worker_tmp_dir: None
+  user: 0
+  group: 0
+  umask: 0
+  initgroups: False
+  tmp_upload_dir: None
+  secure_scheme_headers: {'X-FORWARDED-PROTOCOL': 'ssl', 'X-FORWARDED-PROTO': 'https', 'X-FORWARDED-SSL': 'on'}
+  forwarded_allow_ips: ['127.0.0.1']
+  accesslog: None
+  disable_redirect_access_to_syslog: False
+  access_log_format: %(h)s %(l)s %(u)s %(t)s "%(r)s" %(s)s %(b)s "%(f)s" "%(a)s"
+  errorlog: log/error.log
+  loglevel: debug
+  capture_output: False
+  logger_class: gunicorn.glogging.Logger
+  logconfig: None
+  logconfig_dict: {}
+  syslog_addr: udp://localhost:514
+  syslog: False
+  syslog_prefix: None
+  syslog_facility: user
+  enable_stdio_inheritance: False
+  statsd_host: None
+  dogstatsd_tags: 
+  statsd_prefix: 
+  proc_name: None
+  default_proc_name: main:app
+  pythonpath: None
+  paste: None
+  on_starting: <function OnStarting.on_starting at 0x7f8dd4f3e0d0>
+  on_reload: <function OnReload.on_reload at 0x7f8dd4f3e1e0>
+  when_ready: <function WhenReady.when_ready at 0x7f8dd4f3e2f0>
+  pre_fork: <function Prefork.pre_fork at 0x7f8dd4f3e400>
+  post_fork: <function Postfork.post_fork at 0x7f8dd4f3e510>
+  post_worker_init: <function PostWorkerInit.post_worker_init at 0x7f8dd4f3e620>
+  worker_int: <function WorkerInt.worker_int at 0x7f8dd4f3e730>
+  worker_abort: <function WorkerAbort.worker_abort at 0x7f8dd4f3e840>
+  pre_exec: <function PreExec.pre_exec at 0x7f8dd4f3e950>
+  pre_request: <function PreRequest.pre_request at 0x7f8dd4f3ea60>
+  post_request: <function PostRequest.post_request at 0x7f8dd4f3eae8>
+  child_exit: <function ChildExit.child_exit at 0x7f8dd4f3ebf8>
+  worker_exit: <function WorkerExit.worker_exit at 0x7f8dd4f3ed08>
+  nworkers_changed: <function NumWorkersChanged.nworkers_changed at 0x7f8dd4f3ee18>
+  on_exit: <function OnExit.on_exit at 0x7f8dd4f3ef28>
+  proxy_protocol: False
+  proxy_allow_ips: ['127.0.0.1']
+  keyfile: None
+  certfile: None
+  ssl_version: 2
+  cert_reqs: 0
+  ca_certs: None
+  suppress_ragged_eofs: True
+  do_handshake_on_connect: False
+  ciphers: None
+  raw_paste_global_conf: []
+  strip_header_spaces: False
+[2020-04-10 04:09:19 +0800] [5959] [INFO] Starting gunicorn 20.0.4
+[2020-04-10 04:09:19 +0800] [5959] [DEBUG] Arbiter booted
+[2020-04-10 04:09:19 +0800] [5959] [INFO] Listening at: http://0.0.0.0:5006 (5959)
+[2020-04-10 04:09:19 +0800] [5959] [INFO] Using worker: gevent
+[2020-04-10 04:09:19 +0800] [5961] [INFO] Booting worker with pid: 5961
+[2020-04-10 04:09:19 +0800] [5969] [INFO] Booting worker with pid: 5969
+[2020-04-10 04:09:19 +0800] [5971] [INFO] Booting worker with pid: 5971
+[2020-04-10 04:09:19 +0800] [5972] [INFO] Booting worker with pid: 5972
+[2020-04-10 04:09:20 +0800] [5959] [DEBUG] 4 workers
+[2020-04-10 04:09:59 +0800] [5969] [DEBUG] GET /go_too9
+[2020-04-10 04:10:01 +0800] [5969] [DEBUG] GET /go_too9
+[2020-04-10 04:10:19 +0800] [5972] [DEBUG] GET /go_too9
+[2020-04-10 04:38:13 +0800] [5969] [DEBUG] GET /
+[2020-04-10 04:38:14 +0800] [5969] [DEBUG] GET /swaggerui/swagger-ui-bundle.js
+[2020-04-10 04:38:15 +0800] [5969] [DEBUG] GET /swagger.json
+[2020-04-10 04:38:19 +0800] [5972] [DEBUG] GET /go_too9
+[2020-04-10 04:38:42 +0800] [5971] [INFO] Parent changed, shutting down: <Worker 5971>
+[2020-04-10 04:38:42 +0800] [5971] [INFO] Worker exiting (pid: 5971)
+[2020-04-10 04:38:42 +0800] [5972] [INFO] Parent changed, shutting down: <Worker 5972>
+[2020-04-10 04:38:42 +0800] [5972] [INFO] Worker exiting (pid: 5972)
+[2020-04-10 04:38:42 +0800] [5969] [INFO] Parent changed, shutting down: <Worker 5969>
+[2020-04-10 04:38:42 +0800] [5969] [INFO] Worker exiting (pid: 5969)
+[2020-04-10 04:38:42 +0800] [5961] [INFO] Parent changed, shutting down: <Worker 5961>
+[2020-04-10 04:38:42 +0800] [5961] [INFO] Worker exiting (pid: 5961)
