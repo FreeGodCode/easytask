@@ -1,38 +1,40 @@
-from flask import Blueprint, jsonify, session, request, current_app
-import logging
 import hashlib
-import time
+import logging
 import random
 import string
-from app.utils.response import ResMsg
+import time
+
+from flask import Blueprint, session, request
+
+from app.models.accounts import EtAccount
 from app.models.mercharnt import ETMerchants
 from app.models.task import EtTask
-from app.models.accounts import EtAccount
+from app.utils.auth import Auth, login_required
 from app.utils.code import ResponseCode, ResponseMessage
 from app.utils.core import db
-from app.utils.auth import Auth, login_required
+from app.utils.response import ResMsg
 from app.utils.util import helpers
-from app.utils.util import Redis
 
 bp = Blueprint("merchants", __name__, url_prefix='/merchants')
 # 商户管理服务
 logger = logging.getLogger(__name__)
 
-task_info_key= "tasks_info"
-task_info_u_key= "tasks_info_"
-task_detail_key= "tasks_detail_:"
+task_info_key = "tasks_info"
+task_info_u_key = "tasks_info_"
+task_detail_key = "tasks_detail_:"
 task_complete_key = "complete_tasks_:"
 complete_tasks_uid_key = "complete_tasks_"
 task_verifyed_key = "verifyed_tasks_:"
-tasks_high_info_key= "tasks_high_info"
+tasks_high_info_key = "tasks_high_info"
 
 
 # 哈希md5密码加密
 def hash_password(password):
-    m= hashlib.md5()
+    m = hashlib.md5()
     b = password.encode(encoding='utf-8')
     m.update(b)
     return m.hexdigest()
+
 
 @bp.route('/registered', methods=["POST"])
 @login_required
@@ -48,7 +50,7 @@ def registered():
     mobile = req.get("mobile", '')
     industry = req.get("industry", '')
     user_type = req.get("user_type", '')
-    account_name= session.get("user_name")
+    account_name = session.get("user_name")
     if not all([username, password]):
         res.update(code=ResponseCode.Success, data={}, msg="参数异常")
         return res.data
@@ -62,7 +64,8 @@ def registered():
             res.update(code=ResponseCode.Success, data={}, msg="账户已存在,无需重复注册")
             return res.data
         else:
-            new_user = ETMerchants(username=username, password=password_hash, mobile=mobile, industry=industry, ip=ip, accounts_name=account_name,user_type=user_type)
+            new_user = ETMerchants(username=username, password=password_hash, mobile=mobile, industry=industry, ip=ip,
+                                   accounts_name=account_name, user_type=user_type)
             db.session.add(new_user)
             try:
                 db_res = db.session.commit()
@@ -87,6 +90,7 @@ def registered():
                 res.update(code=ResponseCode.Success, data={}, msg=f"数据添加失败{why}")
                 return res.data
 
+
 @bp.route('/login', methods=["POST"])
 def login():
     """
@@ -100,14 +104,14 @@ def login():
     password = req.get("password")
     password_hash = hash_password(password)
     noew_timestr = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
-    user = db.session.query(ETMerchants).filter(ETMerchants.username == username, ETMerchants.password == password_hash).first()
+    user = db.session.query(ETMerchants).filter(ETMerchants.username == username,
+                                                ETMerchants.password == password_hash).first()
     if user.status != 1:
         res.update(code=ResponseCode.Fail, data={}, msg='当前账户已禁用，请请联系客服')
         return res.data
     res_data = dict()
     if user:
         user = db.session.query(ETMerchants.username).first()
-        
 
         res_data.update(dict(zip(user.keys(), user)))
 
@@ -122,6 +126,7 @@ def login():
         res.update(code=ResponseCode.LoginFail, data={}, msg=ResponseMessage.LoginFail)
         return res.data
 
+
 @bp.route('/lists', methods=["GET"])
 @login_required
 def mercharnt_list():
@@ -130,15 +135,15 @@ def mercharnt_list():
     :return: json
     """
     res = ResMsg()
-    
-    page_index = int(request.args.get("page",  1))
+
+    page_index = int(request.args.get("page", 1))
     page_size = int(request.args.get("limit", 10))
-    
+
     p_i, p_num = (page_index - 1) * page_size, page_size
 
     k = 'id, nickname, user_type, industry, status, last_login, ip, password, username, mobile'
     oem_sql = f"SELECT {k} FROM et_merchants ORDER BY last_login DESC LIMIT {p_i}, {p_num}"
-    
+
     oem = db.session.execute(oem_sql).fetchall()
     res_data = dict()
 
@@ -153,6 +158,7 @@ def mercharnt_list():
         res.update(code=ResponseCode.Success, data={}, msg="数据获取异常")
         return res.data
 
+
 @bp.route('/merlists', methods=["GET"])
 def merlists():
     """
@@ -160,7 +166,7 @@ def merlists():
     :retrun: json
     """
     res = ResMsg()
-    page_index = int(request.args.get("page",  1))
+    page_index = int(request.args.get("page", 1))
     page_size = int(request.args.get("limit", 10))
     p_i, p_num = (page_index - 1) * page_size, page_size
 
@@ -185,10 +191,9 @@ def merlists():
         us_sql = f"SELECT id,username,addtime,industry,balance,lock_balance,status from et_merchants \
                     ORDER BY addtime DESC LIMIT {p_i}, {p_num}"
 
-
         u_lists = db.session.execute(us_sql).fetchall()
         res_data = dict()
-       
+
         if u_lists:
             wi_list = [{k: v for (k, v) in row.items()} for row in u_lists]
             count_wi = wi_list
@@ -216,12 +221,12 @@ def merlists():
         #         GROUP BY em.username,em.balance,em.addtime,em.lock_balance,em.industry,em.id,em.status \
         #         ORDER BY addtime DESC LIMIT {p_i}, {p_num}"
         # u_data = db.session.execute(us_sql).first()
-        
+
         us_sql = f"SELECT id,username,addtime,industry,balance,lock_balance,status from et_merchants \
                     WHERE username = '{username}'\
                     ORDER BY addtime DESC LIMIT {p_i}, {p_num}"
         u_data = db.session.execute(us_sql).first()
-        
+
         if u_data:
             json_data = {k: v for k, v in u_data.items()}
             res.update(code=ResponseCode.Success, data=json_data, msg="获取成功!")
@@ -238,17 +243,15 @@ def mertasks():
     :retrun: json
     """
     res = ResMsg()
-    page_index = int(request.args.get("page",  1))
+    page_index = int(request.args.get("page", 1))
     page_size = int(request.args.get("limit", 10))
     p_i, p_num = (page_index - 1) * page_size, page_size
 
-    mer_id = request.args.get('id',)
+    mer_id = request.args.get('id', )
     if mer_id:
-        m = f'SELECT \
-            et.name,et.task_reward,et.tasks_counts,t1.task_rejected,t1.task_completes \
+        m = f'SELECT et.name,et.task_reward,et.tasks_counts,t1.task_rejected,t1.task_completes \
             FROM \
-            ( \
-            SELECT \
+            (SELECT \
             SUM( IF (status = 4, 1, 0) ) AS task_completes, \
             SUM( IF (status = 5, 1, 0) ) AS task_rejected, \
             task_id \
@@ -274,6 +277,7 @@ def mertasks():
             res.update(code=ResponseCode.Success, data={}, msg="数据获取异常")
             return res.data
 
+
 @bp.route('/recharge', methods=["POST"])
 @login_required
 def merrecharge():
@@ -290,7 +294,7 @@ def merrecharge():
     # 使用乐观锁修改用户余额
     user_sql = f"SELECT balance,balance_version FROM et_merchants WHERE id={user_id}"
     user = db.session.execute(user_sql).first()
-    user_data  = dict(user)
+    user_data = dict(user)
     # 生成20位随机字符串
     salt = ''.join(random.sample(string.ascii_letters + string.digits, 20))
     version_time = str(time.time()) + salt
@@ -317,6 +321,7 @@ def merrecharge():
         res.update(code=ResponseCode.Success, data={}, msg=f"充值失败{why},请稍后再试")
         return res.data
 
+
 @bp.route('/ban_mer', methods=["POST"])
 def ban_mer():
     """
@@ -327,13 +332,13 @@ def ban_mer():
     req = request.get_json(force=True)
 
     mer_id = req.get("id")
-    status= req.get("status")
+    status = req.get("status")
 
     update_dict = {
         'status': status
     }
-    update_dict_ready = helpers.rmnullkeys( update_dict )
-    user = db.session.query(ETMerchants).filter(ETMerchants.id == mer_id).first() 
+    update_dict_ready = helpers.rmnullkeys(update_dict)
+    user = db.session.query(ETMerchants).filter(ETMerchants.id == mer_id).first()
     if user:
         db.session.query(ETMerchants).filter(ETMerchants.id == mer_id).update(update_dict_ready)
         try:
@@ -343,6 +348,7 @@ def ban_mer():
         except Exception as why:
             res.update(code=ResponseCode.Success, data={}, msg=f"修改失败,请稍后再试{why}")
             return res.data
+
 
 @bp.route('/edit_mer', methods=["POST"])
 def editmer():
@@ -376,6 +382,7 @@ def editmer():
         res.update(code=ResponseCode.Success, data={}, msg=f"修改失败,请稍后再试")
         return res.data
 
+
 @bp.route('/mer_with', methods=["GET"])
 def mer_with():
     """
@@ -383,7 +390,7 @@ def mer_with():
     :return: json
     """
     res = ResMsg()
-    page_index = int(request.args.get("page",  1))
+    page_index = int(request.args.get("page", 1))
     page_size = int(request.args.get("limit", 10))
     p_i, p_num = (page_index - 1) * page_size, page_size
 
@@ -442,6 +449,7 @@ def mer_with():
             res.update(code=ResponseCode.Success, data={}, msg="数据获取异常")
             return res.data
 
+
 @bp.route('/changes_tasks', methods=["GET"])
 def changes_tasks():
     """
@@ -456,7 +464,6 @@ def changes_tasks():
     comment = request.args.get('comment', '')
     mer_id = request.args.get('mer_id', '')
 
-
     where_cond = ''
     if u_pass != '':
         where_cond = 7
@@ -468,7 +475,7 @@ def changes_tasks():
 
         # 查询当前任务锁定金额
         s_sql = f"SELECT balance,et.lock_balance as task_lockbalance, etm.lock_balance from et_merchants as etm LEFT JOIN et_mertask_withdrawal as et on et.mer_id = etm.id where etm.id = {mer_id} and et.task_id = {task_id}"
-        
+
         data_list = db.session.execute(s_sql).first()
         json_data = dict(data_list)
         # bugcheck  data_list 可能查询为空
@@ -500,7 +507,7 @@ def audit():
     :return: json
     """
     res = ResMsg()
-    page_index = int(request.args.get("page",  1))
+    page_index = int(request.args.get("page", 1))
     page_size = int(request.args.get("limit", 10))
     p_i, p_num = (page_index - 1) * page_size, page_size
 
@@ -567,6 +574,7 @@ def audit():
         res.update(code=ResponseCode.Success, data={}, msg="数据获取异常")
         return res.data
 
+
 @bp.route('/getinfo', methods=["GET"])
 @login_required
 def handle_info():
@@ -575,19 +583,20 @@ def handle_info():
     :return: json
     """
     res = ResMsg()
-    
+
     token = request.args.get("token")
     payload = Auth.decode_auth_token(token)
-    userid= payload['user_id']
+    userid = payload['user_id']
 
-    res_data= dict()
-    
-    user = db.session.query(ETMerchants.id, ETMerchants.username, ETMerchants.mobile, ETMerchants.status).filter(ETMerchants.username == userid).first()
+    res_data = dict()
+
+    user = db.session.query(ETMerchants.id, ETMerchants.username, ETMerchants.mobile, ETMerchants.status).filter(
+        ETMerchants.username == userid).first()
     if user:
         res_data.update(dict(zip(user.keys(), user)))
-        if res_data['status']== 1:
-            res_data['roles']= ['admin']
-            res_data['avatar']= 'https://qiniu.staticfile.org/user_avatar.jpg'
+        if res_data['status'] == 1:
+            res_data['roles'] = ['admin']
+            res_data['avatar'] = 'https://qiniu.staticfile.org/user_avatar.jpg'
             res.update(code=ResponseCode.Success, data=res_data, msg='账号获取成功')
         else:
 
@@ -595,7 +604,7 @@ def handle_info():
         return res.data
     else:
 
-        res.update(code=ResponseCode.Fail, data={},msg='账户异常')
+        res.update(code=ResponseCode.Fail, data={}, msg='账户异常')
         return res.data
 
 
@@ -628,6 +637,7 @@ def refresh_token():
 
     return res.data
 
+
 @bp.route('/logout', methods=["GET"])
 def handle_loginout():
     """
@@ -636,7 +646,7 @@ def handle_loginout():
     """
     res = ResMsg()
     header_token = request.headers.get("xtoken")
-    access_token = request.args.get("token",header_token)
+    access_token = request.args.get("token", header_token)
     if not access_token:
         res.update(code=ResponseCode.InvalidParameter)
         return res.data
@@ -651,8 +661,9 @@ def handle_loginout():
     access_token = None
     data = {"access_token": None}
     res.update(code=ResponseCode.Success, data=data, msg='logout success!')
-    
+
     return res.data
+
 
 @bp.route('/taks_getinfo', methods=["GET"])
 @login_required
@@ -662,11 +673,11 @@ def handle_info_task():
     :return: json
     """
     res = ResMsg()
-    
+
     taskid = request.args.get("id")
 
-    res_data= dict()
-    
+    res_data = dict()
+
     task = db.session.query(EtTask).filter(EtTask.id == taskid).first()
     if task:
         res_data.update(dict(helpers.model_to_dict(task)))
@@ -674,8 +685,9 @@ def handle_info_task():
         return res.data
     else:
 
-        res.update(code=ResponseCode.Success, data={},msg='任务数据异常')
+        res.update(code=ResponseCode.Success, data={}, msg='任务数据异常')
         return res.data
+
 
 @bp.route('/settlement', methods=["GET"])
 def settlement():
@@ -684,7 +696,7 @@ def settlement():
     :return: json
     """
     res = ResMsg()
-    page_index = int(request.args.get("page",  1))
+    page_index = int(request.args.get("page", 1))
     page_size = int(request.args.get("limit", 10))
     p_i, p_num = (page_index - 1) * page_size, page_size
 
@@ -751,6 +763,7 @@ def settlement():
         res.update(code=ResponseCode.Success, data={}, msg="数据获取异常")
         return res.data
 
+
 @bp.route('/add_settlement', methods=["POST"])
 def add_settlement():
     """
@@ -765,7 +778,7 @@ def add_settlement():
 
     # 查询当前任务锁定金额
     s_sql = f"SELECT balance,et.lock_balance as task_lockbalance, etm.lock_balance from et_merchants as etm LEFT JOIN et_mertask_withdrawal as et on et.mer_id = etm.id where etm.id = {mer_id} and et.task_id = {task_id}"
-    
+
     data_list = db.session.execute(s_sql).first()
     json_data = dict(data_list)
     # bugcheck  data_list 可能查询为空
@@ -791,14 +804,3 @@ def add_settlement():
     db.session.commit()
     res.update(code=ResponseCode.Success, data={}, msg="修改成功")
     return res.data
-
-
-
-
-
-
-
-
-
-
-

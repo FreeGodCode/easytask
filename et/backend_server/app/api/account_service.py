@@ -305,7 +305,7 @@ def heandel_add_channel():
 
     account_name = session.get("user_name")
 
-    insert_sql = f"INSERT INTO et_channels (`ch_name`, `ch_type` `account`) VALUES ('{ch_name}', 1,  '{account_name}');"
+    insert_sql = f"INSERT INTO et_channels (`ch_name`, `ch_type` `account`) VALUES ('{ch_name}', 1, '{account_name}');"
 
     db.session.execute(insert_sql)
     db.session.commit()

@@ -291,6 +291,3 @@ def handle_mdrplists():
 
         res.update(code=ResponseCode.Success, data={}, msg=f'用户{member_id}收益数据为空')
         return res.data
-
-
-

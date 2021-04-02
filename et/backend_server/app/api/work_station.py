@@ -1,10 +1,12 @@
+import json
 import logging
 import time
-import json
+
+from anytree.importer import DictImporter
 from flask import Blueprint, request, session, jsonify
 
 from app.api.task_service import calculating_earnings
-from app.models import et_recharge_withdrawal
+from app.celery import async_calculating_earnings
 from app.models.accounts import EtAccount
 from app.models.et_merchants import EtMerchants
 from app.models.et_recharge_withdrawal import EtRechargeWithdrawal
@@ -16,8 +18,6 @@ from app.utils.code import ResponseCode
 from app.utils.core import db, realtionlib
 from app.utils.response import ResMsg
 from app.utils.util import route, helpers, Redis
-from app.celery import flask_app_context, async_calculating_earnings
-from anytree.importer import DictImporter
 
 bp = Blueprint("workstation", __name__, url_prefix='/workstation')
 
@@ -172,8 +172,8 @@ def handle_create_task():
                 VALUE ({int(t)}, {mer_id}, {total_balance}, 0, 1)"
                 db.session.execute(add_w_sql)
                 db.session.commit()
-            except Exception as why:
-                res.update(code=ResponseCode.Fail, data={}, msg=f'任务数据异常{why}')
+            except Exception as e:
+                res.update(code=ResponseCode.Fail, data={}, msg=f'任务数据异常{e}')
                 return res.data
 
     update_task_dict_ready = helpers.rmnullkeys(update_task_dict)
@@ -534,7 +534,8 @@ def handle_detail_list():
         # ON etm.id = etw.mer_id \
         # WHERE etm.id = {mer_id}").fetchall()
 
-        withdrawal = db.session.execute(f"SELECT etm.balance AS user_balance, etw.id, etw.add_time, etw.type_id, etw.business_id, etw.withdrawal_num, etw.balance FROM et_recharge_withdrawal AS etw LEFT JOIN et_merchants AS etm ON etm.id = etw.mer_id  WHERE etm.id = {mer_id} ORDER BY etw.add_time DESC LIMIT {p_i},{p_num}").fetchall()
+        withdrawal = db.session.execute(
+            f"SELECT etm.balance AS user_balance, etw.id, etw.add_time, etw.type_id, etw.business_id, etw.withdrawal_num, etw.balance FROM et_recharge_withdrawal AS etw LEFT JOIN et_merchants AS etm ON etm.id = etw.mer_id  WHERE etm.id = {mer_id} ORDER BY etw.add_time DESC LIMIT {p_i},{p_num}").fetchall()
         withdrawal_list = [{k: v for (k, v) in row.items()} for row in withdrawal]
         counts = withdrawal_list
         EtRechargeWithdrawal_counts = db.session.execute(
@@ -549,7 +550,8 @@ def handle_detail_list():
         # ON etm.id = etw.mer_id \
         # WHERE etm.id = {mer_id}").fetchall()
 
-        withdrawal = db.session.execute(f"SELECT etm.balance AS user_balance, etw.id, etw.add_time, etw.type_id, etw.business_id, etw.withdrawal_num, etw.balance FROM et_recharge_withdrawal AS etw LEFT JOIN et_merchants AS etm ON etm.id = etw.mer_id  WHERE etm.id = {mer_id} ORDER BY etw.add_time DESC LIMIT {p_i},{p_num}").fetchall()
+        withdrawal = db.session.execute(
+            f"SELECT etm.balance AS user_balance, etw.id, etw.add_time, etw.type_id, etw.business_id, etw.withdrawal_num, etw.balance FROM et_recharge_withdrawal AS etw LEFT JOIN et_merchants AS etm ON etm.id = etw.mer_id  WHERE etm.id = {mer_id} ORDER BY etw.add_time DESC LIMIT {p_i},{p_num}").fetchall()
 
         withdrawal_list = [{k: v for (k, v) in row.items()} for row in withdrawal]
         logger.error(len(withdrawal_list))
@@ -1184,7 +1186,6 @@ def detail_accounts():
         return res.data
 
 
-
 # 任务列表中任务删除
 @bp.route('/remove_task', methods=["POST"])
 @login_required
@@ -1224,7 +1225,8 @@ def handle_remove_task():
     if task_status != 4 and task_status != 2:
         # 前端传递数据过来
         if filters:
-            lock_balance = db.session.execute(f"SELECT lock_balance FROM et_mertask_withdrawal WHERE mer_id={mer_id} AND task_id = {task_id}").first()
+            lock_balance = db.session.execute(
+                f"SELECT lock_balance FROM et_mertask_withdrawal WHERE mer_id={mer_id} AND task_id = {task_id}").first()
 
             # etmer_data = db.session.query(EtMerchants).filter(EtMerchants.id == mer_id).first()
             res_data = {}
@@ -1281,7 +1283,6 @@ def handle_remove_task():
         return jsonify(res.data)
 
 
-
 # 任务加量
 @bp.route("/add_task_num", methods=["POST"])
 @login_required
@@ -1291,7 +1292,7 @@ def handle_add_task_num():
     req = request.get_json(force=True)
 
     task_id = req.get("id", "")
-    task_reward = req.get("task_reward","")
+    task_reward = req.get("task_reward", "")
     tasks_counts = req.get("task_counts", "")
     task_balance = req.get("task_balance", "")
     task_status = req.get("status", "")
@@ -1299,7 +1300,6 @@ def handle_add_task_num():
 
     add_task_num = int(req.get("task_counts", ""))
     add_task_price = int(req.get("task_money", "0"))
-
 
     query_dict = {
         "id": task_id,
@@ -1421,8 +1421,10 @@ def handle_task_settle_account():
                     "status": 9
                 }
                 db.session.query(EtTask).filter(EtTask.id == task_id).update(update_status_dict)
-                lock_balance = db.session.execute(f"SELECT lock_balance FROM et_mertask_withdrawal WHERE mer_id={mer_id} AND task_id={task_id}").first()
-                task_balance, task_lock_balance = db.session.execute(f"SELECT balance, lock_balance FROM et_merchants WHERE id={mer_id}").first()
+                lock_balance = db.session.execute(
+                    f"SELECT lock_balance FROM et_mertask_withdrawal WHERE mer_id={mer_id} AND task_id={task_id}").first()
+                task_balance, task_lock_balance = db.session.execute(
+                    f"SELECT balance, lock_balance FROM et_merchants WHERE id={mer_id}").first()
                 update_balance = task_balance + lock_balance[0]
                 update_lock_balance = task_lock_balance - lock_balance[0]
                 # updat_etm_dict = {
@@ -1431,7 +1433,8 @@ def handle_task_settle_account():
                 # }
                 # 更新商户表
                 # db.session.query(EtMerchants).filter(EtMerchants.id == mer_id).update(updat_etm_dict)
-                db.session.execute(f"UPDATE et_merchants SET balance={update_balance}, lock_balance={update_lock_balance} WHERE id={mer_id}")
+                db.session.execute(
+                    f"UPDATE et_merchants SET balance={update_balance}, lock_balance={update_lock_balance} WHERE id={mer_id}")
 
                 # 加入商户流水表记录：资金流水为结算，收入
                 t = time.time()

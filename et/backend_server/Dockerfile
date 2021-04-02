@@ -29,10 +29,8 @@ COPY ./run_docker.sh .
 COPY ./ngcors.conf /etc/nginx/conf.d/ngcors.conf
 RUN ["chmod", "+x", "./run_docker.sh"]
 
-
 RUN pip --no-cache-dir install  -i ${PIPURL} --upgrade pip
 RUN pip --no-cache-dir install  -i ${PIPURL} -r requirements.txt
-
 
 # RUN python -m http.server 8001
 RUN mkdir /run/nginx

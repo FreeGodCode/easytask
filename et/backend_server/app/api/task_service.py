@@ -41,7 +41,7 @@ user_info_key= "user_info:"
 user_withdraw_recode_key= "user_withdraw_recode:"
 user_task_earnings_key=  "user_task_earnings_:"
 
-@route(bp, '/list', methods=["GET"])
+@bp.route('/list', methods=["GET"])
 @login_required
 def handle_list():
     """
@@ -107,7 +107,7 @@ def handle_list():
         res.update(code=ResponseCode.Success, data={}, msg=f'任务数据异常or空')
         return res.data
 
-@route(bp, '/getinfo', methods=["GET"])
+@bp.route('/getinfo', methods=["GET"])
 @login_required
 def handle_info():
     """
@@ -131,7 +131,7 @@ def handle_info():
         return res.data
 
 
-@route(bp, '/copytask', methods=["GET"])
+@bp.route('/copytask', methods=["GET"])
 @login_required
 def handle_copytask():
     """
@@ -171,7 +171,7 @@ def handle_copytask():
         res.update(code=ResponseCode.Success, data={}, msg='任务数据异常')
         return res.data
 
-@route(bp, '/taskorder_stats', methods=["GET"])
+@bp.route('/taskorder_stats', methods=["GET"])
 @login_required
 def handle_task_order_stat():
     """
@@ -210,7 +210,7 @@ def handle_task_order_stat():
         res.update(code=ResponseCode.Success, data={}, msg='订单数据异常')
         return res.data
 
-@route(bp, '/addtask', methods=["POST","OPTIONS"])
+@bp.route('/addtask', methods=["POST","OPTIONS"])
 @login_required
 def handle_addtask():
     """
@@ -294,7 +294,7 @@ def handle_addtask():
         res.update(code=ResponseCode.Success, data={},msg=f'任务数据异常{why}')
         return res.data
 
-@route(bp, '/edit_task', methods=["POST","OPTIONS"])
+@bp.route('/edit_task', methods=["POST","OPTIONS"])
 @login_required
 def handle_edittask():
     """
@@ -373,7 +373,7 @@ def handle_edittask():
         res.update(code=ResponseCode.Success, data={},msg=f'修改失败，数据异常{why}')
         return res.data
 
-@route(bp, '/del_task', methods=["POST","OPTIONS"])
+@bp.route('/del_task', methods=["POST","OPTIONS"])
 @login_required
 def handle_deltask():
     """
@@ -405,7 +405,7 @@ def handle_deltask():
         res.update(code=ResponseCode.Success, data={},msg=f'修改失败，数据异常{why}')
         return res.data
 
-@route(bp, '/sort_task', methods=["POST","OPTIONS"])
+@bp.route('/sort_task', methods=["POST","OPTIONS"])
 @login_required
 def handle_sorttask():
     """
@@ -434,7 +434,7 @@ def handle_sorttask():
         return res.data
 
 
-@route(bp, '/verify_task', methods=["POST","OPTIONS"])
+@bp.route('/verify_task', methods=["POST","OPTIONS"])
 @login_required
 def handle_verifytask():
     """
@@ -467,7 +467,7 @@ def handle_verifytask():
         res.update(code=ResponseCode.Success, data={},msg=f'修改失败，数据异常{why}')
         return res.data
 
-@route(bp, '/taskorder/list', methods=["GET"])
+@bp.route('/taskorder/list', methods=["GET"])
 @login_required
 def handle_taskorderlist():
     """
@@ -557,7 +557,7 @@ def handle_taskorderlist():
         res.update(code=ResponseCode.Success, data={}, msg=f'{task_sql}任务数据为空')
         return res.data
 
-@route(bp, '/taskorder/verify_task', methods=["POST","OPTIONS"])
+@bp.route('/taskorder/verify_task', methods=["POST","OPTIONS"])
 @login_required
 def handle_verifytaskorder():
     """
@@ -624,9 +624,7 @@ def handle_verifytaskorder():
                 res.update(code=ResponseCode.Success, data={}, msg='该单未通过审核')
             
             if status == 4:
-
                 task_limit=20
-
                 counts = db.session.execute(f"SELECT count(id) FROM et_task_orders WHERE status=4 AND member_id={task_order_dict['member_id']}").first()
                 
                 # update member status 2
@@ -669,6 +667,7 @@ def handle_verifytaskorder():
 
             res.update(code=ResponseCode.Success, data={},msg=f'任务订单审核失败,{why}')
             return res.data
+    
     
 def calculating_earnings(task_order:dict, task_id:int, type_set:int =1):
     '''
@@ -796,7 +795,7 @@ def calculating_earnings(task_order:dict, task_id:int, type_set:int =1):
                 res.update(code=ResponseCode.Success, data={},msg=f'用户信息异常{user}')
 
 
-@route(bp, '/testasyncAdd', methods=["GET"])
+@bp.route('/testasyncAdd', methods=["GET"])
 def test_add(task_order:dict, task_id:int, type_set:int =1):
     # ce_calculating_earnings.delay(task_order_dict, task_order.task_id, type_set=1 )
     # result = add.delay(1, 2)
@@ -804,14 +803,7 @@ def test_add(task_order:dict, task_id:int, type_set:int =1):
     pass
 
 
-@route(bp, '/testasync', methods=["GET"])
+@bp.route('/testasync', methods=["GET"])
 def test_flask_app_context():
-    
     result = flask_app_context.delay()
     return result.get(timeout=1)
-
-
-
-
-
-
