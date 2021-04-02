@@ -33,9 +33,7 @@ def create_app(config_name, config_path=None):
 
     # 更新Celery配置信息
     celery_conf = "redis://{}:{}/{}".format(app.config['REDIS_HOST'], app.config['REDIS_PORT'], app.config['REDIS_DB'])
-
     celery_conf_prod = "redis://:{}@{}:{}/{}".format(app.config['REDIS_PWD_PROD'], app.config['REDIS_HOST_PROD'], app.config['REDIS_PORT'], app.config['REDIS_DB'])
-    
     celery_app.conf.update({"broker": celery_conf_prod, "broker_url": celery_conf_prod, "result_backend": celery_conf_prod})
 
     # 注册接口
