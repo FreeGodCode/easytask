@@ -8,12 +8,14 @@ from utils.constants import TASKS_TABLE,ET_TASK_ORDERS
 from utils.mysql_cli import MysqlSearch
 from datetime import datetime
 
+
 class TasksDetail(object):
     """任务详情缓存"""
     def __init__(self,tasks_id):
         self.tasks_detail_key = 'tasks_detail_:{}'.format(tasks_id)
         self.tasks_id = tasks_id
         self.key = 0
+
     def save(self,tasks_detail):
         """
         设置任务详情缓存
@@ -44,7 +46,9 @@ class TasksDetail(object):
         else:
             current_app.logger.info(self.tasks_id)
             # 查询任务详情内容
-            sql = f"SELECT task_class,recommend,tags,allow_nums,end_time,task_reward,name,poster_img,task_info,task_steps,virtual_nums,begin_task_time,deadline_time,count_tasks,tasks_counts FROM {TASKS_TABLE} WHERE ID={self.tasks_id}"
+            sql = f"SELECT task_class,recommend,tags,allow_nums,end_time,task_reward,name,poster_img,task_info,\
+            task_steps,virtual_nums,begin_task_time,deadline_time,count_tasks,tasks_counts FROM {TASKS_TABLE} \
+            WHERE ID={self.tasks_id}"
             res = MysqlSearch().get_one(sql)
             # 计算任务剩余数
             tasks_count = res['tasks_counts'] - res['count_tasks']

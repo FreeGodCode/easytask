@@ -1,9 +1,12 @@
 import json
 from flask import current_app
 from redis.exceptions import RedisError
-from cache import constants
+# from cache import constants
+from app.common.cache import constants
 from utils.constants import MEMBERS_TABLE
 from utils.mysql_cli import MysqlSearch
+
+
 class UserCache(object):
     """用户缓存"""
     def __init__(self, mobile):
@@ -51,16 +54,3 @@ class UserCache(object):
                 return user_info
             else:
                 return False
-
-
-
-
-
-
-
-
-
-
-
-
-

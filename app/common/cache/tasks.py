@@ -53,10 +53,13 @@ class TasksCache(object):
                 #                                                         (SELECT task_id FROM {ET_TASK_ORDERS} as et where member_id={g.user_id}) \
                 #                                                             order by check_time desc LIMIT {page_index},{page_size} ")
                 # else:
-                tasks_info_list = MysqlSearch().get_more(f"SELECT task_reward,id,name,tasks_counts,allow_nums,poster_img, \
-                                                       count_tasks,tasks_fulfil,tags,recommend,virtual_nums,end_time,begin_task_time,\
-                                                            task_class,check_time FROM {TASKS_TABLE} WHERE status=2 \
-                                                                order by check_time desc LIMIT {page_index},{page_size} ")
+                tasks_info_list = MysqlSearch().get_more(
+                    f"SELECT task_reward,id,name,tasks_counts,allow_nums,poster_img, count_tasks,tasks_fulfil,tags,\
+                    recommend,virtual_nums,end_time,begin_task_time, task_class,check_time \
+                    FROM {TASKS_TABLE} \
+                    WHERE status=2 \
+                    order by check_time desc \
+                    LIMIT {page_index},{page_size} ")
                 # 查询系统公告,并返回
                 gg = MysqlSearch().get_one(f"SELECT notice FROM {ET_GLOBAL_CONFIG}")
                 tasks_info = []

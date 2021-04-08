@@ -97,6 +97,3 @@ class MysqlWrite(object):
             self.connection.rollback()
         finally:
             self.close_connection()
-
-
-
