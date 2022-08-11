@@ -6,6 +6,7 @@ from utils.mysql_cli import MysqlSearch
 from utils.constants import MEMBERS_TABLE, ET_GLOBAL_CONFIG
 from flask import g, current_app
 
+
 def get_short_link(iiuv):
     host = 'https://dwz.cn'
     path = '/admin/v2/create'
@@ -15,7 +16,6 @@ def get_short_link(iiuv):
 
     # 设置Token
     token = global_config.getRaw('baidu', 'BAIDU_SHORT_LINK_TOKEN')
-
 
     # 设置待创建的长网址 # TODO 生成短链接地址是跳转到301的地址
     bodys = {'Url': global_config.getRaw('baidu', 'SHORT_URL') + f"?iiuv={iiuv}", 'TermOfValidity': 'long-term'}

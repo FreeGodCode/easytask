@@ -69,7 +69,6 @@ def get_rank_data():
 
         act_config = db.session.execute(f'SELECT * FROM `et_activity_configs` WHERE `act_id` = {activity_id}').first()
 
-
         if not act_config:
             print('活动配置数据异常！')
             return '活动配置数据异常！'

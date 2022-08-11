@@ -4,8 +4,9 @@ from flask import current_app
 from redis import RedisError
 from anytree import Node, findall_by_attr
 from anytree.exporter import DictExporter
-from utils.constants import ET_MEMBER_RELATIONS,MEMBERS_TABLE
-from utils.mysql_cli import MysqlWrite,MysqlSearch
+from utils.constants import ET_MEMBER_RELATIONS, MEMBERS_TABLE
+from utils.mysql_cli import MysqlWrite, MysqlSearch
+
 
 class MemberRelationTreeCache(object):
     def tree(self, mobile, iiuv):
@@ -68,7 +69,8 @@ class MemberRelationTreeCache(object):
                 current_app.logger.error(e)
         else:
             # TODO 如果当前parent_id不是顶级节点,查询当前parent_id的上级并进入树结构查询
-            top_parent = MysqlSearch().get_one(f"SELECT top_parent_id FROM {ET_MEMBER_RELATIONS} WHERE member_id='{parent['id']}'")
+            top_parent = MysqlSearch().get_one(
+                f"SELECT top_parent_id FROM {ET_MEMBER_RELATIONS} WHERE member_id='{parent['id']}'")
             try:
                 root_data = rc.hget(f"drp_relation_member_{top_parent['top_parent_id']}", 0)
             except Exception as e:
@@ -83,7 +85,7 @@ class MemberRelationTreeCache(object):
                 root = importer.import_(json_data)
                 level_1 = findall_by_attr(root, top_parent['top_parent_id'])[0]
                 level_2 = findall_by_attr(root, parent['id'])[0]
-                level_3 = Node(member['id'],parent=level_2)
+                level_3 = Node(member['id'], parent=level_2)
                 exporter = DictExporter()
                 data = exporter.export(root)
                 rc.hset(f"drp_relation_member_{top_parent['top_parent_id']}", 0, json.dumps(data))
@@ -129,7 +131,3 @@ class MemberRelationTreeCache(object):
                     sql_iiuv = f"INSERT INTO {ET_MEMBER_RELATIONS} (member_id,parent_id,levels) VALUE ('{member['id']}','{parent['id']}' ,2)"
                     MysqlWrite().write(sql_iiuv)
                 return True
-
-
-
-

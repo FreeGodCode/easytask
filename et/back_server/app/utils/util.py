@@ -10,22 +10,23 @@ import redis
 from PIL import Image, ImageFont, ImageDraw
 from flask import jsonify, current_app
 from app.utils.response import ResMsg
-from datetime import datetime as cdatetime #有时候会返回datatime类型
-from datetime import date,time
+from datetime import datetime as cdatetime  # 有时候会返回datatime类型
+from datetime import date, time
 from flask_sqlalchemy import Model
 from sqlalchemy.orm.query import Query
-from sqlalchemy import DateTime,Numeric,Date,Time #有时又是DateTime
- 
+from sqlalchemy import DateTime, Numeric, Date, Time  # 有时又是DateTime
+
 
 class helpers:
 
     @staticmethod
-    def rmnullkeys(metadict:dict):
-        try:   
+    def rmnullkeys(metadict: dict):
+        try:
             if isinstance(metadict, dict):
                 return {k: v for k, v in metadict.items() if v}
         except BaseException as why:
             raise TypeError(f'{why}Type error of parameter')
+
     @staticmethod
     def model_to_dict(result):
         try:
@@ -42,12 +43,12 @@ class helpers:
 
     @staticmethod
     def queryToDict(models):
-        if(isinstance(models,list)):
-            if(isinstance(models[0],Model)):
+        if (isinstance(models, list)):
+            if (isinstance(models[0], Model)):
                 lst = []
                 for model in models:
                     gen = model_to_dict(model)
-                    dit = dict((g[0],g[1]) for g in gen)
+                    dit = dict((g[0], g[1]) for g in gen)
                     lst.append(dit)
                 return lst
             else:
@@ -56,20 +57,23 @@ class helpers:
         else:
             if (isinstance(models, Model)):
                 gen = model_to_dict(models)
-                dit = dict((g[0],g[1]) for g in gen)
+                dit = dict((g[0], g[1]) for g in gen)
                 return dit
             else:
                 res = dict(zip(models.keys(), models))
                 find_datetime(res)
                 return res
 
+
 def result_to_dict(results):
     res = [dict(zip(r.keys(), r)) for r in results]
-    
+
     for r in res:
         find_datetime(r)
     return res
-def model_to_dict(model):      
+
+
+def model_to_dict(model):
     for col in model.__table__.columns:
         if isinstance(col.type, DateTime):
             value = convert_datetime(getattr(model, col.name))
@@ -78,20 +82,25 @@ def model_to_dict(model):
         else:
             value = getattr(model, col.name)
         yield (col.name, value)
+
+
 def find_datetime(value):
     for v in value:
         if (isinstance(value[v], cdatetime)):
-            value[v] = convert_datetime(value[v])   
+            value[v] = convert_datetime(value[v])
+
+
 def convert_datetime(value):
     if value:
-        if(isinstance(value,(cdatetime,DateTime))):
+        if (isinstance(value, (cdatetime, DateTime))):
             return value.strftime("%Y-%m-%d %H:%M:%S")
-        elif(isinstance(value,(date,Date))):
+        elif (isinstance(value, (date, Date))):
             return value.strftime("%Y-%m-%d")
-        elif(isinstance(value,(Time,time))):
+        elif (isinstance(value, (Time, time))):
             return value.strftime("%H:%M:%S")
     else:
         return ""
+
 
 def route(bp, *args, **kwargs):
     """
@@ -174,7 +183,7 @@ class Redis(object):
         host = current_app.config['REDIS_HOST_PROD']
         port = current_app.config['REDIS_PORT']
         db = current_app.config['REDIS_DB']
-        password=current_app.config['REDIS_PWD_PROD']
+        password = current_app.config['REDIS_PWD_PROD']
         r = redis.StrictRedis(host, port, db, password)
         return r
 
@@ -222,7 +231,7 @@ class Redis(object):
         zrange(name, start, end, desc=False, withscores=False, score_cast_func=<type 'float'>)[source]
         """
         r = cls._get_r()
-        ret= r.zrange(key, start, end, desc, withscores)
+        ret = r.zrange(key, start, end, desc, withscores)
         return ret
 
     @classmethod
@@ -231,16 +240,16 @@ class Redis(object):
         写入zset
         """
         r = cls._get_r()
-        ret= r.sismember(key, value)
+        ret = r.sismember(key, value)
         return ret
-    
+
     @classmethod
     def smembers(cls, key):
         """
         对应的集合的所有成员 
         """
         r = cls._get_r()
-        ret=r.smembers(key)
+        ret = r.smembers(key)
         return ret
 
     @classmethod
@@ -291,7 +300,7 @@ class Redis(object):
         添加指定内容到list
         """
         r = cls._get_r()
-        res = r.lpush(name,key)
+        res = r.lpush(name, key)
         return res
 
     @classmethod

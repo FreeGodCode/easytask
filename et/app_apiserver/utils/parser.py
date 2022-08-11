@@ -1,5 +1,6 @@
 import re
 
+
 def mobile(mobile_str):
     """
     检验手机号格式
@@ -25,6 +26,7 @@ def name_str(namestr):
     else:
         raise ValueError('输入正确中文名称')
 
+
 def email(email_str):
     """
     检验邮箱格式
@@ -43,6 +45,7 @@ def regex(pattern):
     :param pattern: str 正则表达式
     :return:  检验函数
     """
+
     def validate(value_str):
         """
         检验字符串格式
@@ -55,5 +58,3 @@ def regex(pattern):
             raise ValueError('Invalid params.')
 
     return validate
-
-

@@ -2,12 +2,14 @@ import datetime
 import json
 from flask import current_app, g
 from redis.exceptions import RedisError
-from utils.constants import TASKS_TABLE,ET_GLOBAL_CONFIG, ET_TASK_ORDERS, ET_MEMBER_EARNINGS
+from utils.constants import TASKS_TABLE, ET_GLOBAL_CONFIG, ET_TASK_ORDERS, ET_MEMBER_EARNINGS
 from utils.mysql_cli import MysqlSearch
 from cache import constants
 
+
 class TasksCache(object):
     """任务缓存"""
+
     def __init__(self):
 
         self.tasks_info_key = f"tasks_info"
@@ -33,7 +35,7 @@ class TasksCache(object):
         """
         rc = current_app.redis_cli
         try:
-            tasks_info = rc.hget(self.tasks_info_key,self.key)
+            tasks_info = rc.hget(self.tasks_info_key, self.key)
         except RedisError as e:
             current_app.logger.error(e)
             tasks_info = None
@@ -60,7 +62,8 @@ class TasksCache(object):
                                                                 order by check_time desc LIMIT {page_index},{page_size} ")
                 # 任务完成/奖励状态栏
                 m = MysqlSearch().get_one(f"SELECT COUNT(status) FROM {ET_TASK_ORDERS} WHERE status=4")
-                c = MysqlSearch().get_one(f"SELECT SUM(amounts) from {ET_MEMBER_EARNINGS} as ete WHERE task_id in (SELECT task_id FROM {ET_TASK_ORDERS} WHERE status=4 and ete.amount_type=1)")
+                c = MysqlSearch().get_one(
+                    f"SELECT SUM(amounts) from {ET_MEMBER_EARNINGS} as ete WHERE task_id in (SELECT task_id FROM {ET_TASK_ORDERS} WHERE status=4 and ete.amount_type=1)")
                 e = MysqlSearch().get_one(f"SELECT COUNT(id) from {ET_TASK_ORDERS}")
                 # 查询系统公告,并返回
                 dic = {
