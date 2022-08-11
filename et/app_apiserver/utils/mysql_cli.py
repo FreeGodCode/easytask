@@ -27,18 +27,18 @@ class MysqlSearch(object):
         except MySQLdb.Error as e:
             print('Error : {} '.format(e))
 
-    def get_one(self,sql):
+    def get_one(self, sql):
         try:
             # 获取会话指针
             cursor = self.connection.cursor()
             # 执行sql
             cursor.execute(sql)
-            # 使用 下面方法把元祖转成字典列表,并且进行数据的整合
+            # 使用下面方法把元祖转成字典列表,并且进行数据的整合
             data = cursor.fetchone()
             if not data:
                 cursor.close()
                 return False
-            result = dict(zip([k[0] for k in cursor.description],data))
+            result = dict(zip([k[0] for k in cursor.description], data))
             cursor.close()
             return result
         except Exception as e:
@@ -52,8 +52,8 @@ class MysqlSearch(object):
             cursor = self.connection.cursor()
             cursor.execute(sql)
             # 使用 下面方法把元祖转成字典列表,并且进行数据的整合
-            result = [dict(zip([k[0] for k in cursor.description],row))
-                for row in cursor.fetchall()]
+            result = [dict(zip([k[0] for k in cursor.description], row))
+                      for row in cursor.fetchall()]
             cursor.close()
             return result
         except Exception as e:
@@ -85,7 +85,7 @@ class MysqlWrite(object):
         except MySQLdb.Error as e:
             print('Error : {} '.format(e))
 
-    def write(self,sql):
+    def write(self, sql):
         try:
             cursor = self.connection.cursor()
             result = cursor.execute(sql)
