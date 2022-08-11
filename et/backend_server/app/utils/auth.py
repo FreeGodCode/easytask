@@ -21,7 +21,7 @@ class Auth(object):
 
         key = current_app.config.get('SECRET_KEY', cls.key)
         now = datetime.utcnow()
-        exp_datetime = now + timedelta(hours=exp)*10
+        exp_datetime = now + timedelta(hours=exp) * 10
         access_payload = {
             'exp': exp_datetime,
             'flag': 0,  # 标识是否为一次性token，0是，1不是
@@ -124,6 +124,7 @@ def login_required(f):
     :param f:
     :return:
     """
+
     @wraps(f)
     def wrapper(*args, **kwargs):
         res = ResMsg()
